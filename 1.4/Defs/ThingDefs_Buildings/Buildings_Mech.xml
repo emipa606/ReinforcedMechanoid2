@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Mechanoid Crate Base ====================== -->
+	<ThingDef Abstract="True" Name="RM_CrateBase" ParentName="BuildingBase">
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>50</pathCost>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+	</ThingDef>
+	<!-- ================================ Mechanoid Crate ====================== -->
+	<ThingDef ParentName="RM_CrateBase">
+		<defName>RM_MechanoidCrate</defName>
+		<label>mech crate</label>
+		<description>A mechanoid crate of unknown purpose. It's insides are made up from machinery, motors and other mysterious apparatus.\n\nA strange noise can be heard coming from them.</description>
+		<graphicData>
+			<texPath>Things/Building/Mechanoid/MechanoidCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2, 2)</drawSize>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Mass>35</Mass>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-10</Beauty>
+			<WorkToBuild>600</WorkToBuild>
+		</statBases>
+		<costList Inherit="False"/>
+		<passability>Impassable</passability>
+		<size>(2, 2)</size>
+		<fillPercent>0.80</fillPercent>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSpecial</li>
+		</thingCategories>
+		<killedLeavings>
+			<Steel>5</Steel>
+			<Plasteel>3</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<VFE_ComponentMechanoid MayRequire="OskarPotocki.VFE.Mechanoid">1</VFE_ComponentMechanoid>
+		</killedLeavings>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+			<claimable>true</claimable>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>RM_MechanoidCrate_Ambience</soundAmbient>
+		</building>
+	</ThingDef>
+	<!-- ================================ Plasma Cell ====================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RM_MechanoidPlasmaCell</defName>
+		<label>plasma cell</label>
+		<description>A mechanoid plasma cell used for refueling of plasma based weapons. The unstable plasma stored inside makes it unstable. If damaged, the cell will generate a massive explosion.\n\nSome brave humans steal these from mechanoids for their own use as defensive bombs. However, an unintentional detonation can be devastating.</description>
+		<graphicData>
+			<texPath>Things/Building/Mechanoid/MechanoidPlasmaCell/MechanoidPlasmaCell_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.7, 0.5, 0.7)</volume>
+			</shadowData>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<drawerType>RealtimeOnly</drawerType>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<statBases>
+			<Mass>18</Mass>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Beauty>-10</Beauty>
+			<WorkToBuild>300</WorkToBuild>
+		</statBases>
+		<costList Inherit="False"/>
+		<passability>PassThroughOnly</passability>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<pathCost>50</pathCost>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.6</fillPercent>
+		<specialDisplayRadius>8.9</specialDisplayRadius>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<stealable>true</stealable>
+		<building>
+			<isTrap>true</isTrap>
+			<claimable>true</claimable>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>7.9</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explodeOnKilled>true</explodeOnKilled>
+				<startWickHitPointsPercent>0.8</startWickHitPointsPercent>
+				<extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0</preExplosionSpawnChance>
+				<wickTicks>
+					<min>0</min>
+					<max>450</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ================================ Mechanoid Spirit ====================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RM_BrokenSpirit</defName>
+		<label>ancient spirit</label>
+		<description>A dormant or deactivated Dextro-class mechanoid transport ship used for troop and cargo transit between surface and orbit, or between moons of a planetary system.</description>
+		<graphicData>
+			<texPath>Things/Building/Mechanoid/BrokenSpirit</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,8)</drawSize>
+		</graphicData>
+		<size>(4,6)</size>
+		<techLevel>Ultra</techLevel>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<rotatable>true</rotatable>
+		<stealable>false</stealable>
+		<startingHpRange>0.4~0.95</startingHpRange>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<building>
+			<buildingTags>
+				<li>RM_AncientShip</li>
+			</buildingTags>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_ShowExplosionRadius</li>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<killedLeavings>
+			<Steel>100</Steel>
+			<Plasteel>150</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
+			<VFE_ComponentMechanoid MayRequire="OskarPotocki.VFE.Mechanoid">8</VFE_ComponentMechanoid>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>1520</wickTicks>
+				<explosiveRadius>7.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explodeOnKilled>true</explodeOnKilled>
+				<startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+				<extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

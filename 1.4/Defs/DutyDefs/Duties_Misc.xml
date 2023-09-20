@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--======== Mechanoid Vulture Breakdown ========-->
+	<DutyDef>
+		<defName>RM_BreakDownMechanoids</defName>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ReinforcedMechanoids.JobGiver_BreakDownMechanoids"/>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+	
+  <DutyDef>
+    <defName>RM_Build</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+		<li Class="JobGiver_Work" />
+        <li Class="JobGiver_WanderNearDutyLocation">
+          <wanderRadius>8</wanderRadius>
+          <locomotionUrgencyOutsideRadius>Sprint</locomotionUrgencyOutsideRadius>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+</Defs>

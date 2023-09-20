@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--======== Mechanoid Caretaker ========-->
+	<RaidStrategyDef>
+		<defName>RM_CaretakerRaid</defName>
+		<workerClass>ReinforcedMechanoids.RaidStrategyWorker_ImmediateAttackMechanoidCaretaker</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>Mechanoid</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+			</points>
+		</pointsFactorCurve>
+		<arriveModes>
+			<li>EdgeWalkIn</li>
+		</arriveModes>
+		<letterLabelEnemy>Raid (Caretaker)</letterLabelEnemy>
+		<arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+		<letterLabelFriendly>Friendlies</letterLabelFriendly>
+		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
+	</RaidStrategyDef>
+
+	<!--======== Mechanoid Wraith ========-->
+	<RaidStrategyDef>
+		<defName>RM_WraithSiege</defName>
+		<workerClass>ReinforcedMechanoids.RaidStrategyWorker_ImmediateAttackMechanoidWraith</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RM_Remnants</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+			</points>
+		</pointsFactorCurve>
+		<arriveModes>
+			<li>EdgeWalkIn</li>
+		</arriveModes>
+		<letterLabelEnemy>Siege (Wraith)</letterLabelEnemy>
+		<arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+		<letterLabelFriendly>Friendlies</letterLabelFriendly>
+		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
+	</RaidStrategyDef>
+
+	<!--======== Mechanoid Locust ========-->
+	<RaidStrategyDef>
+		<defName>RM_LocustRaid</defName>
+		<workerClass>ReinforcedMechanoids.RaidStrategyWorker_ImmediateAttackMechanoidLocust</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RM_Remnants</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+			</points>
+		</pointsFactorCurve>
+		<arriveModes>
+			<li>EdgeWalkIn</li>
+		</arriveModes>
+		<letterLabelEnemy>Raid (Locust)</letterLabelEnemy>
+		<arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+		<letterLabelFriendly>Friendlies</letterLabelFriendly>
+		<arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
+	</RaidStrategyDef>
+</Defs>

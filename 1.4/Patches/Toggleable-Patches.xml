@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Shield Sounds ================ -->
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>Replace vanilla shield sounds?</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<SoundDef>
+						<defName>RM_EnergyShield_Broken</defName>
+						<context>MapOnly</context>
+						<maxSimultaneous>1</maxSimultaneous>
+						<subSounds>
+							<li>
+								<grains>
+									<li Class="AudioGrain_Folder">
+										<clipFolderPath>Misc/EnergyShield/RM_Shield_Broken</clipFolderPath>
+									</li>
+								</grains>
+								<volumeRange>40.58823~40.58823</volumeRange>
+								<distRange>0~70</distRange>
+							</li>
+						</subSounds>
+					</SoundDef>
+					<SoundDef>
+						<defName>RM_EnergyShield_Reset</defName>
+						<context>MapOnly</context>
+						<maxSimultaneous>1</maxSimultaneous>
+						<subSounds>
+							<li>
+								<grains>
+									<li Class="AudioGrain_Clip">
+										<clipPath>Misc/EnergyShield/RM_Shield_Reset</clipPath>
+									</li>
+								</grains>
+								<volumeRange>24.11765~24.11765</volumeRange>
+								<distRange>0~70</distRange>
+							</li>
+						</subSounds>
+					</SoundDef>
+				</value>
+			</li>
+			<!-- ================ Spartan Mechanoid ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "RM_Droid_Spartan"]/comps/li[@Class="VFECore.CompProperties_ShieldBubble"]</xpath>
+				<value>
+					<brokenSound>RM_EnergyShield_Broken</brokenSound>
+					<resetSound>RM_EnergyShield_Reset</resetSound>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ================ Add new music tracks ================ -->
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>Enable new Halo inspired music tracks?</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<SongDef>
+						<label>Through Moonlit Trees</label>
+						<clipPath>Songs/Relax/Through_Moonlit_Trees</clipPath>
+						<volume>0.8</volume>
+					</SongDef>
+					<SongDef>
+						<label>Under Cover of Night</label>
+						<clipPath>Songs/Relax/Under_Cover_of_Night</clipPath>
+						<volume>0.8</volume>
+					</SongDef>
+					<SongDef>
+						<label>Mechanoid Dance</label>
+						<clipPath>Songs/Tension/Mechanoid_Dance</clipPath>
+						<volume>0.8</volume>
+						<tense>true</tense>
+					</SongDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

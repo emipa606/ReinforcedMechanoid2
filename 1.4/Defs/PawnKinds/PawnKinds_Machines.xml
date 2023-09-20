@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--============================= Droid Base ================================-->
+	<PawnKindDef ParentName="BaseMechanoidKind" Name="RM_BaseDroidKind" Abstract="True">
+		<skills>
+			<li>
+				<skill>Animals</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Artistic</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Construction</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Cooking</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Crafting</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Medicine</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Mining</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Plants</skill>
+				<range>0</range>
+			</li>
+			<li>
+				<skill>Social</skill>
+				<range>0</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	<!--============================= Buffer Droid ================================-->
+	<PawnKindDef ParentName="RM_BaseDroidKind">
+		<defName>RM_Droid_Buffer</defName>
+		<label>buffer droid</label>
+		<race>RM_Droid_Buffer</race>
+		<combatPower>99999</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Droid/BufferDroid/BufferDroid</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	<!--============================= Spartan Droid ================================-->
+	<PawnKindDef ParentName="RM_BaseDroidKind">
+		<defName>RM_Droid_Spartan</defName>
+		<combatPower>99999</combatPower>
+		<label>spartan mechanoid</label>
+		<race>RM_Droid_Spartan</race>
+		<alternateGraphicChance>0.5</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Droid/SpartanDroid/SpartanDroidB</texPath>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Droid/SpartanDroid/SpartanDroidA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>12</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================================ Remnants Faction Namers ====================== -->
+	<RulePackDef>
+		<defName>RM_NamerFactionRemnants</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>TyrikanFactionName->Names/TyrikanFactionName</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name->The [TyrikanFactionName] Remnants</li>
+				<li>r_name->The [TyrikanFactionName] Remains</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>RM_NamerSettlementRemnants</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>TyrikanShipsNamePrefix->Names/TyrikanShipsNamePrefix</li>
+				<li>TyrikanShipsNameMiddle->Names/TyrikanShipsNameMiddle</li>
+				<li>TyrikanShipsNamePostfix->Names/TyrikanShipsNamePostfix</li>
+				<li>TyrikanShipsNameFull->Names/TyrikanShipsNameFull</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name->[TyrikanShipsNamePrefix] [TyrikanShipsNameMiddle] of [TyrikanShipsNamePostfix]</li>
+				<li>r_name->[TyrikanShipsNameFull]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

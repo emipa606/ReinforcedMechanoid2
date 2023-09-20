@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================================ Mechanoid Plasma Pistol ====================== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt">
+		<defName>RM_MeleeWeapon_GravitonMace</defName>
+		<label>graviton mace</label>
+		<description>A truly massive weapon designed for use by large, powerful mechanoids simply due to its weight and the required strength to properly wield. One side protrudes a metal core which is wrapped in an insulated plasma sheath, giving it a scorching cutting edge, while the other side features what boils down to a modified repulsor generator fitted with pneumatic plates.\n\nDue to the knockback effect of the hammer side of this mace, which intended use is against armoured vehicles and entrenched power armour users, this weapon can be considered somewhat as a crowd control weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/MechanoidGravitonMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Equipment/WeaponMelee/MechanoidGravitonMace</uiIconPath>
+		<techLevel>Ultra</techLevel>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<relicChance>0</relicChance>
+		<generateCommonality>0.3</generateCommonality>
+		<statBases>
+			<MarketValue>5500</MarketValue>
+			<Mass>50</Mass>
+		</statBases>
+		<weaponTags>
+			<li>MechanoidGravitonMace</li>
+		</weaponTags>
+		<costList>
+			<Plasteel>125</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>RM_GravitonMaceAttack</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>3.8</cooldownTime>
+				<armorPenetration>0.6</armorPenetration>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3.6</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>16</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

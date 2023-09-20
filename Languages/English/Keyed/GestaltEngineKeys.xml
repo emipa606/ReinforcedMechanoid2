@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<RM.Upgrade>Upgrade</RM.Upgrade>
+	<RM.UpgradeDesc>Upgrade the gestalt. This will make it consume more power, push more heat but also be more capable and able to control more mechanoids.</RM.UpgradeDesc>
+	<RM.Downgrade>Downgrade</RM.Downgrade>
+	<RM.DowngradeDesc>Downgrade the gestalt. Reduces power consumption, pushes less heat but also be less capable and able to control fewer mechanoids.</RM.DowngradeDesc>
+	<RM.Upgrading>Upgrading</RM.Upgrading>
+	<RM.Downgrading>Downgrading</RM.Downgrading>
+	<RM.UpgradeInProcess>Upgrade in process! {0} completed.</RM.UpgradeInProcess>
+	<RM.DowngradeInProcess>Downgrade in process! {0} completed.</RM.DowngradeInProcess>
+	<RM.Level>Current level: {0}</RM.Level>
+	<RM.HackingBiocodedFailed>Hacking biocoded equipment: Failed, {0} destroyed!</RM.HackingBiocodedFailed>
+	<RM.HackingBiocodedSuccess>Hacking biocoded equipment: Successful! {0} is unlocked.</RM.HackingBiocodedSuccess>
+	<RM.OnCooldown>On cooldown for {0}</RM.OnCooldown>
+	<RM.FinishedUpgrade>{0} finished upgrading.</RM.FinishedUpgrade>
+	<RM.FinishedDowngrade>{0} finished downgrading.</RM.FinishedDowngrade>
+	<RM.ConnectMechanoid>Connect mechanoid</RM.ConnectMechanoid>
+	<RM.ConnectMechanoidDesc>text.todo</RM.ConnectMechanoidDesc>
+	<RM.IncapableOfConnectingMechanoid>Incapable of connecting mechanoid</RM.IncapableOfConnectingMechanoid>
+	<RM.BusyConnectingMechanoid>Busy connecting mechanoid</RM.BusyConnectingMechanoid>
+	<RM.NotEnoughBandwidth>Connecting would exceed gestalt's bandwidth!</RM.NotEnoughBandwidth>
+	<RM.HackMechanoid>Hack hostile mechanoid</RM.HackMechanoid>
+	<RM.HackMechanoidDesc>text.todo</RM.HackMechanoidDesc>
+	
+</LanguageData>

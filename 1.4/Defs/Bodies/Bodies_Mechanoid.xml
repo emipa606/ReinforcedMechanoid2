@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Mechanoid Vulture & Falcon Base ====================== -->
+	<BodyDef Name="RM_VultureFalconBody" Abstract="True">
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>left sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>right sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left index finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>right mechanical shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Vulture ====================== -->
+	<BodyDef ParentName="RM_VultureFalconBody">
+		<defName>RM_Mechanical_Vulture</defName>
+		<label>vulture</label>
+	</BodyDef>
+	<!-- ================================ Mechanoid Falcon ====================== -->
+	<BodyDef ParentName="RM_VultureFalconBody">
+		<defName>RM_Mechanical_Falcon</defName>
+		<label>falcon</label>
+	</BodyDef>
+	<!-- ================================ Mechanoid Gremlin ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Gremlin</defName>
+		<label>gremlin</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>left sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>right sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalBackStorage</def>
+					<customLabel>grenade storage</customLabel>
+					<coverage>0.34</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.10</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left index finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>right mechanical shoulder</customLabel>
+					<coverage>0.10</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.10</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Harpy ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Harpy</defName>
+		<label>harpy</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>sight sensor</customLabel>
+									<coverage>0.26</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_SkimmerPackBody</def>
+					<coverage>0.26</coverage>
+					<depth>Outside</depth>
+					<height>Top</height>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.14</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>right mechanical shoulder</customLabel>
+					<coverage>0.14</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.10</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.10</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Ranger ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Ranger</defName>
+		<label>ranger</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>sight sensor</customLabel>
+									<coverage>0.26</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>right mechanical shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Zealot ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Zealot</defName>
+		<label>zealot</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>sight sensor</customLabel>
+									<coverage>0.46</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>SmellSensor</def>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderZealot</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderZealot</def>
+					<customLabel>right shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Marshal ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Marshal</defName>
+		<label>marshal</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>RM_HeadBlade</def>
+									<coverage>0.10</coverage>
+									<depth>Outside</depth>
+								</li>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>left sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>right sight sensor</customLabel>
+									<coverage>0.13</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>SmellSensor</def>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderZealot</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>Blade</def>
+									<customLabel>left blade</customLabel>
+									<coverage>0.3</coverage>
+									<groups>
+										<li>LeftBlade</li>
+									</groups>
+								</li>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderZealot</def>
+					<customLabel>right shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>Blade</def>
+									<customLabel>right blade</customLabel>
+									<coverage>0.3</coverage>
+									<groups>
+										<li>RightBlade</li>
+									</groups>
+								</li>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Sentinel ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Sentinel</defName>
+		<label>sentinel</label>
+		<corePart>
+			<def>RM_MechanicalThoraxSentinel</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalNeck</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>RM_MechanicalHeadSentinel</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>RM_HeadBlade</def>
+									<coverage>0.10</coverage>
+									<depth>Outside</depth>
+								</li>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>sight sensor</customLabel>
+									<coverage>0.26</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.10</coverage>
+								</li>
+								<li>
+									<def>SmellSensor</def>
+									<coverage>0.10</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderSentinel</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.175</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>left hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left pinky</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left middle finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left index finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>left thumb</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>LeftHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderSentinel</def>
+					<customLabel>right shoulder</customLabel>
+					<coverage>0.175</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right pinky</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.15</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.2</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>MechanicalFoot</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Behemoth ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Behemoth</defName>
+		<label>behemoth</label>
+		<corePart>
+			<def>RM_MechanicalThoraxBehemoth</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>RM_MechanicalNeckBehemoth</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>MechanicalHead</def>
+							<coverage>0.80</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>ArtificialBrain</def>
+									<coverage>0.10</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>SightSensor</def>
+									<customLabel>sight sensor</customLabel>
+									<coverage>0.6</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>left hearing sensor</customLabel>
+									<coverage>0.05</coverage>
+								</li>
+								<li>
+									<def>HearingSensor</def>
+									<customLabel>right hearing sensor</customLabel>
+									<coverage>0.05</coverage>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderBehemoth</def>
+					<customLabel>left shoulder</customLabel>
+					<coverage>0.15</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>left arm</customLabel>
+							<coverage>0.50</coverage>
+							<parts>
+								<li>
+									<def>RM_BehemothShield</def>
+									<customLabel>armored shield</customLabel>
+									<coverage>0.35</coverage>
+									<height>Bottom</height>
+									<depth>Outside</depth>
+									<groups>
+										<li>LeftHand</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShoulderBehemoth</def>
+					<customLabel>right shoulder</customLabel>
+					<coverage>0.17</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>right arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>right hand</customLabel>
+									<coverage>0.2</coverage>
+									<height>Bottom</height>
+									<parts>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right middle finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+												<li>MiddleFingers</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right index finger</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+										<li>
+											<def>MechanicalFinger</def>
+											<customLabel>right thumb</customLabel>
+											<coverage>0.20</coverage>
+											<groups>
+												<li>RightHand</li>
+											</groups>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalLegBehemoth</def>
+					<customLabel>left leg</customLabel>
+					<coverage>0.18</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>RM_MechanicalFootBehemoth</def>
+							<customLabel>left foot</customLabel>
+							<coverage>0.5</coverage>
+							<groups>
+								<li>FrontLeftLeg</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalLegBehemoth</def>
+					<customLabel>right leg</customLabel>
+					<coverage>0.18</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>RM_MechanicalFootBehemoth</def>
+							<customLabel>right foot</customLabel>
+							<coverage>0.5</coverage>
+							<groups>
+								<li>FrontRightLeg</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<customLabel>primary reactor</customLabel>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<customLabel>secondary reactor</customLabel>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.04</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Caretaker ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Caretaker</defName>
+		<label>caretaker</label>
+		<corePart>
+			<def>RM_MechanicalThoraxCanManipulateCaretaker</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>RM_MechanicalHeadCaretaker</def>
+					<coverage>0.20</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<coverage>0.29</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.28</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.28</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>RM_MechanicalShellCaretaker</def>
+					<coverage>0.78</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>FluidReprocessor</def>
+							<customLabel>left fluid peprocessor</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>FluidReprocessor</def>
+							<customLabel>right fluid peprocessor</customLabel>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>Reactor</def>
+							<customLabel>first reactor</customLabel>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>Reactor</def>
+							<customLabel>second reactor</customLabel>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>RM_ShieldGenerator</def>
+							<customLabel>second reactor</customLabel>
+							<coverage>0.35</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Wraith ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Wraith</defName>
+		<label>wraith</label>
+		<corePart>
+			<def>RM_MechanicalWraithBody</def>
+			<height>Bottom</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalHead</def>
+					<coverage>0.18</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<customLabel>primary artificial brain</customLabel>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>ArtificialBrain</def>
+							<customLabel>secondary artificial brain</customLabel>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>center sight sensor</customLabel>
+							<coverage>0.20</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left sensors array</customLabel>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right sensors array</customLabel>
+							<coverage>0.10</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.03</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.03</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<customLabel>left fluid peprocessor</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<customLabel>right fluid peprocessor</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>RM_MechanicalSecondWraithBody</def>
+					<coverage>0.7</coverage>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>Reactor</def>
+							<customLabel>first reactor</customLabel>
+							<coverage>0.35</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>Reactor</def>
+							<customLabel>second reactor</customLabel>
+							<coverage>0.35</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>RM_GyroStabilizer</def>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	<!-- ================================ Mechanoid Locust ====================== -->
+	<BodyDef>
+		<defName>RM_Mechanical_Locust</defName>
+		<label>locust</label>
+		<corePart>
+			<def>RM_MechanicalThoraxLocust</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>RM_MechanicalHeadLocust</def>
+					<coverage>0.48</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>RM_CoolingSystem</def>
+							<customLabel>left cooling system</customLabel>
+							<coverage>0.18</coverage>
+						</li>
+						<li>
+							<def>RM_CoolingSystem</def>
+							<customLabel>right cooling system</customLabel>
+							<coverage>0.18</coverage>
+						</li>
+						<li>
+							<def>RM_LaserFocus</def>
+							<customLabel>laser focus</customLabel>
+							<coverage>0.40</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.03</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.03</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>RM_MechanicalLegLocust</def>
+					<customLabel>front left leg</customLabel>
+					<coverage>0.10</coverage>
+				</li>
+				<li>
+					<def>RM_MechanicalLegLocust</def>
+					<customLabel>front right leg</customLabel>
+					<coverage>0.10</coverage>
+				</li>
+				<li>
+					<def>RM_MechanicalLegLocust</def>
+					<customLabel>back left leg</customLabel>
+					<coverage>0.10</coverage>
+				</li>
+				<li>
+					<def>RM_MechanicalLegLocust</def>
+					<customLabel>back right leg</customLabel>
+					<coverage>0.10</coverage>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

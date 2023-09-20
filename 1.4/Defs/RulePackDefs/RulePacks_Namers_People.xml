@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>RM_NamerPersonTyrikan</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>TyrikanFirstMale->Names/Tyrikan_First_Male</li>
+				<li>TyrikanLast->Names/Tyrikan_Last</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name(p=2)->[TyrikanFirstMale] [TyrikanLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>RM_NamerPersonTyrikanFemale</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>TyrikanFirstFemale->Names/Tyrikan_First_Female</li>
+				<li>TyrikanLast->Names/Tyrikan_Last</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name(p=2)->[TyrikanFirstFemale] [TyrikanLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

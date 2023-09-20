@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================================ ARC Weapons ====================== -->
+	<SoundDef>
+		<defName>RM_Interact_ARC</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>UI/WeaponHandling/HandleWeapon_ARC</clipPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RM_Shot_ARC</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/ARC_Shot</clipFolderPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ================================ Plasma Immolator ====================== -->
+	<SoundDef>
+		<defName>RM_Shot_PlasmaImmolator</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/PlasmaImmolator_Shot</clipFolderPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ================================ Plasma Hellgator ====================== -->
+	<SoundDef>
+		<defName>RM_Shot_PlasmaHellgator</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/PlasmaHellgator_Shot</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>1.4~1.6</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RM_Hit_PlasmaHellgator</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapon/PlasmaHellgator_Hit</clipPath>
+					</li>
+				</grains>
+				<volumeRange>28.82353~37.05883</volumeRange>
+				<tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ================================ Needler ====================== -->
+	<SoundDef>
+		<defName>RM_Interact_ShardLauncher</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>UI/WeaponHandling/HandleWeapon_ShardLauncher</clipPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RM_Shot_ShardLauncher</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/Shard_Shot</clipFolderPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RM_Hit_ShardLauncher</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/Shard_Hit</clipFolderPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ================================ Needler Lance ====================== -->
+	<SoundDef>
+		<defName>RM_Interact_ShardLance</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>UI/WeaponHandling/HandleWeapon_ShardLance</clipPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>RM_Shot_ShardLance</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/ShardLance_Shot</clipFolderPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ================================ Locust Laser ====================== -->
+	<SoundDef>
+		<defName>RM_Shot_LocustLaser</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/LocustLaser_Shot_Heavy</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.83</min>
+					<max>1.15</max>
+				</pitchRange>
+				<volumeRange>
+					<min>35</min>
+					<max>35</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ================================ Charge Railgun====================== -->
+	<SoundDef>
+		<defName>RM_Shot_ChargeRailgun</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/ChargeRailgun_Shot</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>50</min>
+					<max>70</max>
+				</volumeRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ================================ Graviton Mace====================== -->
+	<SoundDef>
+		<defName>RM_Hit_GravitonMace</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Weapon/GravitonMace_Hit</clipFolderPath>
+					</li>
+				</grains>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

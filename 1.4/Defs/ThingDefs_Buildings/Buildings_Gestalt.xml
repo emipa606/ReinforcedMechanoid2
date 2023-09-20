@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ================================ Gestalt Engine ====================== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RM_GestaltEngine</defName>
+		<label>gestalt engine</label>
+		<description>A ultratech personae-class supercomputer designed as both a central command and control hub for local mechanoids and act as a relay for remotely interfacing designated users with said mechanoids.\n\nWhile the baseline model is rather simple, it can be upgraded with more features as it has plenty of room for expansion. Immediate options include independent research, unravelling biocoding on apparel and even hacking foreign or hostile mechanoids.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Biotech/GestaltEngine_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,7)</drawSize>
+			<shadowData>
+				<volume>(5.03,1.0,4.25)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Biotech/GestaltEngine_MenuIcon</uiIconPath>
+		<size>(5,5)</size>
+		<tickerType>Normal</tickerType>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<castEdgeShadows>true</castEdgeShadows>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>1</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>2500</MaxHitPoints>
+			<WorkToBuild>65000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Beauty>-30</Beauty>
+			<ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+		</statBases>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>350</Plasteel>
+			<ComponentSpacer>15</ComponentSpacer>
+		</costList>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<recipes>
+			<li>RM_HackBiocodedThings</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<ai_chillDestination>false</ai_chillDestination>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+			<buildingTags>
+				<li>Mechanitor</li>
+				<li>Gestalt</li>
+			</buildingTags>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>RM_GestaltEngine</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities/>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="GestaltEngine.CompProperties_Upgradeable">
+				<compClass>GestaltEngine.CompGestaltEngine</compClass>
+				<upgrades>
+					<li> <!-- level 0 -->
+						<overlayGraphic>
+							<texPath>Things/Building/Biotech/Tier0_GestaltEngine</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(11,11)</drawSize>
+						</overlayGraphic>
+						<upgradeCooldownTicks>180000</upgradeCooldownTicks>
+						<upgradeDurationTicks>60000</upgradeDurationTicks>
+						<powerConsumption>300</powerConsumption>
+					</li>
+					<li> <!-- level 1 -->
+						<overlayGraphic>
+							<texPath>Things/Building/Biotech/Tier1_GestaltEngine</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(11,11)</drawSize>
+						</overlayGraphic>
+						<upgradeCooldownTicks>180000</upgradeCooldownTicks>
+						<downgradeCooldownTicks>180000</downgradeCooldownTicks>
+						<upgradeDurationTicks>60000</upgradeDurationTicks>
+						<downgradeDurationTicks>60000</downgradeDurationTicks>
+						<powerConsumption>1000</powerConsumption>
+						<researchPointsPerSecond>0.1</researchPointsPerSecond>
+						<totalMechBandwidth MayRequire="Ludeon.Rimworld.Biotech">6</totalMechBandwidth>
+						<totalControlGroups MayRequire="Ludeon.Rimworld.Biotech">1</totalControlGroups>
+						<unlockedRecipes>
+							<li>RM_HackBiocodedThings</li>
+						</unlockedRecipes>
+					</li>
+					<li> <!-- level 2 -->
+						<overlayGraphic>
+							<texPath>Things/Building/Biotech/Tier2_GestaltEngine</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(11,11)</drawSize>
+						</overlayGraphic>
+						<upgradeCooldownTicks>180000</upgradeCooldownTicks>
+						<downgradeCooldownTicks>180000</downgradeCooldownTicks>
+						<upgradeDurationTicks>60000</upgradeDurationTicks>
+						<downgradeDurationTicks>60000</downgradeDurationTicks>
+						<powerConsumption>2000</powerConsumption>
+						<heatPerSecond>10</heatPerSecond>
+						<researchPointsPerSecond>0.15</researchPointsPerSecond>
+						<totalMechBandwidth MayRequire="Ludeon.Rimworld.Biotech">12</totalMechBandwidth>
+						<totalControlGroups MayRequire="Ludeon.Rimworld.Biotech">2</totalControlGroups>
+						<unlockedRecipes>
+							<li>RM_HackBiocodedThings</li>
+						</unlockedRecipes>
+					</li>
+					<li> <!-- level 3 -->
+						<overlayGraphic>
+							<texPath>Things/Building/Biotech/Tier3_GestaltEngine</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(11,11)</drawSize>
+						</overlayGraphic>
+						<upgradeCooldownTicks>180000</upgradeCooldownTicks>
+						<downgradeCooldownTicks>180000</downgradeCooldownTicks>
+						<upgradeDurationTicks>60000</upgradeDurationTicks>
+						<downgradeDurationTicks>60000</downgradeDurationTicks>
+						<powerConsumption>4000</powerConsumption>
+						<heatPerSecond>25</heatPerSecond>
+						<researchPointsPerSecond>0.2</researchPointsPerSecond>
+						<totalMechBandwidth MayRequire="Ludeon.Rimworld.Biotech">18</totalMechBandwidth>
+						<totalControlGroups MayRequire="Ludeon.Rimworld.Biotech">3</totalControlGroups>
+						<unlockedRecipes>
+							<li>RM_HackBiocodedThings</li>
+						</unlockedRecipes>
+					</li>
+					<li> <!-- level 4 -->
+						<overlayGraphic>
+							<texPath>Things/Building/Biotech/Tier4_GestaltEngine</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(11,11)</drawSize>
+						</overlayGraphic>
+						<downgradeCooldownTicks>180000</downgradeCooldownTicks>
+						<downgradeDurationTicks>60000</downgradeDurationTicks>
+						<powerConsumption>6000</powerConsumption>
+						<heatPerSecond>50</heatPerSecond>
+						<researchPointsPerSecond>0.25</researchPointsPerSecond>
+						<totalMechBandwidth MayRequire="Ludeon.Rimworld.Biotech">24</totalMechBandwidth>
+						<totalControlGroups MayRequire="Ludeon.Rimworld.Biotech">4</totalControlGroups>
+						<unlockedRecipes>
+							<li>RM_HackBiocodedThings</li>
+						</unlockedRecipes>
+					</li>
+				</upgrades>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="OrbitalStrikeBase">
+		<defName>RM_LocustBeam</defName>
+		<label>locust beam</label>
+		<thingClass>ReinforcedMechanoids.LocustBeam</thingClass>
+		<comps>
+			<li Class="CompProperties_CameraShaker">
+				<mag>0.03</mag>
+			</li>
+			<li Class="CompProperties_AffectsSky">
+				<skyColors>
+					<sky>(255, 230, 200)</sky>
+					<shadow>(225, 220, 185)</shadow>
+					<overlay>(255, 255, 255)</overlay>
+					<saturation>1.3</saturation>
+				</skyColors>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="ReinforcedMechanoids.BeamExtension">
+				<duration>600</duration>
+				<radius>2</radius>
+				<firesStartedPerTick>4</firesStartedPerTick>
+				<flameDamageAmountRange>65~100</flameDamageAmountRange>
+				<corpseFlameDamageAmountRange>5~10</corpseFlameDamageAmountRange>
+				<sustainerSound>OrbitalBeam</sustainerSound>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>RM_Mote_LocustBeam</defName>
+		<graphicData>
+			<texPath>Things/Mote/PowerBeam</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<mote>
+			<fadeInTime>0.5</fadeInTime>
+			<solidTime>4.5</solidTime>
+			<fadeOutTime>1.0</fadeOutTime>
+		</mote>
+	</ThingDef>
+</Defs>
