@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <id>RM_GestaltBasicMechtech</id>
+    <label>Requires Basic Mechtech to research?</label>
+    <tooltip>If you want to research it without needing basic mechtech, toggle this off! It will now require "only" microelectronics. (Default: On)</tooltip>
+    <defaultValue>True</defaultValue>
+    <category>RM_GestaltEngine</category>
+    <order>4</order>
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName="RM_GestaltEngine"]/prerequisites</xpath>
+        <value>
+          <prerequisites>
+            <li>MicroelectronicsBasics</li>
+          </prerequisites>
+        </value>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ResearchProjectDef[defName="RM_GestaltEngine"]/hiddenPrerequisites</xpath>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

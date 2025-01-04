@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Matriarch - Mechanoid Constructor -->
+  <ThingDef ParentName="LancerMechanoidWalker">
+    <defName>RM_Mech_Matriarch</defName>
+    <label>matriarch</label>
+    <description>Fast human-sized gestator mechanoids built for maintaining and gestating different kind of mechanoids. Their bodies are light and lack any real armor, as well as any combat abilities.</description>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MoveSpeed>2.9</MoveSpeed>
+      <BandwidthCost>3</BandwidthCost>
+      <ControlTakingTime>25</ControlTakingTime>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.0</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.0</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.15</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>Lancer</body>
+      <baseHealthScale>0.68</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <mechEnabledWorkTypes>
+        <li>Hauling</li>
+        <li>Crafting</li>
+        <li>Smithing</li>
+      </mechEnabledWorkTypes>
+    </race>
+  </ThingDef>
+  <PawnKindDef ParentName="NonCombatLightMechanoidKind">
+    <defName>RM_Mech_Matriarch</defName>
+    <label>matriarch</label>
+    <race>RM_Mech_Matriarch</race>
+    <controlGroupPortraitZoom>1</controlGroupPortraitZoom>
+    <combatPower>20</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/MatriarchClean</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Matriarch</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/MatriarchAncient</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Matriarch</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

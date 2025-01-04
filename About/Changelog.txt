@@ -1,0 +1,6 @@
+# Changelog for ReinforcedMechanoid2
+
+1.5.1 - Updated for 1.5
+Included all features of the updated Gestalt Engine
+Used DeepL to update translations for ChineseSimplified, French, German
+

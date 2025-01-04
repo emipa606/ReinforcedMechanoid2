@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReinforcedMechanoids", "ReinforcedMechanoids\ReinforcedMechanoids.csproj", "{87C274FF-58B1-4A95-9E84-934BD12E1032}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87C274FF-58B1-4A95-9E84-934BD12E1032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C274FF-58B1-4A95-9E84-934BD12E1032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C274FF-58B1-4A95-9E84-934BD12E1032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C274FF-58B1-4A95-9E84-934BD12E1032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31E7E7DC-29AF-4595-90C8-39D6A09D9DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E7E7DC-29AF-4595-90C8-39D6A09D9DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E7E7DC-29AF-4595-90C8-39D6A09D9DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E7E7DC-29AF-4595-90C8-39D6A09D9DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {d2dcfa5c-8a31-46f4-9fbb-df36b0f3bac2}
+	EndGlobalSection
+EndGlobal

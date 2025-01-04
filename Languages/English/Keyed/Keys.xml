@@ -1,30 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<RM.ToggleCaretakerShield>Shield: {0}</RM.ToggleCaretakerShield>
-	<RM.ToggleCaretakerShieldDesc>Toggle the caretakers built-in shield.</RM.ToggleCaretakerShieldDesc>
-	<RM.CanThrowGrenadesIn>Can throw grenade in: {0}</RM.CanThrowGrenadesIn>
-	<RM.CanThrowGrenadesNow>Can throw grenade now</RM.CanThrowGrenadesNow>
-	<RM.RemnantsBaseDescription>A downed ship of one of the factions.</RM.RemnantsBaseDescription>
-	<RM.CanJumpIn>Can jump in: {0}</RM.CanJumpIn>
-	<RM.CanJumpNow>Can jump now</RM.CanJumpNow>
-	<RM.ForcedWeatherChanged>Weather changed to: {0}</RM.ForcedWeatherChanged>
-	<RM.ForcedWeatherCooldown>Currently on cooldown. Weather can be changed in {0}.</RM.ForcedWeatherCooldown>
-	<RM.ForcedWeatherDesc>Choose what weather type should be forced on the local map.</RM.ForcedWeatherDesc>
-	<RM.Minus10>Change the local temperature by -10.</RM.Minus10>
-	<RM.Minus50>Change the local temperature by -50.</RM.Minus50>
-	<RM.Plus10>Change the local temperature by +10.</RM.Plus10>
-	<RM.Plus50>Change the local temperature by +50.</RM.Plus50>
-	<RM.TargetTemperatureOffset>Target temperature offset: {0}</RM.TargetTemperatureOffset>
-	<RM.CurrentTemperatureOffset>Current temperature offset reached: {0}</RM.CurrentTemperatureOffset>
-	<RM.SunNoLongerBlocked>Sun is no longer being blocked.</RM.SunNoLongerBlocked>
-	<RM.Reward_TransporterLoot_Label>Transporter loot</RM.Reward_TransporterLoot_Label>
-	<RM.Reward_TransporterLoot_Desc>You can loot everything from the transporter</RM.Reward_TransporterLoot_Desc>
-	<RM.ToggleInvisibility>Invisibility</RM.ToggleInvisibility>
-	<RM.ToggleInvisibilityDesc>Toggle the mechanoids psychical engine to manipulate the visual centers of everyone nearby, rendering them unable to perceive it.</RM.ToggleInvisibilityDesc>
-	<RM.AutomaticMode>Autonomous weapon.</RM.AutomaticMode>
-	<RM.Jump>Skimmer Jump</RM.Jump>
-	<RM.JumpDesc>Order the mechanoid to use its built-in skimmer pack to jump to a specific location.</RM.JumpDesc>
-	<RM.OnCooldown>On cooldown. It will be available in {0}.</RM.OnCooldown>
-	<RM.ToggleAllegianceOverlay>Allegiance overlay</RM.ToggleAllegianceOverlay>
-	<RM.ToggleAllegianceOverlayDesc>Toggle this mechanoids allegiance color overlay.</RM.ToggleAllegianceOverlayDesc>
+  <RM.ToggleCaretakerShield>Shield: {0}</RM.ToggleCaretakerShield>
+  <RM.ToggleCaretakerShieldDesc>Toggle the caretakers built-in shield.</RM.ToggleCaretakerShieldDesc>
+  <RM.CanThrowGrenadesIn>Can throw grenade in: {0}</RM.CanThrowGrenadesIn>
+  <RM.CanThrowGrenadesNow>Can throw grenade now</RM.CanThrowGrenadesNow>
+  <RM.RemnantsBaseDescription>A downed ship of one of the factions.</RM.RemnantsBaseDescription>
+  <RM.CanJumpIn>Can jump in: {0}</RM.CanJumpIn>
+  <RM.CanJumpNow>Can jump now</RM.CanJumpNow>
+  <RM.ForcedWeatherChanged>Weather changed to: {0}</RM.ForcedWeatherChanged>
+  <RM.ForcedWeatherCooldown>Currently on cooldown. Weather can be changed in {0}.</RM.ForcedWeatherCooldown>
+  <RM.ForcedWeatherDesc>Choose what weather type should be forced on the local map.</RM.ForcedWeatherDesc>
+  <RM.Minus10>Change the local temperature by -10.</RM.Minus10>
+  <RM.Minus50>Change the local temperature by -50.</RM.Minus50>
+  <RM.Plus10>Change the local temperature by +10.</RM.Plus10>
+  <RM.Plus50>Change the local temperature by +50.</RM.Plus50>
+  <RM.TargetTemperatureOffset>Target temperature offset: {0}</RM.TargetTemperatureOffset>
+  <RM.CurrentTemperatureOffset>Current temperature offset reached: {0}</RM.CurrentTemperatureOffset>
+  <RM.SunNoLongerBlocked>Sun is no longer being blocked.</RM.SunNoLongerBlocked>
+  <RM.Reward_TransporterLoot_Label>Transporter loot</RM.Reward_TransporterLoot_Label>
+  <RM.Reward_TransporterLoot_Desc>You can loot everything from the transporter</RM.Reward_TransporterLoot_Desc>
+  <RM.ToggleInvisibility>Invisibility</RM.ToggleInvisibility>
+  <RM.ToggleInvisibilityDesc>Toggle the mechanoids psychical engine to manipulate the visual centers of everyone nearby, rendering them unable to perceive it.</RM.ToggleInvisibilityDesc>
+  <RM.AutomaticMode>Autonomous weapon.</RM.AutomaticMode>
+  <RM.Jump>Skimmer Jump</RM.Jump>
+  <RM.JumpDesc>Order the mechanoid to use its built-in skimmer pack to jump to a specific location.</RM.JumpDesc>
+  <RM.OnCooldown>On cooldown. It will be available in {0}.</RM.OnCooldown>
+  <RM.ToggleAllegianceOverlay>Allegiance overlay</RM.ToggleAllegianceOverlay>
+  <RM.ToggleAllegianceOverlayDesc>Toggle this mechanoids allegiance color overlay.</RM.ToggleAllegianceOverlayDesc>
 </LanguageData>

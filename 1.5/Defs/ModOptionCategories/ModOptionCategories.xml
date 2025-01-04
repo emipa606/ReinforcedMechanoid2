@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ModSettingsFramework.ModOptionCategoryDef>
+    <defName>RM_GestaltEngine</defName>
+    <label>General</label>
+    <order>0</order>
+  </ModSettingsFramework.ModOptionCategoryDef>
+  <ModSettingsFramework.ModOptionCategoryDef>
+    <defName>RM_GestaltEngine_Upgrades</defName>
+    <label>Gestalt Upgrades</label>
+    <order>10</order>
+  </ModSettingsFramework.ModOptionCategoryDef>
+  <!--	<ModSettingsFramework.ModOptionCategoryDef>
+		<defName>RM_GestaltEngine_Compatibility</defName>
+		<label>Gestalt Upgrades</label>
+		<order>900</order>
+	</ModSettingsFramework.ModOptionCategoryDef>-->
+</Defs>

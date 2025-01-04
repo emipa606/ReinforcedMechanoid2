@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>RM_Matriarch</defName>
+    <label>gestate matriarch</label>
+    <description>Gestate a matriarch mechanoid.</description>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>65</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>65</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <RM_Mech_Matriarch>1</RM_Mech_Matriarch>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>RM_Mech_Matriarch</ThingDef>
+    </descriptionHyperlinks>
+    <researchPrerequisite>HighMechtech</researchPrerequisite>
+  </RecipeDef>
+</Defs>
