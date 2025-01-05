@@ -152,7 +152,7 @@
       <li Class="VFECore.ApparelExtension">
         <equippedStatFactors>
           <MeleeDodgeChance>-0.75</MeleeDodgeChance>
-          <PsychicSensitivity>0.5</PsychicSensitivity>
+          <PsychicSensitivity>1.5</PsychicSensitivity>
         </equippedStatFactors>
       </li>
       <li Class="VFECore.ApparelDrawPosExtension">

@@ -78,7 +78,7 @@
                 </li>
               </verbs>
               <apparel>
-                <wornGraphicPath>Things/Pawn/Humanlike/Apparel/FragGrenadeBelt/FragGrenadeBelt</wornGraphicPath>
+                <wornGraphicPath>Things/Item/Equipment/WeaponRanged/MechanoidImmolatorGrenades</wornGraphicPath>
                 <wornGraphicData>
                   <renderUtilityAsPack>true</renderUtilityAsPack>
                   <north>

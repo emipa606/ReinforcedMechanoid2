@@ -12,7 +12,7 @@
     <lifeStages>
       <li MayRequire="Ludeon.Rimworld.Biotech">
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Mech_Vulture/Mech_VultureClean</texPath>
+          <texPath>Things/Pawn/Mechanoid/Mech_Vulture_New/Mech_VultureClean</texPath>
           <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Vulture</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
@@ -24,7 +24,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Mech_Vulture/Mech_Vulture</texPath>
+          <texPath>Things/Pawn/Mechanoid/Mech_Vulture_New/Mech_Vulture</texPath>
           <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Vulture</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
@@ -361,7 +361,7 @@
     <lifeStages>
       <li MayRequire="Ludeon.Rimworld.Biotech">
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Mech_Behemoth/Mech_BehemothClean</texPath>
+          <texPath>Things/Pawn/Mechanoid/Mech_Behemoth_New/Mech_BehemothClean</texPath>
           <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Behemoth</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
@@ -373,7 +373,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Mech_Behemoth/Mech_Behemoth</texPath>
+          <texPath>Things/Pawn/Mechanoid/Mech_Behemoth_New/Mech_Behemoth</texPath>
           <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Behemoth</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>

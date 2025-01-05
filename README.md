@@ -1,9 +1,9 @@
-# [Reinforced Mechanoid 2 (Continued)]()
+# [Reinforced Mechanoid 2 (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3400713047)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Helixien, Taranchuk, OskarPotocki, Luizi, IcingWithCheeseCake, Sir Van, Reann_Shepards mod https://steamcommunity.com/sharedfiles/filedetails/?id=2910050186
-with permission since they had no time to support it
+with permission
 
 - This mod now includes all features of the [Gestalt Engine](https://steamcommunity.com/sharedfiles/filedetails/?id=3392334612) so there is no need to have both loaded.
 
@@ -11,9 +11,7 @@ with permission since they had no time to support it
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
-[![Image](https://i.imgur.com/isPIiKb.png)](https://ko-fi.com/helixien)
 [![Image](https://i.imgur.com/lMvcJSM.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013)
-![Image](https://i.imgur.com/p7Fv1Z6.gif)
 
 ![Image](https://i.imgur.com/NaWKVlJ.png)
 
@@ -130,8 +128,6 @@ Rimworld is owned by Tynan Sylvester and he wants you to finally buy his book!
 
 [ CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-![Image](https://i.imgur.com/aHcSOCl.png)
-
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
@@ -144,4 +140,6 @@ Rimworld is owned by Tynan Sylvester and he wants you to finally buy his book!
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
+[![Image](https://img.shields.io/github/v/release/emipa606/ReinforcedMechanoid2?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3400713047) | tags:  gestalt engine
