@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.3 - Fixed spawning issue for the droids using charging stations
+
+
 1.5.2 - Updated the Prophet Aura
 Fixed west-graphic for some mechs
 Fixed immolator grenade belt worn graphics

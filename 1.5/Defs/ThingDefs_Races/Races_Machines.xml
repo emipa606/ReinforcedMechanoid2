@@ -24,6 +24,9 @@
       </li>
     </tools>
     <race>
+      <mechEnabledWorkTypes>
+        <li>Firefighter</li>
+      </mechEnabledWorkTypes>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>VFE_Mechanoids_ViolentMachine</thinkTreeMain>
       <body>Lancer</body>
