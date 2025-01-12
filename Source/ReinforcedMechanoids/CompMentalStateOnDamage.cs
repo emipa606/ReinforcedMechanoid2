@@ -64,7 +64,7 @@ public class CompMentalStateOnDamage : ThingComp
         }
 
         var mentalState = pawn.MentalState;
-        mentalState.RecoverFromState();
+        mentalState?.RecoverFromState();
         if (Props.hediff != null)
         {
             var firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediff);
