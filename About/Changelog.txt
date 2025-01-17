@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.5 - Added incompatibility to about-file
+
+
 1.5.4 - Fixed the Sentinel berserk recovery issue, thanks to PRO_20 for the detailed report
 
 
