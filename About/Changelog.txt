@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.6 - Fixed the techprint patch not showing
+
+
 1.5.5 - Added incompatibility to about-file
 
 

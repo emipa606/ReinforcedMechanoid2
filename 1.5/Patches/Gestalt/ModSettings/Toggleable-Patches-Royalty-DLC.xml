@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
+  <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <id>RM_GestaltTechprints</id>
+    <label>Requires techprints to research?</label>
+    <tooltip>Want to research the gestalt engine without needing techprints? Toggle this off! (Default: On)</tooltip>
+    <defaultValue>True</defaultValue>
+    <category>RM_GestaltEngine</category>
+    <order>5</order>
     <operations>
-      <li Class="ModSettingsFramework.PatchOperationModOption" MayRequire="Ludeon.Rimworld.Biotech">
-        <id>RM_GestaltTechprints</id>
-        <label>Requires techprints to research?</label>
-        <tooltip>Want to research the gestalt engine without needing techprints? Toggle this off! (Default: On)</tooltip>
-        <defaultValue>True</defaultValue>
-        <category>RM_GestaltEngine</category>
-        <order>5</order>
-        <operations>
-          <li Class="PatchOperationAdd">
-            <xpath>/Defs/ResearchProjectDef[defName="RM_GestaltEngine"]</xpath>
-            <value>
-              <techprintCount>2</techprintCount>
-              <techprintCommonality>0.2</techprintCommonality>
-              <heldByFactionCategoryTags>
-                <li>Empire</li>
-              </heldByFactionCategoryTags>
-            </value>
-          </li>
-        </operations>
+      <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>/Defs/ResearchProjectDef[defName="RM_GestaltEngine"]</xpath>
+        <value>
+          <techprintCount>2</techprintCount>
+          <techprintCommonality>0.2</techprintCommonality>
+          <heldByFactionCategoryTags>
+            <li>Empire</li>
+          </heldByFactionCategoryTags>
+        </value>
       </li>
     </operations>
   </Operation>
