@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.7 - Fixed the weapon draw-offset for the wraith
+
+
 1.5.6 - Fixed the techprint patch not showing
 
 
