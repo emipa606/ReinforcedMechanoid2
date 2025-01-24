@@ -7,17 +7,17 @@ namespace ReinforcedMechanoids.Harmony;
 [HarmonyPatch(typeof(PawnRenderUtility), nameof(PawnRenderUtility.DrawEquipmentAiming))]
 public static class PawnRenderUtility_DrawEquipmentAiming
 {
-    public static void Prefix(ref Vector3 drawLoc, ref Thing eq)
+    public static void Prefix(ref Vector3 drawLoc, ref Thing eq, out float __state)
     {
+        __state = eq.def.equippedAngleOffset;
+
         if (eq.ParentHolder is not Pawn_EquipmentTracker pawnEquipmentTracker)
         {
-            Log.Message($"Cannot find pawnEquipmentTracker for {eq} as parentholder is {eq.ParentHolder}");
             return;
         }
 
         if (pawnEquipmentTracker.pawn == null)
         {
-            Log.Message($"Cannot find pawn for {eq} as pawn is {pawnEquipmentTracker.pawn}");
             return;
         }
 
@@ -25,7 +25,6 @@ public static class PawnRenderUtility_DrawEquipmentAiming
         var modExtension = pawn.def.GetModExtension<EquipmentDrawPositionOffsetExtension>();
         if (modExtension == null)
         {
-            Log.Message($"Cannot find modextension for {eq}");
             return;
         }
 
@@ -80,5 +79,10 @@ public static class PawnRenderUtility_DrawEquipmentAiming
 
                 break;
         }
+    }
+
+    public static void Postfix(ref Thing eq, float __state)
+    {
+        eq.def.equippedAngleOffset = __state;
     }
 }
