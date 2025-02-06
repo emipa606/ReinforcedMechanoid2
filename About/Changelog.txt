@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.9 - Mechs should now spawn the same type of weapon when recovering from being downed
+
+
 1.5.8 - Removed debug-logging, fixed extra-rotation postfix
 
 

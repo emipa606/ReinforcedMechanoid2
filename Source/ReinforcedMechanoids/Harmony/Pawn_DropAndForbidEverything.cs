@@ -25,5 +25,19 @@ public static class Pawn_DropAndForbidEverything
         {
             pawn.equipment = new Pawn_EquipmentTracker(__instance);
         }
+
+        if (!pawn.RaceProps.IsMechanoid)
+        {
+            return;
+        }
+
+        if (pawn.equipment.Primary == null)
+        {
+            return;
+        }
+
+        var equipmentComponent = Current.Game.GetComponent<GameComponent_MechWeapons>();
+
+        equipmentComponent?.SaveWeapon(pawn, pawn.equipment.Primary.def);
     }
 }
