@@ -30,4 +30,5 @@
   <GE.TotalMechBandwidth>Largeur de bande totale des mécas : {0}</GE.TotalMechBandwidth>
   <GE.TotalControlGroups>Nombre total de groupes de contrôle : {0}</GE.TotalControlGroups>
   <GE.UnlocksRecipes>Débloque les recettes : {0}</GE.UnlocksRecipes>
+  <GE.AllowsCaravans>Les Gestalt-mechs autorisés dans les caravanes</GE.AllowsCaravans>
 </LanguageData>

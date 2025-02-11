@@ -30,4 +30,5 @@
   <GE.TotalMechBandwidth>Mech-Bandbreite insgesamt: {0}</GE.TotalMechBandwidth>
   <GE.TotalControlGroups>Kontrollgruppen insgesamt: {0}</GE.TotalControlGroups>
   <GE.UnlocksRecipes>Schaltet Rezepte frei: {0}</GE.UnlocksRecipes>
+  <GE.AllowsCaravans>Gestalt-Mechs in Wohnwagen erlaubt</GE.AllowsCaravans>
 </LanguageData>

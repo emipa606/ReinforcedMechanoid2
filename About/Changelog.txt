@@ -1,5 +1,9 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.10 - Added mod-option to allow gestalt controlled mech in caravans depending on gestalt-level
+Used DeepL to update translations for ChineseSimplified, French, German
+
+
 1.5.9 - Mechs should now spawn the same type of weapon when recovering from being downed
 
 

@@ -21,7 +21,7 @@
   <RM.NotEnoughBandwidth>Connecting would exceed gestalt's bandwidth!</RM.NotEnoughBandwidth>
   <RM.HackMechanoid>Hack hostile mechanoid</RM.HackMechanoid>
   <RM.HackMechanoidDesc>Will take control of the an enemy mechanoid. This will take some time and will have a long cooldown</RM.HackMechanoidDesc>
-  <RM.CannotAddGestaltControlled>Cannot add: Gestalt controlled.</RM.CannotAddGestaltControlled>
+  <RM.CannotAddGestaltControlled>Cannot add: Gestalt level too low.</RM.CannotAddGestaltControlled>
   <GE.StatsReport_GestaltLevel>Gestalt engine level: {0}</GE.StatsReport_GestaltLevel>
   <GE.StatsReport_GestaltLevelAbstract>Gestalt engine focus offset per level</GE.StatsReport_GestaltLevelAbstract>
   <GE.HeatPerSecond>Heat per second: {0}</GE.HeatPerSecond>
@@ -29,4 +29,5 @@
   <GE.TotalMechBandwidth>Total mech bandwidth: {0}</GE.TotalMechBandwidth>
   <GE.TotalControlGroups>Total control groups: {0}</GE.TotalControlGroups>
   <GE.UnlocksRecipes>Unlocks recipes: {0}</GE.UnlocksRecipes>
+  <GE.AllowsCaravans>Gestalt-mechs allowed in caravans</GE.AllowsCaravans>
 </LanguageData>

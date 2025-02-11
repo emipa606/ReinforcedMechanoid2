@@ -3,7 +3,7 @@
   <!-- ================ Mechanoid Max Bandwith - Level 1 ================ -->
   <Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
     <label>Tweak Gestalt Level 1 Bandwith</label>
-    <tooltip>Adjust how much bandwith the Gestalt Engine has when level 1. Default: 6</tooltip>
+    <tooltip>Adjust how much bandwidth the Gestalt Engine has when level 1. Default: 6</tooltip>
     <id>RM_GestaltLevel1Bandwith</id>
     <category>RM_GestaltEngine_Upgrades</category>
     <order>10</order>
@@ -22,10 +22,27 @@
     <range>0~10</range>
     <defaultValue>1</defaultValue>
   </Operation>
+  <!-- ================ Mechanoid Caravans - Level 1 ================ -->
+  <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <id>RM_GestaltLevel1Caravan</id>
+    <label>Gestalt Level 1 Allow Caravans</label>
+    <tooltip>If you want to allow connected mechs to join caravans when the Gestalt Engine is level 1 (Default: Off)</tooltip>
+    <defaultValue>False</defaultValue>
+    <category>RM_GestaltEngine_Upgrades</category>
+    <order>16</order>
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RM_GestaltEngine"]/comps/li[@Class="GestaltEngine.CompProperties_Upgradeable"]/upgrades/li[2]/allowCaravans</xpath>
+        <value>
+          <allowCaravans>true</allowCaravans>
+        </value>
+      </li>
+    </operations>
+  </Operation>
   <!-- ================ Mechanoid Max Bandwith - Level 2 ================ -->
   <Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-    <label>Tweak Gestalt Level 2 Bandwith</label>
-    <tooltip>Adjust how much bandwith the Gestalt Engine has when level 2. Default: 12</tooltip>
+    <label>Tweak Gestalt Level 2 Bandwidth</label>
+    <tooltip>Adjust how much bandwidth the Gestalt Engine has when level 2. Default: 12</tooltip>
     <id>RM_GestaltLevel2Bandwith</id>
     <category>RM_GestaltEngine_Upgrades</category>
     <order>20</order>
@@ -44,10 +61,27 @@
     <range>0~10</range>
     <defaultValue>2</defaultValue>
   </Operation>
+  <!-- ================ Mechanoid Caravans - Level 2 ================ -->
+  <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <id>RM_GestaltLevel2Caravan</id>
+    <label>Gestalt Level 2 Allow Caravans</label>
+    <tooltip>If you want to allow connected mechs to join caravans when the Gestalt Engine is level 2 (Default: Off)</tooltip>
+    <defaultValue>False</defaultValue>
+    <category>RM_GestaltEngine_Upgrades</category>
+    <order>26</order>
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RM_GestaltEngine"]/comps/li[@Class="GestaltEngine.CompProperties_Upgradeable"]/upgrades/li[3]/allowCaravans</xpath>
+        <value>
+          <allowCaravans>true</allowCaravans>
+        </value>
+      </li>
+    </operations>
+  </Operation>
   <!-- ================ Mechanoid Max Bandwith - Level 3 ================ -->
   <Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-    <label>Tweak Gestalt Level 3 Bandwith</label>
-    <tooltip>Adjust how much bandwith the Gestalt Engine has when level 3. Default: 18</tooltip>
+    <label>Tweak Gestalt Level 3 Bandwidth</label>
+    <tooltip>Adjust how much bandwidth the Gestalt Engine has when level 3. Default: 18</tooltip>
     <id>RM_GestaltLevel3Bandwith</id>
     <category>RM_GestaltEngine_Upgrades</category>
     <order>30</order>
@@ -66,10 +100,27 @@
     <range>0~10</range>
     <defaultValue>3</defaultValue>
   </Operation>
+  <!-- ================ Mechanoid Caravans - Level 3 ================ -->
+  <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <id>RM_GestaltLevel3Caravan</id>
+    <label>Gestalt Level 3 Allow Caravans</label>
+    <tooltip>If you want to allow connected mechs to join caravans when the Gestalt Engine is level 3 (Default: On)</tooltip>
+    <defaultValue>True</defaultValue>
+    <category>RM_GestaltEngine_Upgrades</category>
+    <order>36</order>
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RM_GestaltEngine"]/comps/li[@Class="GestaltEngine.CompProperties_Upgradeable"]/upgrades/li[4]/allowCaravans</xpath>
+        <value>
+          <allowCaravans>true</allowCaravans>
+        </value>
+      </li>
+    </operations>
+  </Operation>
   <!-- ================ Mechanoid Max Bandwith - Level 4 ================ -->
   <Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-    <label>Tweak Gestalt Level 4 Bandwith</label>
-    <tooltip>Adjust how much bandwith the Gestalt Engine has when level 4. Default: 24</tooltip>
+    <label>Tweak Gestalt Level 4 Bandwidth</label>
+    <tooltip>Adjust how much bandwidth the Gestalt Engine has when level 4. Default: 24</tooltip>
     <id>RM_GestaltLevel4Bandwith</id>
     <category>RM_GestaltEngine_Upgrades</category>
     <order>40</order>
@@ -87,5 +138,22 @@
     <xpath>Defs/ThingDef[defName="RM_GestaltEngine"]/comps/li[@Class="GestaltEngine.CompProperties_Upgradeable"]/upgrades/li[5]/totalControlGroups</xpath>
     <range>0~10</range>
     <defaultValue>4</defaultValue>
+  </Operation>
+  <!-- ================ Mechanoid Caravans - Level 4 ================ -->
+  <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <id>RM_GestaltLevel4Caravan</id>
+    <label>Gestalt Level 4 Allow Caravans</label>
+    <tooltip>If you want to allow connected mechs to join caravans when the Gestalt Engine is level 4 (Default: On)</tooltip>
+    <defaultValue>True</defaultValue>
+    <category>RM_GestaltEngine_Upgrades</category>
+    <order>46</order>
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="RM_GestaltEngine"]/comps/li[@Class="GestaltEngine.CompProperties_Upgradeable"]/upgrades/li[5]/allowCaravans</xpath>
+        <value>
+          <allowCaravans>true</allowCaravans>
+        </value>
+      </li>
+    </operations>
   </Operation>
 </Patch>

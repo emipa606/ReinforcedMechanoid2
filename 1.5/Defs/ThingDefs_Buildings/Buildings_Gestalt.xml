@@ -98,6 +98,7 @@
             <upgradeCooldownTicks>180000</upgradeCooldownTicks>
             <upgradeDurationTicks>60000</upgradeDurationTicks>
             <powerConsumption>300</powerConsumption>
+            <allowCaravans>false</allowCaravans>
           </li>
           <li>
             <!-- level 1 -->
@@ -117,6 +118,7 @@
             <unlockedRecipes>
               <li>RM_HackBiocodedThings</li>
             </unlockedRecipes>
+            <allowCaravans>false</allowCaravans>
           </li>
           <li>
             <!-- level 2 -->
@@ -137,6 +139,7 @@
             <unlockedRecipes>
               <li>RM_HackBiocodedThings</li>
             </unlockedRecipes>
+            <allowCaravans>false</allowCaravans>
           </li>
           <li>
             <!-- level 3 -->
@@ -157,6 +160,7 @@
             <unlockedRecipes>
               <li>RM_HackBiocodedThings</li>
             </unlockedRecipes>
+            <allowCaravans>false</allowCaravans>
           </li>
           <li>
             <!-- level 4 -->
@@ -175,6 +179,7 @@
             <unlockedRecipes>
               <li>RM_HackBiocodedThings</li>
             </unlockedRecipes>
+            <allowCaravans>false</allowCaravans>
           </li>
         </upgrades>
       </li>

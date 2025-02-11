@@ -30,4 +30,5 @@
   <GE.TotalMechBandwidth>机械臂总带宽：{0}。</GE.TotalMechBandwidth>
   <GE.TotalControlGroups>对照组总数：{0}</GE.TotalControlGroups>
   <GE.UnlocksRecipes>解锁食谱：{0}</GE.UnlocksRecipes>
+  <GE.AllowsCaravans>允许在大篷车中使用 Gestalt-mechs</GE.AllowsCaravans>
 </LanguageData>
