@@ -40,8 +40,8 @@ public abstract class RaidStrategyWorker_ImmediateAttackWithCertainPawnKind : Ra
         var enumerable = PawnGenOptionsWithRequiredPawns(faction, groupKind);
         if (!enumerable.Any())
         {
-            Log.Error("Tried to get MinimumPoints for " + GetType() + " for faction " + faction +
-                      " but the faction has no groups with the required pawn kind. groupKind=" + groupKind);
+            Log.Error(
+                $"Tried to get MinimumPoints for {GetType()} for faction {faction} but the faction has no groups with the required pawn kind. groupKind={groupKind}");
             return 99999f;
         }
 

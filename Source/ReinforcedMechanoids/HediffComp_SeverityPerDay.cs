@@ -54,7 +54,7 @@ public class HediffComp_SeverityPerDay : HediffComp
         stringBuilder.Append(base.CompDebugString());
         if (!Pawn.Dead)
         {
-            stringBuilder.AppendLine("severity/day: " + SeverityChangePerDay().ToString("F3"));
+            stringBuilder.AppendLine($"severity/day: {SeverityChangePerDay():F3}");
         }
 
         return stringBuilder.ToString().TrimEndNewlines();

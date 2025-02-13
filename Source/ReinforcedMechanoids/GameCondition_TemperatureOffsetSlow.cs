@@ -47,11 +47,6 @@ public class GameCondition_TemperatureOffsetSlow : GameCondition_TemperatureOffs
         return curValue;
     }
 
-    public static float LerpInOutValue(GameCondition gameCondition, float lerpTime, float lerpTarget = 1f)
-    {
-        return GameConditionUtility.LerpInOutValue(gameCondition.TicksPassed, lerpTime + 1f, lerpTime, lerpTarget);
-    }
-
     public override void ExposeData()
     {
         base.ExposeData();

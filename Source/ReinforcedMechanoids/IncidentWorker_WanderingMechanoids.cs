@@ -20,8 +20,8 @@ public class IncidentWorker_WanderingMechanoids : IncidentWorker_NeutralGroup
 
         if (!RCellFinder.TryFindTravelDestFrom(parms.spawnCenter, map, out var travelDest))
         {
-            Log.Warning(string.Concat("Failed to do traveler incident from ", parms.spawnCenter,
-                ": Couldn't find anywhere for the traveler to go."));
+            Log.Warning(
+                $"Failed to do traveler incident from {parms.spawnCenter}: Couldn't find anywhere for the traveler to go.");
             return false;
         }
 

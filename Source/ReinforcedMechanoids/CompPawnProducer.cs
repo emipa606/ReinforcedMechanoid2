@@ -26,7 +26,7 @@ public class CompPawnProducer : ThingComp
 
     public override string TransformLabel(string label)
     {
-        return base.TransformLabel(label) + " (" + curPawnKindDef.LabelCap + ")";
+        return $"{base.TransformLabel(label)} (" + curPawnKindDef.LabelCap + ")";
     }
 
     public override void CompTick()

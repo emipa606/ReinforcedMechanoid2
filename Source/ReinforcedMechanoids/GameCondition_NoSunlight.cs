@@ -15,7 +15,7 @@ public class GameCondition_NoSunlight : GameCondition
 
     public override int TransitionTicks => 60000;
 
-    public override string Label => base.Label + " (" + curValue.ToStringPercent() + ")";
+    public override string Label => $"{base.Label} ({curValue.ToStringPercent()})";
 
     public override float SkyTargetLerpFactor(Map map)
     {

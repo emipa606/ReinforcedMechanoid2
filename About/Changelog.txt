@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.11 - Fixed the climate adjuster, thanks to 水之笔记 for detailed information.
+
+
 1.5.10 - Added mod-option to allow gestalt controlled mech in caravans depending on gestalt-level
 Used DeepL to update translations for ChineseSimplified, French, German
 

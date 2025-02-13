@@ -39,7 +39,7 @@ public class JobDriver_FollowClose : JobDriver
             return;
         }
 
-        Log.Error("Follow radius is <= 0. pawn=" + pawn.ToStringSafe());
+        Log.Error($"Follow radius is <= 0. pawn={pawn.ToStringSafe()}");
         job.followRadius = 10f;
     }
 
@@ -111,10 +111,10 @@ public class JobDriver_FollowClose : JobDriver
     {
         if (radius <= 0f)
         {
-            var text = "Checking follow job with radius <= 0. pawn=" + follower.ToStringSafe();
+            var text = $"Checking follow job with radius <= 0. pawn={follower.ToStringSafe()}";
             if (follower.mindState is { duty: not null })
             {
-                text = text + " duty=" + follower.mindState.duty.def;
+                text = $"{text} duty={follower.mindState.duty.def}";
             }
 
             Log.ErrorOnce(text, follower.thingIDNumber ^ 0x324308F9);

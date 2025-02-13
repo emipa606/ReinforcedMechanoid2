@@ -26,16 +26,13 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
     private string GetFloatStringWithSign(float val)
     {
         val = (float)Math.Round(val, 1);
-        if (val <= 0f)
-        {
-            return val.ToStringTemperature("F0");
-        }
-
-        return "+" + val.ToStringTemperature("F0");
+        return val <= 0f ? val.ToStringTemperature("F0") : $"+{val.ToStringTemperature("F0")}";
     }
 
     public void SetTemperatureOffset(float offset)
     {
+        causedCondition.startTick = Find.TickManager.TicksGame;
+        causedCondition.tickSet = Find.TickManager.TicksGame;
         temperatureOffset += offset;
         temperatureOffset = new FloatRange(-50f, 50f).ClampToRange(temperatureOffset);
         SoundDefOf.DragSlider.PlayOneShotOnCamera();
@@ -46,19 +43,19 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
 
     public override IEnumerable<Gizmo> CompGetGizmosExtra()
     {
-        var command_Action = new Command_Action
+        var command_Minus50 = new Command_Action
         {
             defaultLabel = "-50",
             defaultDesc = "RM.Minus50".Translate(),
             icon = ContentFinder<Texture2D>.Get("UI/Buttons/ChangeClimateMinusMax")
         };
-        command_Action.action =
-            (Action)Delegate.Combine(command_Action.action, (Action)delegate { SetTemperatureOffset(-50f); });
-        command_Action.disabled = !parent.GetComp<CompPowerTrader>().PowerOn;
-        command_Action.disabledReason = "NoPower".Translate();
-        command_Action.hotKey = KeyBindingDefOf.Misc1;
-        yield return command_Action;
-        var command_Action2 = new Command_Action
+        command_Minus50.action =
+            (Action)Delegate.Combine(command_Minus50.action, (Action)delegate { SetTemperatureOffset(-50f); });
+        command_Minus50.disabled = !parent.GetComp<CompPowerTrader>().PowerOn;
+        command_Minus50.disabledReason = "NoPower".Translate();
+        command_Minus50.hotKey = KeyBindingDefOf.Misc1;
+        yield return command_Minus50;
+        var command_Minus10 = new Command_Action
         {
             defaultLabel = "-10",
             defaultDesc = "RM.Minus10".Translate(),
@@ -66,11 +63,11 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             disabledReason = "NoPower".Translate(),
             icon = ContentFinder<Texture2D>.Get("UI/Buttons/ChangeClimateMinusMin")
         };
-        command_Action2.action =
-            (Action)Delegate.Combine(command_Action2.action, (Action)delegate { SetTemperatureOffset(-10f); });
-        command_Action2.hotKey = KeyBindingDefOf.Misc2;
-        yield return command_Action2;
-        var command_Action3 = new Command_Action
+        command_Minus10.action =
+            (Action)Delegate.Combine(command_Minus10.action, (Action)delegate { SetTemperatureOffset(-10f); });
+        command_Minus10.hotKey = KeyBindingDefOf.Misc2;
+        yield return command_Minus10;
+        var command_Plus10 = new Command_Action
         {
             defaultLabel = "+10",
             defaultDesc = "RM.Plus10".Translate(),
@@ -78,11 +75,11 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             disabled = !parent.GetComp<CompPowerTrader>().PowerOn,
             disabledReason = "NoPower".Translate()
         };
-        command_Action3.action =
-            (Action)Delegate.Combine(command_Action3.action, (Action)delegate { SetTemperatureOffset(10f); });
-        command_Action3.hotKey = KeyBindingDefOf.Misc3;
-        yield return command_Action3;
-        var command_Action4 = new Command_Action
+        command_Plus10.action =
+            (Action)Delegate.Combine(command_Plus10.action, (Action)delegate { SetTemperatureOffset(10f); });
+        command_Plus10.hotKey = KeyBindingDefOf.Misc3;
+        yield return command_Plus10;
+        var command_Plus50 = new Command_Action
         {
             defaultLabel = "+50",
             defaultDesc = "RM.Plus50".Translate(),
@@ -90,10 +87,10 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             disabledReason = "NoPower".Translate(),
             icon = ContentFinder<Texture2D>.Get("UI/Buttons/ChangeClimatePlusMax")
         };
-        command_Action4.action =
-            (Action)Delegate.Combine(command_Action4.action, (Action)delegate { SetTemperatureOffset(50f); });
-        command_Action4.hotKey = KeyBindingDefOf.Misc4;
-        yield return command_Action4;
+        command_Plus50.action =
+            (Action)Delegate.Combine(command_Plus50.action, (Action)delegate { SetTemperatureOffset(50f); });
+        command_Plus50.hotKey = KeyBindingDefOf.Misc4;
+        yield return command_Plus50;
     }
 
     public override string CompInspectStringExtra()
