@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.12 - Climate changer should never change temperature more than possible, regardless of power and time
+
+
 1.5.11 - Fixed the climate adjuster, thanks to 水之笔记 for detailed information.
 
 

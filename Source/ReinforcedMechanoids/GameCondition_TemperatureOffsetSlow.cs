@@ -1,3 +1,4 @@
+using System;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -19,14 +20,23 @@ public class GameCondition_TemperatureOffsetSlow : GameCondition_TemperatureOffs
             return curValue;
         }
 
-        var num = Find.TickManager.TicksGame - tickSet;
-        var num2 = num > 0 ? TransitionTicks / (float)num : TransitionTicks / 60f;
-        var num3 = 1f / num2;
-        if (!float.IsInfinity(num3) && !float.IsNaN(num3))
+        var timeSinceSet = Math.Min(Find.TickManager.TicksGame - tickSet, TransitionTicks);
+        float timeElapsedFactor;
+        if (timeSinceSet > 0)
+        {
+            timeElapsedFactor = TransitionTicks / (float)timeSinceSet;
+        }
+        else
+        {
+            timeElapsedFactor = TransitionTicks / 60f;
+        }
+
+        var degreeChange = 1f / timeElapsedFactor;
+        if (!float.IsInfinity(degreeChange) && !float.IsNaN(degreeChange))
         {
             if (curValue > tempOffset)
             {
-                curValue -= num3;
+                curValue -= degreeChange;
                 if (Mathf.Ceil(curValue) == tempOffset)
                 {
                     curValue = Mathf.Ceil(curValue);
@@ -34,7 +44,7 @@ public class GameCondition_TemperatureOffsetSlow : GameCondition_TemperatureOffs
             }
             else if (curValue < tempOffset)
             {
-                curValue += num3;
+                curValue += degreeChange;
                 if (Mathf.Floor(curValue) == tempOffset)
                 {
                     curValue = Mathf.Floor(curValue);
