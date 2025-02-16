@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.13 - Mechs should now remain in group 3 and 4 after loading a save
+
+
 1.5.12 - Climate changer should never change temperature more than possible, regardless of power and time
 
 
