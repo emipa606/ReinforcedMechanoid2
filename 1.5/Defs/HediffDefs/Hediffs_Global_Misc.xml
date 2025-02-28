@@ -74,8 +74,8 @@
     </stages>
     <comps>
       <li Class="HediffCompProperties_DisappearsOnDeath" />
-      <li Class="HediffCompProperties">
-        <compClass>HediffComp_Invisibility</compClass>
+      <li Class="HediffCompProperties_Invisibility">
+        <visibleToPlayer>true</visibleToPlayer>
       </li>
       <li MayRequire="Ludeon.RimWorld.Royalty" Class="ReinforcedMechanoids.HediffCompProperties_EffectOnPawn">
         <fleckDef>PsycastPsychicEffect</fleckDef>
