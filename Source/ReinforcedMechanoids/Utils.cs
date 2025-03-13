@@ -204,7 +204,17 @@ public static class Utils
     {
         foreach (var otherPawn in otherPawns)
         {
-            if (!otherPawn.CanBeHealed() || !pawn.CanReserveAndReach(otherPawn, PathEndMode.Touch, Danger.None))
+            if (!otherPawn.CanBeHealed())
+            {
+                continue;
+            }
+
+            if (!otherPawn.PositionHeld.InAllowedArea(pawn))
+            {
+                continue;
+            }
+
+            if (!pawn.CanReserveAndReach(otherPawn, PathEndMode.Touch, Danger.None))
             {
                 continue;
             }
