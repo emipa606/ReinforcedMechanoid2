@@ -6,6 +6,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 using Verse.AI.Group;
+using VFECore;
 
 namespace ReinforcedMechanoids;
 
@@ -198,6 +199,24 @@ public static class Utils
         job.checkOverrideOnExpire = true;
         job.expireRequiresEnemiesNearby = true;
         return job;
+    }
+
+
+    public static void ShutOffShield(Pawn pawn)
+    {
+        var shieldFieldComp = pawn.GetComp<CompShieldField>();
+        if (shieldFieldComp == null)
+        {
+            return;
+        }
+
+        if (!shieldFieldComp.active)
+        {
+            return;
+        }
+
+        shieldFieldComp.Energy = 0;
+        shieldFieldComp.active = false;
     }
 
     public static Job HealOtherMechanoidsOrRepairStructures(Pawn pawn, List<Pawn> otherPawns)

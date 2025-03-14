@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.16 - Caretaker shield should now shut off when killed
+
+
 1.5.15 - Vulture should now not try to start repair mechs-job outside its allowed zone
 
 
