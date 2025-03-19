@@ -264,15 +264,34 @@ public static class Utils
         }
 
         list = list.Distinct().ToList();
-        foreach (var item2 in list.OrderBy(x => x.Position.DistanceTo(pawn.Position)).ToList())
+        foreach (var targetA in list.OrderBy(x => x.Position.DistanceTo(pawn.Position)).ToList())
         {
-            if (!item2.Spawned || !RepairUtility.PawnCanRepairNow(pawn, item2) || !pawn.CanReserve(item2) ||
-                !pawn.CanReach(item2, PathEndMode.Touch, Danger.None))
+            if (!targetA.Spawned)
             {
                 continue;
             }
 
-            var job2 = JobMaker.MakeJob(RM_DefOf.RM_RepairThing, item2);
+            if (!RepairUtility.PawnCanRepairNow(pawn, targetA))
+            {
+                continue;
+            }
+
+            if (!targetA.PositionHeld.InAllowedArea(pawn))
+            {
+                continue;
+            }
+
+            if (!pawn.CanReserve(targetA))
+            {
+                continue;
+            }
+
+            if (!pawn.CanReach(targetA, PathEndMode.Touch, Danger.None))
+            {
+                continue;
+            }
+
+            var job2 = JobMaker.MakeJob(RM_DefOf.RM_RepairThing, targetA);
             job2.locomotionUrgency = LocomotionUrgency.Sprint;
             return job2;
         }

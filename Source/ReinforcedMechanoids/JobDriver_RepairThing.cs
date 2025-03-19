@@ -17,7 +17,10 @@ public class JobDriver_RepairThing : JobDriver
     public override IEnumerable<Toil> MakeNewToils()
     {
         this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
-        yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
+        yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch)
+            .FailOnDespawnedNullOrForbidden(TargetIndex.A)
+            .FailOn(() => !pawn.CanReach(job.GetTarget(TargetIndex.A), PathEndMode.Touch, Danger.None))
+            .FailOnSomeonePhysicallyInteracting(TargetIndex.A);
         var repair = new Toil
         {
             initAction = delegate { ticksToNextRepair = 80f; }
