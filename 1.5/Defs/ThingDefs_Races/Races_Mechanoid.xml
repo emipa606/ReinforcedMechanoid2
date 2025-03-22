@@ -102,9 +102,10 @@
       <body>RM_Mechanical_Caretaker</body>
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>9.5</baseHealthScale>
-      <thinkTreeMain>RM_Mechanoid_Caretaker</thinkTreeMain>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
       <mechWeightClass>UltraHeavy</mechWeightClass>
       <intelligence>ToolUser</intelligence>
+      <dutyBoss>Caretaker</dutyBoss>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>

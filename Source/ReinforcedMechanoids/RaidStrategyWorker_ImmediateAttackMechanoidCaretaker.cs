@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.AI.Group;
@@ -10,7 +11,11 @@ public class
 {
     public override LordJob MakeLordJob(IncidentParms parms, Map map, List<Pawn> pawns, int raidSeed)
     {
-        return new LordJob_AssaultColony_CaretakerRaid(parms.faction, true, false, false, false, false);
+        return new LordJob_BossgroupAssaultColony_Caretaker(parms.faction,
+            RCellFinder.FindSiegePositionFrom(parms.spawnCenter.IsValid ? parms.spawnCenter : pawns[0].PositionHeld,
+                map), from x in pawns
+            where x.kindDef == RM_DefOf.RM_Mech_Caretaker
+            select x);
     }
 
     protected override bool MatchesRequiredPawnKind(PawnKindDef kind)

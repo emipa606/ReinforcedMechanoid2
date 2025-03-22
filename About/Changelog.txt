@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.18 - Caretaker raids should now behave better using the boss-group tactic, thanks to クレア for the updated raid-mechanics
+
+
 1.5.17 - Vulture should now not try to start repair buildings-job outside its allowed zone either
 
 
