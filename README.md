@@ -6,6 +6,7 @@ Update of Helixien, Taranchuk, OskarPotocki, Luizi, IcingWithCheeseCake, Sir Van
 with permission
 
 - This mod now includes all features of the [Gestalt Engine](https://steamcommunity.com/sharedfiles/filedetails/?id=3392334612) so there is no need to have both loaded.
+- For more features, checkout [Reinforced Mechanoid2 Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=3458490409) by Eclair
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 	

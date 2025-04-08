@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.19 - Fixed graviton mace being craftable and removed a redundant gestalt engine patch
+
+
 1.5.18 - Caretaker raids should now behave better using the boss-group tactic, thanks to クレア for the updated raid-mechanics
 
 

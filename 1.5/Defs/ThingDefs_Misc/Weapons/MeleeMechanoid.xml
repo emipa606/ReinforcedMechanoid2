@@ -27,6 +27,7 @@
       <Plasteel>125</Plasteel>
       <ComponentSpacer>5</ComponentSpacer>
     </costList>
+    <recipeMaker Inherit="False" />
     <tools>
       <li>
         <label>head</label>

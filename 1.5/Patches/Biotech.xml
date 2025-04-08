@@ -570,13 +570,6 @@
             <li>Corpse_RM_Mech_Caretaker</li>
           </value>
         </li>
-        <!-- ================================ Patches Gestalt Engine into Biotech ====================== -->
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="RM_GestaltEngine"]/designationCategory</xpath>
-          <value>
-            <designationCategory>Biotech</designationCategory>
-          </value>
-        </li>
       </operations>
     </match>
   </Operation>
