@@ -5,5 +5,11 @@
   "SocialImageSet": true,
   "SearchTags": " gestalt engine",
   "PreviewVersion": "1.5",
-  "LastXmlCleaning": "2025-04-08T19:23:50.8907846+02:00"
+  "LastXmlCleaning": "2025-04-08T19:23:50.8907846+02:00",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 288210,
+  "LinesOfXML": 1340810,
+  "CodeBaseSize": 98
 }
