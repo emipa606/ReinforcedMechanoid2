@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: attaching turret. -->
+  <VFE_Mechanoids_AttachTurret.reportString>attaching turret.</VFE_Mechanoids_AttachTurret.reportString>
+  <!-- EN: recharging. -->
+  <VFE_Mechanoids_Recharge.reportString>recharging.</VFE_Mechanoids_Recharge.reportString>
+  <!-- EN: rebuilding machine. -->
+  <VFE_Mechanoids_RepairMachine.reportString>rebuilding machine.</VFE_Mechanoids_RepairMachine.reportString>
+</LanguageData>

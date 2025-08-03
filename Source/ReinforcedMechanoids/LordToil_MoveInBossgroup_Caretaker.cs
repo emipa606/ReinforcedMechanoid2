@@ -8,9 +8,9 @@ namespace ReinforcedMechanoids;
 
 public class LordToil_MoveInBossgroup_Caretaker : LordToil
 {
-    public static readonly FloatRange EscortRadiusRanged = new FloatRange(5f, 10f);
+    private static readonly FloatRange EscortRadiusRanged = new(5f, 10f);
 
-    public readonly List<Pawn> bosses = [];
+    private readonly List<Pawn> bosses = [];
 
     public LordToil_MoveInBossgroup_Caretaker(IEnumerable<Pawn> bosses)
     {

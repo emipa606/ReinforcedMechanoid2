@@ -80,7 +80,7 @@ public static class JobGiver_AIFightEnemy_TryGiveJob_HotSwappable
                 }
                 else
                 {
-                    var intVec = FindSiegePositionFrom(pawn.Position, pawn.Map, lordJob_AssaultColony_WraithSiege);
+                    var intVec = findSiegePositionFrom(pawn.Position, pawn.Map, lordJob_AssaultColony_WraithSiege);
                     if (intVec.IsValid)
                     {
                         lordJob_AssaultColony_WraithSiege.siegeSpot = intVec;
@@ -102,21 +102,15 @@ public static class JobGiver_AIFightEnemy_TryGiveJob_HotSwappable
             return false;
         }
 
-        if (list == null)
-        {
-            list = Utils.GetOtherMechanoids(pawn, lord);
-        }
+        list ??= Utils.GetOtherMechanoids(pawn, lord);
 
-        __result = Utils.HealOtherMechanoidsOrRepairStructures(pawn, list);
-        if (__result == null)
-        {
-            __result = Utils.FollowOtherMechanoids(pawn, list);
-        }
+        __result = Utils.HealOtherMechanoidsOrRepairStructures(pawn, list) ?? Utils.FollowOtherMechanoids(pawn, list);
 
         return false;
     }
 
-    public static IntVec3 FindSiegePositionFrom(IntVec3 entrySpot, Map map, LordJob_AssaultColony_WraithSiege lordSiege,
+    private static IntVec3 findSiegePositionFrom(IntVec3 entrySpot, Map map,
+        LordJob_AssaultColony_WraithSiege lordSiege,
         bool allowRoofed = false)
     {
         var list = new List<IntVec3>();
@@ -133,51 +127,51 @@ public static class JobGiver_AIFightEnemy_TryGiveJob_HotSwappable
         IntVec3 result;
         for (var num = 70; num >= 20; num -= 10)
         {
-            if (TryFindSiegePosition(entrySpot, num, map, allowRoofed, lordSiege, list, out result))
+            if (tryFindSiegePosition(entrySpot, num, map, allowRoofed, lordSiege, list, out result))
             {
                 return result;
             }
         }
 
-        if (TryFindSiegePosition(entrySpot, 100f, map, allowRoofed, lordSiege, list, out result))
+        if (tryFindSiegePosition(entrySpot, 100f, map, allowRoofed, lordSiege, list, out result))
         {
             return result;
         }
 
         for (var num2 = 70; num2 >= 20; num2 -= 10)
         {
-            if (TryFindSiegePositionVanilla(entrySpot, num2, map, allowRoofed, list, out result))
+            if (tryFindSiegePositionVanilla(entrySpot, num2, map, allowRoofed, list, out result))
             {
                 return result;
             }
         }
 
-        return TryFindSiegePositionVanilla(entrySpot, 100f, map, allowRoofed, list, out result)
+        return tryFindSiegePositionVanilla(entrySpot, 100f, map, allowRoofed, list, out result)
             ? result
             : IntVec3.Invalid;
     }
 
-    private static bool TryFindSiegePosition(IntVec3 entrySpot, float minDistToColony, Map map, bool allowRoofed,
+    private static bool tryFindSiegePosition(IntVec3 entrySpot, float minDistToColony, Map map, bool allowRoofed,
         LordJob_AssaultColony_WraithSiege lordSiege, List<IntVec3> list, out IntVec3 result)
     {
         var cellRect = CellRect.CenteredOn(entrySpot, 150);
         cellRect.ClipInsideMap(map);
         var num = minDistToColony * minDistToColony;
-        return TryFindSiegeSpot(entrySpot, map, allowRoofed, (int)lordSiege.SiegeRadius, out result,
+        return tryFindSiegeSpot(entrySpot, map, allowRoofed, (int)lordSiege.SiegeRadius, out result,
             cellRect, list, num);
     }
 
-    private static bool TryFindSiegePositionVanilla(IntVec3 entrySpot, float minDistToColony, Map map, bool allowRoofed,
+    private static bool tryFindSiegePositionVanilla(IntVec3 entrySpot, float minDistToColony, Map map, bool allowRoofed,
         List<IntVec3> list, out IntVec3 result)
     {
         var cellRect = CellRect.CenteredOn(entrySpot, 60);
         cellRect.ClipInsideMap(map);
         cellRect = cellRect.ContractedBy(14);
         var num = minDistToColony * minDistToColony;
-        return TryFindSiegeSpotVanilla(entrySpot, map, allowRoofed, out result, cellRect, list, num);
+        return tryFindSiegeSpotVanilla(entrySpot, map, allowRoofed, out result, cellRect, list, num);
     }
 
-    private static bool IsGoodCell(Map map, IntVec3 cell)
+    private static bool isGoodCell(Map map, IntVec3 cell)
     {
         var terrain = cell.GetTerrain(map);
         return terrain.affordances.Contains(TerrainAffordanceDefOf.Heavy) &&
@@ -185,7 +179,7 @@ public static class JobGiver_AIFightEnemy_TryGiveJob_HotSwappable
                cell.GetEdifice(map) == null;
     }
 
-    private static bool TryFindSiegeSpot(IntVec3 entrySpot, Map map, bool allowRoofed, int siegeRadius,
+    private static bool tryFindSiegeSpot(IntVec3 entrySpot, Map map, bool allowRoofed, int siegeRadius,
         out IntVec3 result, CellRect cellRect,
         List<IntVec3> list, float num)
     {
@@ -194,7 +188,7 @@ public static class JobGiver_AIFightEnemy_TryGiveJob_HotSwappable
         {
             var intVec = list2.First();
             list2.Remove(intVec);
-            if (intVec.CloseToEdge(map, 20) || !IsGoodCell(map, intVec) ||
+            if (intVec.CloseToEdge(map, 20) || !isGoodCell(map, intVec) ||
                 !map.reachability.CanReach(intVec, entrySpot, PathEndMode.OnCell, TraverseMode.NoPassClosedDoors,
                     Danger.Some) || !map.reachability.CanReachColony(intVec))
             {
@@ -219,7 +213,7 @@ public static class JobGiver_AIFightEnemy_TryGiveJob_HotSwappable
             }
 
             var list3 = CellRect.CenteredOn(intVec, siegeRadius).ClipInsideMap(map).Cells.ToList();
-            var num2 = list3.Count(x => IsGoodCell(map, x));
+            var num2 = list3.Count(x => isGoodCell(map, x));
             if (!(num2 >= list3.Count / 1.2f))
             {
                 continue;
@@ -233,7 +227,7 @@ public static class JobGiver_AIFightEnemy_TryGiveJob_HotSwappable
         return false;
     }
 
-    private static bool TryFindSiegeSpotVanilla(IntVec3 entrySpot, Map map, bool allowRoofed, out IntVec3 result,
+    private static bool tryFindSiegeSpotVanilla(IntVec3 entrySpot, Map map, bool allowRoofed, out IntVec3 result,
         CellRect cellRect, List<IntVec3> list, float num)
     {
         var num2 = 0;

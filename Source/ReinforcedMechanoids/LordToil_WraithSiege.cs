@@ -12,7 +12,7 @@ namespace ReinforcedMechanoids;
 [HotSwappable]
 public class LordToil_WraithSiege : LordToil_AssaultColony
 {
-    private static readonly FloatRange BuilderCountFraction = new FloatRange(0.25f, 0.4f);
+    private static readonly FloatRange BuilderCountFraction = new(0.25f, 0.4f);
 
     private static readonly SimpleCurve LampBuildingMinCountCurve =
     [
@@ -47,7 +47,7 @@ public class LordToil_WraithSiege : LordToil_AssaultColony
         new CurvePoint(2200f, 0.5f)
     ];
 
-    public readonly Dictionary<Pawn, DutyDef> rememberedDuties = new Dictionary<Pawn, DutyDef>();
+    private readonly Dictionary<Pawn, DutyDef> rememberedDuties = new();
 
     public override IntVec3 FlagLoc => Data?.siegeCenter ?? IntVec3.Invalid;
 
@@ -91,8 +91,7 @@ public class LordToil_WraithSiege : LordToil_AssaultColony
         var lordToilData_Siege = Data;
         lordToilData_Siege.baseRadius = LordJob.SiegeRadius;
         var list = new List<Thing>();
-        foreach (var item2 in PlaceBlueprints(lordToilData_Siege.siegeCenter, Map, lord.faction,
-                     lordToilData_Siege.blueprintPoints))
+        foreach (var item2 in PlaceBlueprints(Map))
         {
             lordToilData_Siege.blueprints.Add(item2);
             foreach (var cost in item2.TotalMaterialCost())
@@ -168,7 +167,7 @@ public class LordToil_WraithSiege : LordToil_AssaultColony
 
     private void SpawnMechCluster(IntVec3 siegeCenter)
     {
-        var resolveParams = default(ResolveParams);
+        var resolveParams = default(SketchResolveParams);
         resolveParams.mechClusterForMap = lord.Map;
         resolveParams.points = LordJob.additionalRaidPoints;
         resolveParams.totalPoints = null;
@@ -188,10 +187,10 @@ public class LordToil_WraithSiege : LordToil_AssaultColony
     {
         var edgeWallRects = new List<CellRect>
         {
-            new CellRect(0, 0, size.x, 1),
-            new CellRect(0, 0, 1, size.z),
-            new CellRect(size.x - 1, 0, 1, size.z),
-            new CellRect(0, size.z - 1, size.x, 1)
+            new(0, 0, size.x, 1),
+            new(0, 0, 1, size.z),
+            new(size.x - 1, 0, 1, size.z),
+            new(0, size.z - 1, size.x, 1)
         };
         foreach (var item in buildings.OrderBy(x => x.building.IsTurret && !x.building.IsMortar))
         {
@@ -258,8 +257,7 @@ public class LordToil_WraithSiege : LordToil_AssaultColony
         return list;
     }
 
-    public IEnumerable<Blueprint_Build> PlaceBlueprints(IntVec3 placeCenter, Map map, Faction placeFaction,
-        float points)
+    private IEnumerable<Blueprint_Build> PlaceBlueprints(Map map)
     {
         foreach (var item in PlaceCoverBlueprints(map))
         {
@@ -405,7 +403,7 @@ public class LordToil_WraithSiege : LordToil_AssaultColony
         }
     }
 
-    private bool CanBeBuilder(Pawn p)
+    private static bool CanBeBuilder(Pawn p)
     {
         return p.kindDef == RM_DefOf.RM_Mech_Vulture;
     }

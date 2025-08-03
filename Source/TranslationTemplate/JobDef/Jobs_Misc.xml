@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: breaking down TargetA. -->
+  <RM_BreakDownMechanoid.reportString>breaking down TargetA.</RM_BreakDownMechanoid.reportString>
+  <!-- EN: following TargetA. -->
+  <RM_FollowClose.reportString>following TargetA.</RM_FollowClose.reportString>
+  <!-- EN: repairing TargetA. -->
+  <RM_RepairMechanoid.reportString>repairing TargetA.</RM_RepairMechanoid.reportString>
+  <!-- EN: repairing TargetA. -->
+  <RM_RepairThing.reportString>repairing TargetA.</RM_RepairThing.reportString>
+</LanguageData>

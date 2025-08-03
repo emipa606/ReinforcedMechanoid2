@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: shield -->
+  <RM_BehemothShield.label>shield</RM_BehemothShield.label>
+  <!-- EN: cooling system -->
+  <RM_CoolingSystem.label>cooling system</RM_CoolingSystem.label>
+  <!-- EN: gyro stabilizer -->
+  <RM_GyroStabilizer.label>gyro stabilizer</RM_GyroStabilizer.label>
+  <!-- EN: head blade -->
+  <RM_HeadBlade.label>head blade</RM_HeadBlade.label>
+  <!-- EN: laser focus -->
+  <RM_LaserFocus.label>laser focus</RM_LaserFocus.label>
+  <!-- EN: storage -->
+  <RM_MechanicalBackStorage.label>storage</RM_MechanicalBackStorage.label>
+  <!-- EN: foot -->
+  <RM_MechanicalFootBehemoth.label>foot</RM_MechanicalFootBehemoth.label>
+  <!-- EN: head -->
+  <RM_MechanicalHeadCaretaker.label>head</RM_MechanicalHeadCaretaker.label>
+  <!-- EN: head -->
+  <RM_MechanicalHeadLocust.label>head</RM_MechanicalHeadLocust.label>
+  <!-- EN: head -->
+  <RM_MechanicalHeadSentinel.label>head</RM_MechanicalHeadSentinel.label>
+  <!-- EN: leg -->
+  <RM_MechanicalLegBehemoth.label>leg</RM_MechanicalLegBehemoth.label>
+  <!-- EN: leg -->
+  <RM_MechanicalLegLocust.label>leg</RM_MechanicalLegLocust.label>
+  <!-- EN: neck -->
+  <RM_MechanicalNeckBehemoth.label>neck</RM_MechanicalNeckBehemoth.label>
+  <!-- EN: secondary body -->
+  <RM_MechanicalSecondWraithBody.label>secondary body</RM_MechanicalSecondWraithBody.label>
+  <!-- EN: mechanical body -->
+  <RM_MechanicalSecondWraithBody.labelShort>mechanical body</RM_MechanicalSecondWraithBody.labelShort>
+  <!-- EN: shell -->
+  <RM_MechanicalShellCaretaker.label>shell</RM_MechanicalShellCaretaker.label>
+  <!-- EN: shoulder -->
+  <RM_MechanicalShoulderBehemoth.label>shoulder</RM_MechanicalShoulderBehemoth.label>
+  <!-- EN: shoulder -->
+  <RM_MechanicalShoulderSentinel.label>shoulder</RM_MechanicalShoulderSentinel.label>
+  <!-- EN: shoulder -->
+  <RM_MechanicalShoulderZealot.label>shoulder</RM_MechanicalShoulderZealot.label>
+  <!-- EN: thorax -->
+  <RM_MechanicalThoraxBehemoth.label>thorax</RM_MechanicalThoraxBehemoth.label>
+  <!-- EN: thorax -->
+  <RM_MechanicalThoraxCanManipulateCaretaker.label>thorax</RM_MechanicalThoraxCanManipulateCaretaker.label>
+  <!-- EN: thorax -->
+  <RM_MechanicalThoraxLocust.label>thorax</RM_MechanicalThoraxLocust.label>
+  <!-- EN: thorax -->
+  <RM_MechanicalThoraxSentinel.label>thorax</RM_MechanicalThoraxSentinel.label>
+  <!-- EN: primary body -->
+  <RM_MechanicalWraithBody.label>primary body</RM_MechanicalWraithBody.label>
+  <!-- EN: mechanical body -->
+  <RM_MechanicalWraithBody.labelShort>mechanical body</RM_MechanicalWraithBody.labelShort>
+  <!-- EN: shield generator -->
+  <RM_ShieldGenerator.label>shield generator</RM_ShieldGenerator.label>
+  <!-- EN: skimmer pack -->
+  <RM_SkimmerPackBody.label>skimmer pack</RM_SkimmerPackBody.label>
+</LanguageData>

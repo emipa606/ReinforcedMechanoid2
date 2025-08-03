@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN:
+    <li>r_name->The [TyrikanFactionName] Remnants</li>
+    <li>r_name->The [TyrikanFactionName] Remains</li>
+  -->
+  <RM_NamerFactionRemnants.rulePack.rulesStrings>
+    <li>r_name->The [TyrikanFactionName] Remnants</li>
+    <li>r_name->The [TyrikanFactionName] Remains</li>
+  </RM_NamerFactionRemnants.rulePack.rulesStrings>
+  <!-- EN:
+    <li>r_name->[TyrikanShipsNamePrefix] [TyrikanShipsNameMiddle] of [TyrikanShipsNamePostfix]</li>
+    <li>r_name->[TyrikanShipsNameFull]</li>
+  -->
+  <RM_NamerSettlementRemnants.rulePack.rulesStrings>
+    <li>r_name->[TyrikanShipsNamePrefix] [TyrikanShipsNameMiddle] of [TyrikanShipsNamePostfix]</li>
+    <li>r_name->[TyrikanShipsNameFull]</li>
+  </RM_NamerSettlementRemnants.rulePack.rulesStrings>
+</LanguageData>

@@ -1,5 +1,4 @@
 using System.Linq;
-using System.Text;
 using RimWorld;
 using Verse;
 
@@ -7,7 +6,7 @@ namespace ReinforcedMechanoids;
 
 public class MechShipPart : Building
 {
-    public override bool ClaimableBy(Faction by, StringBuilder reason = null)
+    public override AcceptanceReport ClaimableBy(Faction by)
     {
         return false;
     }

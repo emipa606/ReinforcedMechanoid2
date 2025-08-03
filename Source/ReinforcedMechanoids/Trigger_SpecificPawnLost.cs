@@ -83,7 +83,7 @@ public class Trigger_SpecificPawnLost(
         return !(minTick != null && GenTicks.TicksGame < minTick.Value) && Rand.Value < chance;
     }
 
-    public static bool SignalIsLost(TriggerSignal signal, List<Pawn> pawn)
+    private static bool SignalIsLost(TriggerSignal signal, List<Pawn> pawn)
     {
         if (signal.Pawn != null && !pawn.Contains(signal.Pawn))
         {

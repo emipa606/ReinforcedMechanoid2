@@ -1,7 +1,7 @@
 using RimWorld;
 using UnityEngine;
+using VEF.Abilities;
 using Verse;
-using VFECore.Abilities;
 
 namespace ReinforcedMechanoids;
 

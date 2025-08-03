@@ -19,7 +19,7 @@ public static class DrawPosition_ForRot
         return false;
     }
 
-    public static Vector3 ForRot(DrawPositionVector3 drawPosition, Rot4 rot)
+    private static Vector3 ForRot(DrawPositionVector3 drawPosition, Rot4 rot)
     {
         var result = Vector3.positiveInfinity;
         switch (rot.AsInt)

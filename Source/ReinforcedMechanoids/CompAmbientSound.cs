@@ -8,7 +8,7 @@ public class CompAmbientSound : ThingComp
 {
     private Sustainer sustainerAmbient;
 
-    public CompProperties_AmbientSound Props => props as CompProperties_AmbientSound;
+    private CompProperties_AmbientSound Props => props as CompProperties_AmbientSound;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {
@@ -18,24 +18,18 @@ public class CompAmbientSound : ThingComp
             var info = SoundInfo.InMap(parent);
             if (parent is Pawn pawn)
             {
-                if (pawn.pather == null)
-                {
-                    pawn.pather = new Pawn_PathFollower(pawn);
-                }
+                pawn.pather ??= new Pawn_PathFollower(pawn);
 
-                if (pawn.stances == null)
-                {
-                    pawn.stances = new Pawn_StanceTracker(pawn);
-                }
+                pawn.stances ??= new Pawn_StanceTracker(pawn);
             }
 
             sustainerAmbient = Props.ambientSound.TrySpawnSustainer(info);
         });
     }
 
-    public override void PostDeSpawn(Map map)
+    public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
     {
-        base.PostDeSpawn(map);
+        base.PostDeSpawn(map, mode);
         sustainerAmbient?.End();
     }
 }

@@ -7,7 +7,7 @@ namespace ReinforcedMechanoids;
 public class GameComponent_MechWeapons : GameComponent
 {
     private List<Pawn> mechWeaponKeys = [];
-    private Dictionary<Pawn, ThingDef> MechWeapons = new Dictionary<Pawn, ThingDef>();
+    private Dictionary<Pawn, ThingDef> MechWeapons = new();
     private List<ThingDef> mechWeaponsValues = [];
 
     public GameComponent_MechWeapons(Game game)

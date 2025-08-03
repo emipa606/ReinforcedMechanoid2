@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using ReinforcedMechanoids.Harmony;
 using RimWorld;
+using VEF.Apparels;
 using Verse;
 using Verse.AI;
 using Verse.AI.Group;
-using VFECore;
 
 namespace ReinforcedMechanoids;
 
@@ -21,13 +21,13 @@ public static class Utils
         JobDefOf.Flee
     ];
 
-    public static readonly Dictionary<Pawn, CachedValue> cachedValuesPawn = new Dictionary<Pawn, CachedValue>();
+    private static readonly Dictionary<Pawn, CachedValue> cachedValuesPawn = new();
 
-    public static readonly Dictionary<Map, CachedValue> cachedValuesCenterColony = new Dictionary<Map, CachedValue>();
+    private static readonly Dictionary<Map, CachedValue> cachedValuesCenterColony = new();
 
-    public static readonly IntRange ExpiryInterval_ShooterSucceeded = new IntRange(450, 550);
+    public static readonly IntRange ExpiryInterval_ShooterSucceeded = new(450, 550);
 
-    public static readonly IntRange ExpiryInterval_Melee = new IntRange(360, 480);
+    private static readonly IntRange ExpiryInterval_Melee = new(360, 480);
 
     public static bool InCombat(this Pawn pawn)
     {
@@ -74,7 +74,8 @@ public static class Utils
         }
 
         firstBlockingBuilding = null;
-        var pawnPath = pawn.Map.pathFinder.FindPath(pawn.Position, destination, TraverseMode.NoPassClosedDoorsOrWater);
+        var pawnPath =
+            pawn.Map.pathFinder.FindPathNow(pawn.Position, destination, TraverseMode.NoPassClosedDoorsOrWater);
         var position = pawn.Position;
         var intVec = position;
         var list = pawnPath.NodesReversed.ListFullCopy();
@@ -173,7 +174,7 @@ public static class Utils
         return null;
     }
 
-    public static Job MakeFlee(Pawn pawn, Thing danger, int radius, List<Thing> dangers)
+    private static Job MakeFlee(Pawn pawn, Thing danger, int radius, List<Thing> dangers)
     {
         Job result = null;
         var intVec = pawn.CurJob == null || pawn.CurJob.def != JobDefOf.Flee
@@ -346,7 +347,7 @@ public static class Utils
         return null;
     }
 
-    public static bool CanBeHealed(this Pawn pawn)
+    private static bool CanBeHealed(this Pawn pawn)
     {
         return pawn.kindDef != RM_DefOf.RM_Mech_Vulture && pawn.health.hediffSet.hediffs.Any(x => x is Hediff_Injury);
     }
@@ -365,7 +366,7 @@ public static class Utils
         return job;
     }
 
-    public class CachedValue
+    private class CachedValue
     {
         public Building firstBlockingBuilding;
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: They are attacking immediately. -->
+  <RM_CaretakerRaid.arrivalTextEnemy>They are attacking immediately.</RM_CaretakerRaid.arrivalTextEnemy>
+  <!-- EN: They are moving in to help you immediately. -->
+  <RM_CaretakerRaid.arrivalTextFriendly>They are moving in to help you immediately.</RM_CaretakerRaid.arrivalTextFriendly>
+  <!-- EN: Raid (Caretaker) -->
+  <RM_CaretakerRaid.letterLabelEnemy>Raid (Caretaker)</RM_CaretakerRaid.letterLabelEnemy>
+  <!-- EN: Friendlies -->
+  <RM_CaretakerRaid.letterLabelFriendly>Friendlies</RM_CaretakerRaid.letterLabelFriendly>
+  <!-- EN: They are attacking immediately. -->
+  <RM_LocustRaid.arrivalTextEnemy>They are attacking immediately.</RM_LocustRaid.arrivalTextEnemy>
+  <!-- EN: They are moving in to help you immediately. -->
+  <RM_LocustRaid.arrivalTextFriendly>They are moving in to help you immediately.</RM_LocustRaid.arrivalTextFriendly>
+  <!-- EN: Raid (Locust) -->
+  <RM_LocustRaid.letterLabelEnemy>Raid (Locust)</RM_LocustRaid.letterLabelEnemy>
+  <!-- EN: Friendlies -->
+  <RM_LocustRaid.letterLabelFriendly>Friendlies</RM_LocustRaid.letterLabelFriendly>
+  <!-- EN: They are attacking immediately. -->
+  <RM_WraithSiege.arrivalTextEnemy>They are attacking immediately.</RM_WraithSiege.arrivalTextEnemy>
+  <!-- EN: They are moving in to help you immediately. -->
+  <RM_WraithSiege.arrivalTextFriendly>They are moving in to help you immediately.</RM_WraithSiege.arrivalTextFriendly>
+  <!-- EN: Siege (Wraith) -->
+  <RM_WraithSiege.letterLabelEnemy>Siege (Wraith)</RM_WraithSiege.letterLabelEnemy>
+  <!-- EN: Friendlies -->
+  <RM_WraithSiege.letterLabelFriendly>Friendlies</RM_WraithSiege.letterLabelFriendly>
+</LanguageData>

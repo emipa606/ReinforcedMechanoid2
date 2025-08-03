@@ -10,9 +10,9 @@ public class BeamExtension : DefModExtension
 
     public readonly float radius = 2f;
 
-    public IntRange corpseFlameDamageAmountRange = new IntRange(5, 10);
+    public IntRange corpseFlameDamageAmountRange = new(5, 10);
 
-    public IntRange flameDamageAmountRange = new IntRange(65, 100);
+    public IntRange flameDamageAmountRange = new(65, 100);
 
     public SoundDef sustainerSound;
 }

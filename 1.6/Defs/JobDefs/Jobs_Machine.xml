@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>VFE_Mechanoids_RepairMachine</defName>
+    <driverClass>ReinforcedMechanoids.JobDriver_RepairMachine</driverClass>
+    <reportString>rebuilding machine.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  <JobDef>
+    <defName>VFE_Mechanoids_AttachTurret</defName>
+    <driverClass>ReinforcedMechanoids.JobDriver_AttachTurret</driverClass>
+    <reportString>attaching turret.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  <JobDef>
+    <defName>VFE_Mechanoids_Recharge</defName>
+    <driverClass>ReinforcedMechanoids.JobDriver_Recharge</driverClass>
+    <reportString>recharging.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: shield radius -->
+  <VEF_EnergyShieldRadiusPawn.label>shield radius</VEF_EnergyShieldRadiusPawn.label>
+  <!-- EN: The area covered when the energy shield is active. -->
+  <VEF_EnergyShieldRadiusPawn.description>The area covered when the energy shield is active.</VEF_EnergyShieldRadiusPawn.description>
+  <!-- EN: {0} c -->
+  <VEF_EnergyShieldRadiusPawn.formatString>{0} c</VEF_EnergyShieldRadiusPawn.formatString>
+</LanguageData>

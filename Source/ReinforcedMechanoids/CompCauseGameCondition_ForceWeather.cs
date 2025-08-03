@@ -9,8 +9,8 @@ namespace ReinforcedMechanoids;
 
 public class CompCauseGameCondition_ForceWeather : CompCauseGameConditionPowerDependent
 {
-    public int cooldownTicks;
-    public WeatherDef weather;
+    private int cooldownTicks;
+    private WeatherDef weather;
 
     public override void Initialize(CompProperties props)
     {

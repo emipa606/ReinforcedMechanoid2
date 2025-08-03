@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: inquisitor -->
+  <RM_Inquisitor.label>inquisitor</RM_Inquisitor.label>
+  <!-- EN: lesser prophet -->
+  <RM_LesserProphet.label>lesser prophet</RM_LesserProphet.label>
+  <!-- EN: lesser prophetess -->
+  <RM_LesserProphet.labelFemale>lesser prophetess</RM_LesserProphet.labelFemale>
+  <!-- EN: missionary -->
+  <RM_Missionary.label>missionary</RM_Missionary.label>
+</LanguageData>

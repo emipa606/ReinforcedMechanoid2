@@ -5,7 +5,7 @@ namespace ReinforcedMechanoids;
 
 public class CompActiveGameCondition_PsychicSuppression : CompActiveGameCondition
 {
-    public Gender gender;
+    private Gender gender;
 
     public override void Initialize(CompProperties props)
     {

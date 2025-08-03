@@ -5,7 +5,7 @@ namespace ReinforcedMechanoids;
 
 public class CompInitialHediff : ThingComp
 {
-    public CompProperties_InitialHediff Props => props as CompProperties_InitialHediff;
+    private CompProperties_InitialHediff Props => props as CompProperties_InitialHediff;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {

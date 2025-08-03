@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: behemoth -->
+  <RM_Mech_Behemoth.label>behemoth</RM_Mech_Behemoth.label>
+  <!-- EN: caretaker -->
+  <RM_Mech_Caretaker.label>caretaker</RM_Mech_Caretaker.label>
+  <!-- EN: falcon -->
+  <RM_Mech_Falcon.label>falcon</RM_Mech_Falcon.label>
+  <!-- EN: gremlin -->
+  <RM_Mech_Gremlin.label>gremlin</RM_Mech_Gremlin.label>
+  <!-- EN: harpy -->
+  <RM_Mech_Harpy.label>harpy</RM_Mech_Harpy.label>
+  <!-- EN: harpies -->
+  <RM_Mech_Harpy.labelPlural>harpies</RM_Mech_Harpy.labelPlural>
+  <!-- EN: locust -->
+  <RM_Mech_Locust.label>locust</RM_Mech_Locust.label>
+  <!-- EN: marshal -->
+  <RM_Mech_Marshal.label>marshal</RM_Mech_Marshal.label>
+  <!-- EN: ranger -->
+  <RM_Mech_Ranger.label>ranger</RM_Mech_Ranger.label>
+  <!-- EN: sentinel -->
+  <RM_Mech_Sentinel.label>sentinel</RM_Mech_Sentinel.label>
+  <!-- EN: vulture -->
+  <RM_Mech_Vulture.label>vulture</RM_Mech_Vulture.label>
+  <!-- EN: wraith -->
+  <RM_Mech_WraithSiege.label>wraith</RM_Mech_WraithSiege.label>
+  <!-- EN: zealot -->
+  <RM_Mech_Zealot.label>zealot</RM_Mech_Zealot.label>
+</LanguageData>

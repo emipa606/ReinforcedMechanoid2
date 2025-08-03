@@ -29,7 +29,7 @@ public class LocustBeam : OrbitalStrike
         }
     }
 
-    public void MakeLocustBeamMote(IntVec3 cell, Map map)
+    private void MakeLocustBeamMote(IntVec3 cell, Map map)
     {
         var mote = (Mote)ThingMaker.MakeThing(RM_DefOf.RM_Mote_LocustBeam);
         mote.exactPosition = cell.ToVector3Shifted();

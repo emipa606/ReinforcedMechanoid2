@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--======== Needler ========-->
+  <ThingDef ParentName="MoteBase">
+    <defName>RM_Mote_SupercombineExplosion</defName>
+    <thingClass>VEF.Graphics.MoteOneTime</thingClass>
+    <graphicData Class="VEF.Graphics.GraphicData_Animated">
+      <texPath>Things/Mote/NeedlerExplosion</texPath>
+      <ticksPerFrame>5</ticksPerFrame>
+      <graphicClass>VEF.Graphics.Graphic_AnimatedMote</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0.6</solidTime>
+    </mote>
+  </ThingDef>
+</Defs>

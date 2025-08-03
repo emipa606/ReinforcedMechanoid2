@@ -24,7 +24,7 @@ public static class PawnTweener_PreDrawPosCalculation
             yield return new CodeInstruction(OpCodes.Ldarg_0);
             yield return new CodeInstruction(OpCodes.Ldfld, pawnField);
             yield return new CodeInstruction(OpCodes.Call,
-                AccessTools.Method(typeof(PawnTweener_PreDrawPosCalculation), "ReturnNum"));
+                AccessTools.Method(typeof(PawnTweener_PreDrawPosCalculation), nameof(ReturnNum)));
         }
     }
 

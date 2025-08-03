@@ -7,11 +7,11 @@ namespace ReinforcedMechanoids;
 public class GameCondition_NoSunlight : GameCondition
 {
     private readonly SkyColorSet EclipseSkyColors =
-        new SkyColorSet(new Color(0.482f, 0.603f, 0.682f), Color.white, new Color(0.6f, 0.6f, 0.6f), 1f);
+        new(new Color(0.482f, 0.603f, 0.682f), Color.white, new Color(0.6f, 0.6f, 0.6f), 1f);
 
-    public float curValue;
+    private float curValue;
 
-    public int tickSet;
+    private int tickSet;
 
     public override int TransitionTicks => 60000;
 

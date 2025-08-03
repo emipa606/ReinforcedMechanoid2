@@ -7,13 +7,13 @@ namespace ReinforcedMechanoids;
 
 public class LordJob_BossgroupAssaultColony_Caretaker : LordJob
 {
-    public static readonly IntRange PrepareTicksRange = new IntRange(5000, 10000);
+    private static readonly IntRange PrepareTicksRange = new(5000, 10000);
 
-    public List<Pawn> bosses = [];
+    private List<Pawn> bosses = [];
 
-    public Faction faction;
+    private Faction faction;
 
-    public IntVec3 stageLoc;
+    private IntVec3 stageLoc;
 
     public LordJob_BossgroupAssaultColony_Caretaker()
     {

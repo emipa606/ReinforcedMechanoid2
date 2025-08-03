@@ -17,15 +17,9 @@ public class CompExplodeIfNoOtherFactionPawns : ThingComp
             return;
         }
 
-        if (pawn.equipment == null)
-        {
-            pawn.equipment = new Pawn_EquipmentTracker(pawn);
-        }
+        pawn.equipment ??= new Pawn_EquipmentTracker(pawn);
 
-        if (pawn.apparel == null)
-        {
-            pawn.apparel = new Pawn_ApparelTracker(pawn);
-        }
+        pawn.apparel ??= new Pawn_ApparelTracker(pawn);
     }
 
     public override void CompTick()
@@ -33,11 +27,11 @@ public class CompExplodeIfNoOtherFactionPawns : ThingComp
         base.CompTick();
         if (Find.TickManager.TicksGame % 60 == 0 && (parent is not Pawn pawn || !pawn.Downed && !pawn.Dead))
         {
-            TryExplode();
+            tryExplode();
         }
     }
 
-    public void TryExplode()
+    private void tryExplode()
     {
         if (parent is Pawn { Map: not null, Faction: not null } pawn &&
             !(from x in pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction)

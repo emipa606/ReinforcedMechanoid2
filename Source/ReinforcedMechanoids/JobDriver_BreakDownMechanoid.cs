@@ -8,11 +8,11 @@ namespace ReinforcedMechanoids;
 
 public class JobDriver_BreakDownMechanoid : JobDriver
 {
-    public Corpse Corpse => TargetA.Thing as Corpse;
+    private Corpse Corpse => TargetA.Thing as Corpse;
 
     public IntVec3 InitialCell => TargetB.Cell;
 
-    public int BreakdownDuration =>
+    private int BreakdownDuration =>
         (int)(300f * Corpse.InnerPawn.HealthScale * (Corpse.HitPoints / (float)Corpse.MaxHitPoints));
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
@@ -49,10 +49,7 @@ public class JobDriver_BreakDownMechanoid : JobDriver
                         return;
                     }
 
-                    if (lordJob_BreakDownMechanoids.extractedThings == null)
-                    {
-                        lordJob_BreakDownMechanoids.extractedThings = [];
-                    }
+                    lordJob_BreakDownMechanoids.extractedThings ??= [];
 
                     lordJob_BreakDownMechanoids.extractedThings.Add(item);
                     job.targetQueueA.Add(item);
@@ -85,7 +82,8 @@ public class JobDriver_BreakDownMechanoid : JobDriver
 
     public static Job GetLeaveMapJob(Pawn pawn, Lord lord, LordJob_BreakDownMechanoids lordJob)
     {
-        if (!lordJob.cellToExit.IsValid && lordJob.TryFindExitSpot(pawn.Map, lord.ownedPawns, true, out var spot))
+        if (!lordJob.cellToExit.IsValid &&
+            LordJob_BreakDownMechanoids.TryFindExitSpot(pawn.Map, lord.ownedPawns, true, out var spot))
         {
             lordJob.cellToExit = spot;
         }
@@ -116,7 +114,7 @@ public class JobDriver_BreakDownMechanoid : JobDriver
         return job;
     }
 
-    public IEnumerable<Toil> CollectIngredientsToilsHelper(TargetIndex ingredientIndex, Pawn carrier)
+    private static IEnumerable<Toil> CollectIngredientsToilsHelper(TargetIndex ingredientIndex, Pawn carrier)
     {
         var extract = Toils_JobTransforms.ExtractNextTargetFromQueue(ingredientIndex);
         yield return extract;

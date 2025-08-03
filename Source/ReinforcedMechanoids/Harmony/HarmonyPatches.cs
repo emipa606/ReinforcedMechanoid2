@@ -1,3 +1,4 @@
+using System.Reflection;
 using Verse;
 
 namespace ReinforcedMechanoids.Harmony;
@@ -5,19 +6,9 @@ namespace ReinforcedMechanoids.Harmony;
 [StaticConstructorOnStartup]
 public static class HarmonyPatches
 {
-    public static readonly HarmonyLib.Harmony harmony;
-
     static HarmonyPatches()
     {
-        harmony = new HarmonyLib.Harmony("ReinforcedMechanoids.Mod");
-        harmony.PatchAll();
+        new HarmonyLib.Harmony("ReinforcedMechanoids.Mod").PatchAll(Assembly.GetExecutingAssembly());
         ReinforcedMechanoidsMod.ApplySettings();
-        //foreach (var allDef in DefDatabase<ThingDef>.AllDefs)
-        //{
-        //    if (allDef.race is { IsMechanoid: true })
-        //    {
-        //        allDef.comps.Add(new CompProperties_AllianceOverlayToggle());
-        //    }
-        //}
     }
 }

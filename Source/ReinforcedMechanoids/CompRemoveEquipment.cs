@@ -4,9 +4,9 @@ namespace ReinforcedMechanoids;
 
 public class CompRemoveEquipment : ThingComp
 {
-    public bool hadHealthHigherThanThreshold;
+    private bool hadHealthHigherThanThreshold;
 
-    public CompProperties_RemoveEquipment Props => props as CompProperties_RemoveEquipment;
+    private CompProperties_RemoveEquipment Props => props as CompProperties_RemoveEquipment;
 
     public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
     {

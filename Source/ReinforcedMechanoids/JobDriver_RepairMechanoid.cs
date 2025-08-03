@@ -8,11 +8,11 @@ namespace ReinforcedMechanoids;
 
 public class JobDriver_RepairMechanoid : JobDriver
 {
-    public readonly int TotalWorkTick = 300;
+    private readonly int TotalWorkTick = 300;
 
     private int workDone;
 
-    protected Pawn ToRepair => (Pawn)job.GetTarget(TargetIndex.A).Thing;
+    private Pawn ToRepair => (Pawn)job.GetTarget(TargetIndex.A).Thing;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {

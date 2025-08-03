@@ -7,7 +7,7 @@ public class CompPlaySoundInInterval : ThingComp
 {
     private int ticksToNextCall = -1;
 
-    public CompProperties_PlaySoundInInterval Props => props as CompProperties_PlaySoundInInterval;
+    private CompProperties_PlaySoundInInterval Props => props as CompProperties_PlaySoundInInterval;
 
     public override void CompTick()
     {

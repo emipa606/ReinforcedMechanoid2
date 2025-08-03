@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ================================ Vanilla Mechanoids ====================== -->
+  <!-- ================================ Mechanoid Vulture ====================== -->
+  <ThingDef ParentName="BaseMechanoidWalker" Name="RM_Base_Vulture">
+    <defName>RM_Mech_Vulture</defName>
+    <label>vulture</label>
+    <description>Small and agile Kigyar-class support mechanoids designed to repair other mechanoids in the field. Their bodies are light and lack any real armour, making them extremely vulnerable targets but especially to being tied up in melee. They will actively avoid engaging in combat unless they are left with no alternative.</description>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <MoveSpeed>4.2</MoveSpeed>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.66</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Vulture</body>
+      <mechWeightClass>Light</mechWeightClass>
+      <baseHealthScale>0.45</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>6</Steel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.MechanoidExtension">
+        <preventSpawnInAncientDangersAndClusters>true</preventSpawnInAncientDangersAndClusters>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Caretaker ====================== -->
+  <ThingDef ParentName="BaseMechanoid" Name="RM_Base_Caretaker">
+    <defName>RM_Mech_Caretaker</defName>
+    <label>caretaker</label>
+    <description>Super heavy support mechanoids that are propelled forward on dozens of tiny legs. Essentially a heavily armoured mobile shield generator, they are intended to deploy alongside an escort to improve their chances of survival. Extremely vulnerable should they be without backup if an enemy enters the shield dome as they lack offensive capabilities.</description>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <MoveSpeed>0.3</MoveSpeed>
+      <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+      <PsychicSensitivity>0.85</PsychicSensitivity>
+      <VEF_EnergyShieldRadiusPawn>10</VEF_EnergyShieldRadiusPawn>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.15</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
+      <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.85</EMPResistance>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12.5</power>
+        <cooldownTime>2.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Caretaker</body>
+      <baseBodySize>3.5</baseBodySize>
+      <baseHealthScale>9.5</baseHealthScale>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <intelligence>ToolUser</intelligence>
+      <dutyBoss>Caretaker</dutyBoss>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1500~2500</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="VEF.Apparels.CompProperties_ShieldField">
+        <shieldColour>(0.6, 0.6, 0.8)</shieldColour>
+        <shieldRadiusStat>VEF_EnergyShieldRadiusPawn</shieldRadiusStat>
+        <disarmedByEmpForTicks>600</disarmedByEmpForTicks>
+        <toggleable>true</toggleable>
+        <toggleIconPath>UI/Buttons/CaretakerShield</toggleIconPath>
+        <toggleLabelKey>RM.ToggleCaretakerShield</toggleLabelKey>
+        <toggleDescKey>RM.ToggleCaretakerShieldDesc</toggleDescKey>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_ExplodeIfNoOtherFactionPawns" />
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <wickTicks>500</wickTicks>
+        <chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+        <wickMessages>
+          <li>
+            <wickMessagekey>SelfDestructCountdown</wickMessagekey>
+            <messageType>NeutralEvent</messageType>
+            <ticksLeft>500</ticksLeft>
+          </li>
+        </wickMessages>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_Explosions">
+        <explosions>
+          <li>
+            <explosiveRadius>3.9</explosiveRadius>
+            <explosiveDamageType>Bomb</explosiveDamageType>
+            <postExplosionSpawnThingDef>Filth_MachineBits</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCountRange>2~4</postExplosionSpawnThingCountRange>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explodeOnKilled>true</explodeOnKilled>
+          </li>
+          <li>
+            <explosiveRadius>4.9</explosiveRadius>
+            <explosiveDamageType>Flame</explosiveDamageType>
+            <postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCountRange>2~4</postExplosionSpawnThingCountRange>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explodeOnKilled>true</explodeOnKilled>
+          </li>
+        </explosions>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>50</Steel>
+      <Plasteel>30</Plasteel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.MechanoidExtension">
+        <preventSpawnInAncientDangersAndClusters>true</preventSpawnInAncientDangersAndClusters>
+      </li>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts">
+        <butcherOptions>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <amount>4~6</amount>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <thingDef>ComponentSpacer</thingDef>
+            <amount>1~2</amount>
+            <chance>0.1</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Tyrikan Mechanoids ====================== -->
+  <!-- ================================ Mechanoid Falcon ====================== -->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>RM_Mech_Falcon</defName>
+    <label>falcon</label>
+    <description>Small and agile Kigyar-class assault mechanoids designed to actively engage enemy combatants. Better armoured than Vultures, Falcons were developed to bolster forces that had less need for support units. Deceptively powerful and capable in close range.</description>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <MoveSpeed>4.2</MoveSpeed>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.66</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Falcon</body>
+      <mechWeightClass>Light</mechWeightClass>
+      <baseHealthScale>0.65</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>8</Steel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.MechanoidExtension">
+        <preventSpawnInAncientDangersAndClusters>true</preventSpawnInAncientDangersAndClusters>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Gremlin ====================== -->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>RM_Mech_Gremlin</defName>
+    <label>gremlin</label>
+    <description>Small and weak Unggoy-class fodder mechanoids designed to tie up the enemy while their allies flank them. Equipped with a grenade backpack to bolster their limited arsenal, they are exceptionally dangerous if ignored. The explosives storage can be destroyed to reduce their lethality.</description>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <MoveSpeed>3</MoveSpeed>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.66</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Gremlin</body>
+      <mechWeightClass>Light</mechWeightClass>
+      <baseHealthScale>0.86</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="ReinforcedMechanoids.CompProperties_Explosions">
+        <explosions>
+          <li>
+            <missingBodyPartTrigger>RM_MechanicalBackStorage</missingBodyPartTrigger>
+            <explosiveRadius>1.2</explosiveRadius>
+            <explosiveDamageType>Flame</explosiveDamageType>
+            <postExplosionSpawnThingDef>Filth_MachineBits</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCountRange>1~3</postExplosionSpawnThingCountRange>
+          </li>
+        </explosions>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_ChangeGraphic">
+        <graphicsPerLifestages>
+          <li MayRequire="Ludeon.Rimworld.Biotech">
+            <pawnGraphics>
+              <li>
+                <missingPart>RM_MechanicalBackStorage</missingPart>
+                <bodyGraphicData>
+                  <texPath>Things/Pawn/Mechanoid/Mech_Gremlin/Mech_GremlinCleanDetonated</texPath>
+                  <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Gremlin</maskPath>
+                  <shaderType>CutoutWithOverlay</shaderType>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <drawSize>1.2</drawSize>
+                  <shadowData>
+                    <volume>(0.4, 0.8, 0.4)</volume>
+                  </shadowData>
+                </bodyGraphicData>
+              </li>
+            </pawnGraphics>
+          </li>
+          <li>
+            <pawnGraphics>
+              <li>
+                <missingPart>RM_MechanicalBackStorage</missingPart>
+                <bodyGraphicData>
+                  <texPath>Things/Pawn/Mechanoid/Mech_Gremlin/Mech_GremlinDetonated</texPath>
+                  <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Gremlin</maskPath>
+                  <shaderType>CutoutWithOverlay</shaderType>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <drawSize>1.2</drawSize>
+                  <shadowData>
+                    <volume>(0.4, 0.8, 0.4)</volume>
+                  </shadowData>
+                </bodyGraphicData>
+              </li>
+            </pawnGraphics>
+          </li>
+        </graphicsPerLifestages>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_GrenadeThrower">
+        <grenadeDropTickInterval>2000</grenadeDropTickInterval>
+        <requiredBodyPart>RM_MechanicalBackStorage</requiredBodyPart>
+        <grenadeLauncher>RM_Weapon_GrenadePlasmaImmolator</grenadeLauncher>
+        <maxDistance>15</maxDistance>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>15</Steel>
+      <Plasteel>2</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+  <!-- ================================ Mechanoid Harpy ====================== -->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>RM_Mech_Harpy</defName>
+    <label>harpy</label>
+    <description>Swift and agile Gasgira-class assault mechanoids designed to flank the enemy and engage them from unexpected angles. Equipped with Skimmer jump packs, they can quickly change positions and negate cover.</description>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.66</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Harpy</body>
+      <mechWeightClass>Light</mechWeightClass>
+      <baseHealthScale>0.6</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="ReinforcedMechanoids.CompProperties_PawnJumper">
+        <jumpTickRateInterval>600</jumpTickRateInterval>
+        <maxJumpDistance>25</maxJumpDistance>
+        <minJumpDistance>5</minJumpDistance>
+        <minLandDistanceToThingTarget>10</minLandDistanceToThingTarget>
+        <flightEffecterDef>RM_JumpPawnEffect</flightEffecterDef>
+        <soundLanding>RM_SkimmerPackLaunch</soundLanding>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>10</Steel>
+      <Plasteel>2</Plasteel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.MechanoidExtension">
+        <preventSpawnInAncientDangersAndClusters>true</preventSpawnInAncientDangersAndClusters>
+      </li>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts" MayRequire="Ludeon.RimWorld.Royalty">
+        <butcherOptions>
+          <li>
+            <thingDef>RM_Apparel_SkimmerPack</thingDef>
+            <amount>1</amount>
+            <chance>0.2</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Ranger ====================== -->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>RM_Mech_Ranger</defName>
+    <label>ranger</label>
+    <description>Rapid Sangheili-class humanoid mechanoids designed to act as cannon fodder. Very lightly armoured with a weak bubble shield attachment to promote mass-produced swarm tactics, but particularly vulnerable once engaged in melee.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MoveSpeed>4.8</MoveSpeed>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">1.2</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Ranger</body>
+      <mechWeightClass>Medium</mechWeightClass>
+      <baseHealthScale>0.66</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>20</Steel>
+    </butcherProducts>
+  </ThingDef>
+  <!-- ================================ Mechanoid Zealot ====================== -->
+  <ThingDef ParentName="BaseMechanoidWalker" Name="RM_Base_Zealot">
+    <defName>RM_Mech_Zealot</defName>
+    <label>zealot</label>
+    <description>Bulky Sangheili-class humanoid mechanoids, outfitted for mid to long-range combat and capable of acting as a mobile command post in guerilla operations. Equipped with active camouflage which allows them to reposition, either to command their troops more effectively or exploit an enemy’s weakness.</description>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MoveSpeed>3.6</MoveSpeed>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">1.2</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6.5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Zealot</body>
+      <mechWeightClass>Medium</mechWeightClass>
+      <baseHealthScale>1.5</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li MayRequire="Ludeon.RimWorld.Royalty" Class="ReinforcedMechanoids.CompProperties_Invisibility">
+        <cooldownTicksRange>7500</cooldownTicksRange>
+        <disableWhenInCombat>true</disableWhenInCombat>
+        <removeWhenDamaged>true</removeWhenDamaged>
+        <cooldownWhenInCombat>true</cooldownWhenInCombat>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>25</Steel>
+      <Plasteel>5</Plasteel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts">
+        <butcherOptions>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <amount>2~3</amount>
+            <chance>0.20</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Marshal ====================== -->
+  <ThingDef ParentName="BaseMechanoidWalker">
+    <defName>RM_Mech_Marshal</defName>
+    <label>marshal</label>
+    <description>Bulky Sangheili-class humanoid mechanoids, outfitted for rapid close-range engagement while shrugging off heavy suppressive fire. While their bodies are covered with razors and spikes to punish melee attackers, their primary attack method is using their twin arm blades to sever limbs and gut victims. If that wasn’t already enough, they can charge and ram their enemy with their forehead-mounted axe.</description>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MoveSpeed>3.6</MoveSpeed>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">2</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">18</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">1.2</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+    </statBases>
+    <tools>
+      <li>
+        <label>left blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>3.4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Marshal</body>
+      <mechWeightClass>Medium</mechWeightClass>
+      <baseHealthScale>1.3</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="VEF.Apparels.CompProperties_ShieldBubble">
+        <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+        <EnergyShieldEnergyMax>100</EnergyShieldEnergyMax>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>20</Steel>
+      <Plasteel>5</Plasteel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts">
+        <butcherOptions>
+          <li>
+            <thingDef>Apparel_ShieldBelt</thingDef>
+            <amount>1</amount>
+            <chance>0.20</chance>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <amount>3~4</amount>
+            <chance>0.2</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Sentinel ====================== -->
+  <ThingDef ParentName="BaseMechanoid" Name="RM_Base_Sentinel">
+    <defName>RM_Mech_Sentinel</defName>
+    <label>sentinel</label>
+    <description>Powerful and bulky Jiralhanae-class humanoid mechanoids designed to engage the enemy with heavy weapons while attracting enemy fire. Due to hardware complications, their target analyser is vulnerable to shocks and can be easily scrambled. In which case, the Sentinel switches over to search and destroy behaviour, attacking any nearby combatants.</description>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <MoveSpeed>2.5</MoveSpeed>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <PsychicSensitivity>0.5</PsychicSensitivity>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">24</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+      <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.3</EMPResistance>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head blade</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>RM_Mechanoid_Sentinel</thinkTreeMain>
+      <body>RM_Mechanical_Sentinel</body>
+      <baseBodySize>1.8</baseBodySize>
+      <baseHealthScale>2.2</baseHealthScale>
+      <mechWeightClass>Heavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="ReinforcedMechanoids.CompProperties_MentalStateOnDamage">
+        <maxHealthPctCondition>0.6</maxHealthPctCondition>
+        <chanceOfMentalBreak>0.33</chanceOfMentalBreak>
+        <mentalState>RM_SentinelBerserk</mentalState>
+        <hediff>RM_SentinelBerserk</hediff>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>35</Steel>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts">
+        <butcherOptions>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <amount>3~4</amount>
+            <chance>0.2</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Behemoth ====================== -->
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>RM_Mech_Behemoth</defName>
+    <label>behemoth</label>
+    <description>Heavy Mgalekgolo-class mechanoids, outfitted with extremely bulky reactive armour plating to protect them as they engage their weapon systems. While they are also fitted with a forearm-mounted shield, their thick tree-trunk legs hampers their turning and makes them vulnerable to flanking manoeuvres.</description>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <MoveSpeed>1.9</MoveSpeed>
+      <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <PsychicSensitivity>0.75</PsychicSensitivity>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">24</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">5</WastepacksPerRecharge>
+      <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.3</EMPResistance>
+    </statBases>
+    <tools>
+      <li>
+        <label>left shield</label>
+        <capacities>
+          <li>RM_BehemothAttack</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>4.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>RM_Mechanical_Behemoth</body>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>3.8</baseHealthScale>
+      <mechWeightClass>Heavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="ReinforcedMechanoids.CompProperties_ChangeGraphic">
+        <graphicsPerLifestages>
+          <li MayRequire="Ludeon.Rimworld.Biotech">
+            <pawnGraphics>
+              <li>
+                <missingPart>RM_BehemothShield</missingPart>
+                <bodyGraphicData>
+                  <texPath>Things/Pawn/Mechanoid/Mech_Behemoth/Mech_BehemothClean_NoShield</texPath>
+                  <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Behemoth_NoShield</maskPath>
+                  <shaderType>CutoutWithOverlay</shaderType>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <drawSize>2.5</drawSize>
+                  <shadowData>
+                    <volume>(0.4, 0.8, 0.4)</volume>
+                  </shadowData>
+                </bodyGraphicData>
+              </li>
+            </pawnGraphics>
+          </li>
+          <li>
+            <pawnGraphics>
+              <li>
+                <missingPart>RM_BehemothShield</missingPart>
+                <bodyGraphicData>
+                  <texPath>Things/Pawn/Mechanoid/Mech_Behemoth/Mech_Behemoth_NoShield</texPath>
+                  <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Behemoth_NoShield</maskPath>
+                  <shaderType>CutoutWithOverlay</shaderType>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <drawSize>2.5</drawSize>
+                  <shadowData>
+                    <volume>(0.4, 0.8, 0.4)</volume>
+                  </shadowData>
+                </bodyGraphicData>
+              </li>
+            </pawnGraphics>
+          </li>
+        </graphicsPerLifestages>
+      </li>
+    </comps>
+    <butcherProducts>
+      <Steel>20</Steel>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts">
+        <butcherOptions>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <amount>2~3</amount>
+            <chance>0.2</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Wraith ====================== -->
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>RM_Mech_Wraith</defName>
+    <label>wraith</label>
+    <description>A Zurdo-class mobile artillery mechanoid designed to hang back and pummel enemies from a distance. While it is equipped with the Plasma hellgator for long ranged attacks, it can not defend itself at close range.</description>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <MoveSpeed>0.40</MoveSpeed>
+      <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.15</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
+      <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.35</EMPResistance>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>2.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <body>RM_Mechanical_Wraith</body>
+      <baseBodySize>3.5</baseBodySize>
+      <baseHealthScale>7.5</baseHealthScale>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>2500~3500</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+    </butcherProducts>
+    <comps>
+      <li Class="ReinforcedMechanoids.CompProperties_ChangeGraphic">
+        <graphicsPerLifestages>
+          <li MayRequire="Ludeon.Rimworld.Biotech">
+            <pawnGraphics>
+              <li>
+                <healthPctThreshold>0.5</healthPctThreshold>
+                <bodyGraphicData>
+                  <texPath>Things/Pawn/Mechanoid/Mech_Wraith/Mech_WraithCleanDamaged</texPath>
+                  <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_WraithDamaged</maskPath>
+                  <shaderType>CutoutWithOverlay</shaderType>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <drawSize>4.5</drawSize>
+                  <shadowData>
+                    <volume>(0.4, 0.8, 0.4)</volume>
+                  </shadowData>
+                </bodyGraphicData>
+              </li>
+            </pawnGraphics>
+          </li>
+          <li>
+            <pawnGraphics>
+              <li>
+                <healthPctThreshold>0.5</healthPctThreshold>
+                <bodyGraphicData>
+                  <texPath>Things/Pawn/Mechanoid/Mech_Wraith/Mech_WraithDamaged</texPath>
+                  <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_WraithDamaged</maskPath>
+                  <shaderType>CutoutWithOverlay</shaderType>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <drawSize>4.5</drawSize>
+                  <shadowData>
+                    <volume>(0.4, 0.8, 0.4)</volume>
+                  </shadowData>
+                </bodyGraphicData>
+              </li>
+            </pawnGraphics>
+          </li>
+        </graphicsPerLifestages>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_AmbientSound">
+        <ambientSound>RM_Wraith_Ambience</ambientSound>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_Explosions">
+        <explosions>
+          <li>
+            <explosiveRadius>3.9</explosiveRadius>
+            <explosiveDamageType>Bomb</explosiveDamageType>
+            <postExplosionSpawnThingDef>Filth_MachineBits</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCountRange>2~4</postExplosionSpawnThingCountRange>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explodeOnKilled>true</explodeOnKilled>
+          </li>
+          <li>
+            <explosiveRadius>4.9</explosiveRadius>
+            <explosiveDamageType>Flame</explosiveDamageType>
+            <postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCountRange>2~4</postExplosionSpawnThingCountRange>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explodeOnKilled>true</explodeOnKilled>
+          </li>
+        </explosions>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.EquipmentDrawPositionOffsetExtension">
+        <westDrawOffset>(1.25, 0, 1.2)</westDrawOffset>
+        <eastDrawOffset>(-1.25, 0, 1.2)</eastDrawOffset>
+        <southDrawOffset>(0, 1, 1.25)</southDrawOffset>
+        <northDrawOffset>(0, 1, 0.5)</northDrawOffset>
+      </li>
+      <li Class="ReinforcedMechanoids.MechanoidExtension">
+        <preventSpawnInAncientDangersAndClusters>true</preventSpawnInAncientDangersAndClusters>
+      </li>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts">
+        <butcherOptions>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <amount>4~6</amount>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <thingDef>ComponentSpacer</thingDef>
+            <amount>1~2</amount>
+            <chance>0.1</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <!-- ================================ Mechanoid Locust ====================== -->
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>RM_Mech_Locust</defName>
+    <label>locust</label>
+    <description>A Barakuza-class mobile armour mechanoid designed to engage enemies with a screening force. While it is capable of executing powerful laser barrages on opposing forces, the thinner hull plating leaves it particularly vulnerable to anti-armour weapons.</description>
+    <statBases>
+      <MarketValue>1600</MarketValue>
+      <MoveSpeed>0.45</MoveSpeed>
+      <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
+      <ControlTakingTime MayRequire="Ludeon.Rimworld.Biotech">30</ControlTakingTime>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.15</MechEnergyLossPerHP>
+      <WastepacksPerRecharge MayRequire="Ludeon.Rimworld.Biotech">8</WastepacksPerRecharge>
+      <EMPResistance MayRequire="Ludeon.Rimworld.Biotech">0.35</EMPResistance>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18.5</power>
+        <cooldownTime>2.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <body>RM_Mechanical_Locust</body>
+      <baseBodySize>3</baseBodySize>
+      <baseHealthScale>6.2</baseHealthScale>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <intelligence>ToolUser</intelligence>
+      <mechWeightClass>UltraHeavy</mechWeightClass>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>2500~3500</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>50</Steel>
+      <Plasteel>20</Plasteel>
+    </butcherProducts>
+    <comps>
+      <li Class="ReinforcedMechanoids.CompProperties_Explosions">
+        <explosions>
+          <li>
+            <explosiveRadius>3.9</explosiveRadius>
+            <explosiveDamageType>Bomb</explosiveDamageType>
+            <postExplosionSpawnThingDef>Filth_MachineBits</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCountRange>2~4</postExplosionSpawnThingCountRange>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explodeOnKilled>true</explodeOnKilled>
+          </li>
+          <li>
+            <explosiveRadius>4.9</explosiveRadius>
+            <explosiveDamageType>Flame</explosiveDamageType>
+            <postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCountRange>2~4</postExplosionSpawnThingCountRange>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explodeOnKilled>true</explodeOnKilled>
+          </li>
+        </explosions>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="ReinforcedMechanoids.MechanoidExtension">
+        <preventSpawnInAncientDangersAndClusters>true</preventSpawnInAncientDangersAndClusters>
+      </li>
+      <li Class="ReinforcedMechanoids.AdditionalButcherProducts">
+        <butcherOptions>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <amount>4~6</amount>
+            <chance>0.2</chance>
+          </li>
+          <li>
+            <thingDef>ComponentSpacer</thingDef>
+            <amount>1~2</amount>
+            <chance>0.1</chance>
+          </li>
+        </butcherOptions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

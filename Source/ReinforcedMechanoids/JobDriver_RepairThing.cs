@@ -7,7 +7,7 @@ namespace ReinforcedMechanoids;
 
 public class JobDriver_RepairThing : JobDriver
 {
-    protected float ticksToNextRepair;
+    private float ticksToNextRepair;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: behemoth -->
+  <RM_Mechanical_Behemoth.label>behemoth</RM_Mechanical_Behemoth.label>
+  <!-- EN: sight sensor -->
+  <RM_Mechanical_Behemoth.corePart.parts.RM_MechanicalNeckBehemoth.parts.MechanicalHead.parts.sight_sensor.customLabel>sight sensor</RM_Mechanical_Behemoth.corePart.parts.RM_MechanicalNeckBehemoth.parts.MechanicalHead.parts.sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Behemoth.corePart.parts.RM_MechanicalNeckBehemoth.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Behemoth.corePart.parts.RM_MechanicalNeckBehemoth.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Behemoth.corePart.parts.RM_MechanicalNeckBehemoth.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Behemoth.corePart.parts.RM_MechanicalNeckBehemoth.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Behemoth.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Behemoth.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Behemoth.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Behemoth.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: armored shield -->
+  <RM_Mechanical_Behemoth.corePart.parts.left_shoulder.parts.left_arm.parts.armored_shield.customLabel>armored shield</RM_Mechanical_Behemoth.corePart.parts.left_shoulder.parts.left_arm.parts.armored_shield.customLabel>
+  <!-- EN: right shoulder -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_shoulder.customLabel>right shoulder</RM_Mechanical_Behemoth.corePart.parts.right_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Behemoth.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Behemoth.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Behemoth.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Behemoth.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Behemoth.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Behemoth.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Behemoth.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Behemoth.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: primary reactor -->
+  <RM_Mechanical_Behemoth.corePart.parts.primary_reactor.customLabel>primary reactor</RM_Mechanical_Behemoth.corePart.parts.primary_reactor.customLabel>
+  <!-- EN: secondary reactor -->
+  <RM_Mechanical_Behemoth.corePart.parts.secondary_reactor.customLabel>secondary reactor</RM_Mechanical_Behemoth.corePart.parts.secondary_reactor.customLabel>
+  <!-- EN: caretaker -->
+  <RM_Mechanical_Caretaker.label>caretaker</RM_Mechanical_Caretaker.label>
+  <!-- EN: left sight sensor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.left_sight_sensor.customLabel>left sight sensor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.right_sight_sensor.customLabel>right sight sensor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalHeadCaretaker.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left fluid peprocessor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.left_fluid_peprocessor.customLabel>left fluid peprocessor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.left_fluid_peprocessor.customLabel>
+  <!-- EN: right fluid peprocessor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.right_fluid_peprocessor.customLabel>right fluid peprocessor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.right_fluid_peprocessor.customLabel>
+  <!-- EN: first reactor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.first_reactor.customLabel>first reactor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.first_reactor.customLabel>
+  <!-- EN: second reactor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.second_reactor-0.customLabel>second reactor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.second_reactor-0.customLabel>
+  <!-- EN: second reactor -->
+  <RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.second_reactor-1.customLabel>second reactor</RM_Mechanical_Caretaker.corePart.parts.RM_MechanicalShellCaretaker.parts.second_reactor-1.customLabel>
+  <!-- EN: falcon -->
+  <RM_Mechanical_Falcon.label>falcon</RM_Mechanical_Falcon.label>
+  <!-- EN: left sight sensor -->
+  <RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>left sight sensor</RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>right sight sensor</RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Falcon.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Falcon.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Falcon.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Falcon.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Falcon.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Falcon.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Falcon.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Falcon.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Falcon.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Falcon.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Falcon.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Falcon.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Falcon.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: gremlin -->
+  <RM_Mechanical_Gremlin.label>gremlin</RM_Mechanical_Gremlin.label>
+  <!-- EN: left sight sensor -->
+  <RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>left sight sensor</RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>right sight sensor</RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Gremlin.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: grenade storage -->
+  <RM_Mechanical_Gremlin.corePart.parts.grenade_storage.customLabel>grenade storage</RM_Mechanical_Gremlin.corePart.parts.grenade_storage.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Gremlin.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Gremlin.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Gremlin.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Gremlin.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Gremlin.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Gremlin.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Gremlin.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Gremlin.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Gremlin.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: harpy -->
+  <RM_Mechanical_Harpy.label>harpy</RM_Mechanical_Harpy.label>
+  <!-- EN: sight sensor -->
+  <RM_Mechanical_Harpy.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.sight_sensor.customLabel>sight sensor</RM_Mechanical_Harpy.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Harpy.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Harpy.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Harpy.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Harpy.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Harpy.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Harpy.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Harpy.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Harpy.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Harpy.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Harpy.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Harpy.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Harpy.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Harpy.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Harpy.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Harpy.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Harpy.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: locust -->
+  <RM_Mechanical_Locust.label>locust</RM_Mechanical_Locust.label>
+  <!-- EN: left cooling system -->
+  <RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.left_cooling_system.customLabel>left cooling system</RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.left_cooling_system.customLabel>
+  <!-- EN: right cooling system -->
+  <RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.right_cooling_system.customLabel>right cooling system</RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.right_cooling_system.customLabel>
+  <!-- EN: laser focus -->
+  <RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.laser_focus.customLabel>laser focus</RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.laser_focus.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Locust.corePart.parts.RM_MechanicalHeadLocust.parts.right_hearing_sensor.customLabel>
+  <!-- EN: front left leg -->
+  <RM_Mechanical_Locust.corePart.parts.front_left_leg.customLabel>front left leg</RM_Mechanical_Locust.corePart.parts.front_left_leg.customLabel>
+  <!-- EN: front right leg -->
+  <RM_Mechanical_Locust.corePart.parts.front_right_leg.customLabel>front right leg</RM_Mechanical_Locust.corePart.parts.front_right_leg.customLabel>
+  <!-- EN: back left leg -->
+  <RM_Mechanical_Locust.corePart.parts.back_left_leg.customLabel>back left leg</RM_Mechanical_Locust.corePart.parts.back_left_leg.customLabel>
+  <!-- EN: back right leg -->
+  <RM_Mechanical_Locust.corePart.parts.back_right_leg.customLabel>back right leg</RM_Mechanical_Locust.corePart.parts.back_right_leg.customLabel>
+  <!-- EN: marshal -->
+  <RM_Mechanical_Marshal.label>marshal</RM_Mechanical_Marshal.label>
+  <!-- EN: left sight sensor -->
+  <RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>left sight sensor</RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>right sight sensor</RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Marshal.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Marshal.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Marshal.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left blade -->
+  <RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_blade.customLabel>left blade</RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_blade.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Marshal.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right shoulder -->
+  <RM_Mechanical_Marshal.corePart.parts.right_shoulder.customLabel>right shoulder</RM_Mechanical_Marshal.corePart.parts.right_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right blade -->
+  <RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_blade.customLabel>right blade</RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_blade.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Marshal.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Marshal.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Marshal.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Marshal.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Marshal.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Marshal.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Marshal.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Marshal.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Marshal.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: ranger -->
+  <RM_Mechanical_Ranger.label>ranger</RM_Mechanical_Ranger.label>
+  <!-- EN: sight sensor -->
+  <RM_Mechanical_Ranger.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.sight_sensor.customLabel>sight sensor</RM_Mechanical_Ranger.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Ranger.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Ranger.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Ranger.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Ranger.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Ranger.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Ranger.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Ranger.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Ranger.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Ranger.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Ranger.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Ranger.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Ranger.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Ranger.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Ranger.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Ranger.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Ranger.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: sentinel -->
+  <RM_Mechanical_Sentinel.label>sentinel</RM_Mechanical_Sentinel.label>
+  <!-- EN: sight sensor -->
+  <RM_Mechanical_Sentinel.corePart.parts.MechanicalNeck.parts.RM_MechanicalHeadSentinel.parts.sight_sensor.customLabel>sight sensor</RM_Mechanical_Sentinel.corePart.parts.MechanicalNeck.parts.RM_MechanicalHeadSentinel.parts.sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Sentinel.corePart.parts.MechanicalNeck.parts.RM_MechanicalHeadSentinel.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Sentinel.corePart.parts.MechanicalNeck.parts.RM_MechanicalHeadSentinel.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Sentinel.corePart.parts.MechanicalNeck.parts.RM_MechanicalHeadSentinel.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Sentinel.corePart.parts.MechanicalNeck.parts.RM_MechanicalHeadSentinel.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Sentinel.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left pinky -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>left pinky</RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Sentinel.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right shoulder -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_shoulder.customLabel>right shoulder</RM_Mechanical_Sentinel.corePart.parts.right_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right pinky -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>right pinky</RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Sentinel.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Sentinel.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Sentinel.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Sentinel.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Sentinel.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Sentinel.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Sentinel.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: vulture -->
+  <RM_Mechanical_Vulture.label>vulture</RM_Mechanical_Vulture.label>
+  <!-- EN: left sight sensor -->
+  <RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>left sight sensor</RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>right sight sensor</RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Vulture.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Vulture.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Vulture.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: left index finger -->
+  <RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>left index finger</RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Vulture.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right mechanical shoulder -->
+  <RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.customLabel>right mechanical shoulder</RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Vulture.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Vulture.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Vulture.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Vulture.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Vulture.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Vulture.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Vulture.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Vulture.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Vulture.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <!-- EN: wraith -->
+  <RM_Mechanical_Wraith.label>wraith</RM_Mechanical_Wraith.label>
+  <!-- EN: primary artificial brain -->
+  <RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.primary_artificial_brain.customLabel>primary artificial brain</RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.primary_artificial_brain.customLabel>
+  <!-- EN: secondary artificial brain -->
+  <RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.secondary_artificial_brain.customLabel>secondary artificial brain</RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.secondary_artificial_brain.customLabel>
+  <!-- EN: center sight sensor -->
+  <RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.center_sight_sensor.customLabel>center sight sensor</RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.center_sight_sensor.customLabel>
+  <!-- EN: left sensors array -->
+  <RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.left_sensors_array.customLabel>left sensors array</RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.left_sensors_array.customLabel>
+  <!-- EN: right sensors array -->
+  <RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.right_sensors_array.customLabel>right sensors array</RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.right_sensors_array.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Wraith.corePart.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left fluid peprocessor -->
+  <RM_Mechanical_Wraith.corePart.parts.left_fluid_peprocessor.customLabel>left fluid peprocessor</RM_Mechanical_Wraith.corePart.parts.left_fluid_peprocessor.customLabel>
+  <!-- EN: right fluid peprocessor -->
+  <RM_Mechanical_Wraith.corePart.parts.right_fluid_peprocessor.customLabel>right fluid peprocessor</RM_Mechanical_Wraith.corePart.parts.right_fluid_peprocessor.customLabel>
+  <!-- EN: first reactor -->
+  <RM_Mechanical_Wraith.corePart.parts.RM_MechanicalSecondWraithBody.parts.first_reactor.customLabel>first reactor</RM_Mechanical_Wraith.corePart.parts.RM_MechanicalSecondWraithBody.parts.first_reactor.customLabel>
+  <!-- EN: second reactor -->
+  <RM_Mechanical_Wraith.corePart.parts.RM_MechanicalSecondWraithBody.parts.second_reactor.customLabel>second reactor</RM_Mechanical_Wraith.corePart.parts.RM_MechanicalSecondWraithBody.parts.second_reactor.customLabel>
+  <!-- EN: zealot -->
+  <RM_Mechanical_Zealot.label>zealot</RM_Mechanical_Zealot.label>
+  <!-- EN: sight sensor -->
+  <RM_Mechanical_Zealot.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.sight_sensor.customLabel>sight sensor</RM_Mechanical_Zealot.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RM_Mechanical_Zealot.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>left hearing sensor</RM_Mechanical_Zealot.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RM_Mechanical_Zealot.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>right hearing sensor</RM_Mechanical_Zealot.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <!-- EN: left shoulder -->
+  <RM_Mechanical_Zealot.corePart.parts.left_shoulder.customLabel>left shoulder</RM_Mechanical_Zealot.corePart.parts.left_shoulder.customLabel>
+  <!-- EN: left arm -->
+  <RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.customLabel>left arm</RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <!-- EN: left hand -->
+  <RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>left hand</RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <!-- EN: left middle finger -->
+  <RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>left middle finger</RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.right_index_finger.customLabel>
+  <!-- EN: left thumb -->
+  <RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>left thumb</RM_Mechanical_Zealot.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <!-- EN: right shoulder -->
+  <RM_Mechanical_Zealot.corePart.parts.right_shoulder.customLabel>right shoulder</RM_Mechanical_Zealot.corePart.parts.right_shoulder.customLabel>
+  <!-- EN: right arm -->
+  <RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.customLabel>right arm</RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+  <!-- EN: right hand -->
+  <RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>right hand</RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <!-- EN: right middle finger -->
+  <RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>right middle finger</RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <!-- EN: right index finger -->
+  <RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>right index finger</RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <!-- EN: right thumb -->
+  <RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>right thumb</RM_Mechanical_Zealot.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <!-- EN: left leg -->
+  <RM_Mechanical_Zealot.corePart.parts.left_leg.customLabel>left leg</RM_Mechanical_Zealot.corePart.parts.left_leg.customLabel>
+  <!-- EN: left foot -->
+  <RM_Mechanical_Zealot.corePart.parts.left_leg.parts.left_foot.customLabel>left foot</RM_Mechanical_Zealot.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <!-- EN: right leg -->
+  <RM_Mechanical_Zealot.corePart.parts.right_leg.customLabel>right leg</RM_Mechanical_Zealot.corePart.parts.right_leg.customLabel>
+  <!-- EN: right foot -->
+  <RM_Mechanical_Zealot.corePart.parts.right_leg.parts.right_foot.customLabel>right foot</RM_Mechanical_Zealot.corePart.parts.right_leg.parts.right_foot.customLabel>
+</LanguageData>

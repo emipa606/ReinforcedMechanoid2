@@ -7,12 +7,12 @@ namespace ReinforcedMechanoids;
 
 public class CompInvisibility : ThingComp
 {
-    public bool invisibilityOn;
-    public int nextAssignTicks;
+    private bool invisibilityOn;
+    private int nextAssignTicks;
 
-    public CompProperties_Invisibility Props => props as CompProperties_Invisibility;
+    private CompProperties_Invisibility Props => props as CompProperties_Invisibility;
 
-    public bool CanGiveHediff
+    private bool CanGiveHediff
     {
         get
         {
@@ -80,7 +80,7 @@ public class CompInvisibility : ThingComp
         nextAssignTicks = Find.TickManager.TicksGame + Props.cooldownTicksRange.RandomInRange;
     }
 
-    private void TurnOffInvisibility(Pawn pawn)
+    private static void TurnOffInvisibility(Pawn pawn)
     {
         var firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(RM_DefOf.RM_ZealotInvisibility);
         pawn.health.RemoveHediff(firstHediffOfDef);

@@ -5,11 +5,11 @@ namespace ReinforcedMechanoids;
 [StaticConstructorOnStartup]
 public class CompChangePawnGraphic : ThingComp
 {
-    public Pawn Pawn => parent as Pawn;
+    private Pawn Pawn => parent as Pawn;
 
-    public PawnRenderer PawnRenderer => Pawn.Drawer.renderer;
+    private PawnRenderer PawnRenderer => Pawn.Drawer.renderer;
 
-    public CompProperties_ChangeGraphic Props => props as CompProperties_ChangeGraphic;
+    private CompProperties_ChangeGraphic Props => props as CompProperties_ChangeGraphic;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {

@@ -32,7 +32,7 @@ public class LordJob_BreakDownMechanoids : LordJob
         };
     }
 
-    public bool TryFindExitSpot(Map map, List<Pawn> pawns, bool reachableForEveryColonist, out IntVec3 spot)
+    public static bool TryFindExitSpot(Map map, List<Pawn> pawns, bool reachableForEveryColonist, out IntVec3 spot)
     {
         if (reachableForEveryColonist)
         {

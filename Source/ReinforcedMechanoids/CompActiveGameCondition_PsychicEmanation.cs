@@ -8,14 +8,14 @@ public class CompActiveGameCondition_PsychicEmanation : CompActiveGameCondition
 {
     private PsychicDroneLevel droneLevel = PsychicDroneLevel.BadHigh;
 
-    public Gender gender;
+    private Gender gender;
 
     private int ticksToIncreaseDroneLevel;
 
-    public new CompProperties_ActiveGameCondition_PsychicEmanation Props =>
+    private CompProperties_ActiveGameCondition_PsychicEmanation Props =>
         (CompProperties_ActiveGameCondition_PsychicEmanation)props;
 
-    public PsychicDroneLevel Level => droneLevel;
+    private PsychicDroneLevel Level => droneLevel;
 
     private bool DroneLevelIncreases => Props.droneLevelIncreaseInterval != int.MinValue;
 

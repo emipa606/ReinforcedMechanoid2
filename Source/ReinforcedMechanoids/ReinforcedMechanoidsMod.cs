@@ -3,7 +3,6 @@ using RimWorld;
 using RimWorld.QuestGen;
 using UnityEngine;
 using Verse;
-using VFEMech;
 
 namespace ReinforcedMechanoids;
 
@@ -11,9 +10,9 @@ internal class ReinforcedMechanoidsMod : Mod
 {
     public static ReinforcedMechanoidsSettings settings;
 
-    public float scrollHeight;
+    private float scrollHeight;
 
-    public Vector2 scrollPosition;
+    private Vector2 scrollPosition;
 
     public ReinforcedMechanoidsMod(ModContentPack mcp)
         : base(mcp)
@@ -131,7 +130,7 @@ internal class ReinforcedMechanoidsMod : Mod
         DrawSettings(inRect);
     }
 
-    public void DrawSettings(Rect rect)
+    private void DrawSettings(Rect rect)
     {
         var rect2 = new Rect(rect.x, rect.y, rect.width - 16f, 10000f);
         Widgets.BeginScrollView(viewRect: new Rect(rect.x, rect.y, rect.width - 16f, scrollHeight), outRect: rect,
@@ -200,7 +199,7 @@ internal class ReinforcedMechanoidsMod : Mod
         listing_Standard.Label("Disable mechanoids from spawning in the game");
         foreach (var allDef in DefDatabase<PawnKindDef>.AllDefs)
         {
-            if (!allDef.RaceProps.IsMechanoid || typeof(Machine).IsAssignableFrom(allDef.race.thingClass))
+            if (!allDef.RaceProps.IsMechanoid)
             {
                 continue;
             }

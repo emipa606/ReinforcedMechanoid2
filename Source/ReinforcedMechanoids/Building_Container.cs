@@ -9,7 +9,7 @@ public class Building_Container : Building_Casket
 {
     private static readonly List<Pawn> tmpAllowedPawns = [];
 
-    public CompProperties_LootContainer Props => def.GetCompProperties<CompProperties_LootContainer>();
+    private CompProperties_LootContainer Props => def.GetCompProperties<CompProperties_LootContainer>();
 
     public override int OpenTicks => Props.openingTicks;
 
@@ -35,9 +35,9 @@ public class Building_Container : Building_Casket
         }
     }
 
-    public override IEnumerable<FloatMenuOption> GetMultiSelectFloatMenuOptions(List<Pawn> selPawns)
+    public override IEnumerable<FloatMenuOption> GetMultiSelectFloatMenuOptions(IEnumerable<Pawn> enumerable)
     {
-        foreach (var multiSelectFloatMenuOption in base.GetMultiSelectFloatMenuOptions(selPawns))
+        foreach (var multiSelectFloatMenuOption in base.GetMultiSelectFloatMenuOptions(enumerable))
         {
             yield return multiSelectFloatMenuOption;
         }
@@ -48,7 +48,7 @@ public class Building_Container : Building_Casket
         }
 
         tmpAllowedPawns.Clear();
-        foreach (var pawn in selPawns)
+        foreach (var pawn in enumerable)
         {
             if (pawn.CanReach(this, PathEndMode.InteractionCell, Danger.Deadly))
             {
@@ -69,7 +69,7 @@ public class Building_Container : Building_Casket
             tmpAllowedPawns[0].jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.Open, this), JobTag.Misc);
             for (var j = 1; j < tmpAllowedPawns.Count; j++)
             {
-                FloatMenuMakerMap.PawnGotoAction(Position, tmpAllowedPawns[j],
+                FloatMenuOptionProvider_DraftedMove.PawnGotoAction(Position, tmpAllowedPawns[j],
                     RCellFinder.BestOrderedGotoDestNear(Position, tmpAllowedPawns[j]));
             }
         });

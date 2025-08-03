@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ================================ Beam Graphic ====================== -->
+  <ThingDef>
+    <defName>RM_BeamGraphic</defName>
+    <thingClass>VEF.Weapons.LaserBeamGraphic</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+    <label>laser beam</label>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+  </ThingDef>
+  <!-- ================================ Locust Laser ====================== -->
+  <ThingDef ParentName="BaseGun">
+    <defName>RM_Gun_LocustLaser</defName>
+    <label>optical laser</label>
+    <description>The Locust’s primary beam weapon, powerful enough to melt reinforced plasteel and vaporise flesh.</description>
+    <graphicData>
+      <texPath>Things/Blank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Item/Equipment/WeaponRanged/LocustLaser_Icon</uiIconPath>
+    <techLevel>Ultra</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>9999</MarketValue>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>6.8</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <weaponTags Inherit="False">
+      <li>MechanoidLaserLocust</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <defaultProjectile>RM_Bullet_LocustLaser</defaultProjectile>
+        <warmupTime>10.5</warmupTime>
+        <range>25.9</range>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet" Class="VEF.Weapons.LaserBeamDef">
+    <defName>RM_Bullet_LocustLaser</defName>
+    <label>laser beam</label>
+    <description>A focused laser beam.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <textures>
+      <li>Things/Projectile/LocustBeam</li>
+    </textures>
+    <thingClass>ReinforcedMechanoids.LaserLocust</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+    <beamGraphic>RM_BeamGraphic</beamGraphic>
+    <explosionEffect>RM_LaserImpact</explosionEffect>
+    <hitLivingEffect>RM_LaserLivingImpact</hitLivingEffect>
+    <seam>0.25</seam>
+    <causefireChance>0.7</causefireChance>
+    <beamWidth>1.5</beamWidth>
+    <lifetime>600</lifetime>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>28</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <stoppingPower>2.5</stoppingPower>
+      <speed>10000</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

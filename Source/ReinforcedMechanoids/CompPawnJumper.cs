@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using RimWorld;
 using UnityEngine;
+using VEF.Abilities;
 using Verse;
-using VFECore.Abilities;
 
 namespace ReinforcedMechanoids;
 
 public class CompPawnJumper : ThingComp
 {
-    public LocalTargetInfo curTarget = LocalTargetInfo.Invalid;
-    protected Effecter effecter;
+    private LocalTargetInfo curTarget = LocalTargetInfo.Invalid;
+    private Effecter effecter;
 
-    public int jumpTick = -1;
+    private int jumpTick = -1;
 
-    public int nextAllowedJumpTick;
+    private int nextAllowedJumpTick;
 
     public CompProperties_PawnJumper Props => props as CompProperties_PawnJumper;
 
@@ -53,7 +53,7 @@ public class CompPawnJumper : ThingComp
         return parent.Spawned && CanBeJumpedTo(target.Cell);
     }
 
-    public TargetingParameters JumpTargetParameters()
+    private TargetingParameters JumpTargetParameters()
     {
         return new TargetingParameters
         {
@@ -67,7 +67,7 @@ public class CompPawnJumper : ThingComp
         };
     }
 
-    public bool JumpDistanceCheck(IntVec3 cell)
+    private bool JumpDistanceCheck(IntVec3 cell)
     {
         var num = parent.Position.DistanceTo(cell);
         return !(num > Props.maxJumpDistance) && !(num <= Props.minJumpDistance);
@@ -129,7 +129,7 @@ public class CompPawnJumper : ThingComp
         }
 
         pawn.rotationTracker.FaceTarget(target);
-        var val = (AbilityPawnFlyer)(PawnFlyer_Jump)PawnFlyer.MakeFlyer(RM_DefOf.RM_JumpPawn, pawn, intVec,
+        var val = (AbilityPawnFlyer)PawnFlyer.MakeFlyer(RM_DefOf.RM_JumpPawn, pawn, intVec,
             Props.flightEffecterDef, Props.soundLanding);
         val.target = intVec;
         GenSpawn.Spawn(val, intVec, map);
@@ -191,7 +191,7 @@ public class CompPawnJumper : ThingComp
         yield return jumpButton;
     }
 
-    public Texture2D GetTexture2D(RenderTexture rTex)
+    private static Texture2D GetTexture2D(RenderTexture rTex)
     {
         var texture2D = new Texture2D(rTex.width, rTex.height, TextureFormat.RGBA32, false);
         texture2D.Apply(false);

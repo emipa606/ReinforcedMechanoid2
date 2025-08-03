@@ -8,19 +8,19 @@ namespace ReinforcedMechanoids;
 
 public class CompExplosions : ThingComp
 {
-    public readonly Dictionary<int, bool> bodyPartWasPresents = new Dictionary<int, bool>();
+    private readonly Dictionary<int, bool> bodyPartWasPresents = new();
 
-    public readonly Dictionary<int, bool> hadHealthHigherThanThresholds = new Dictionary<int, bool>();
+    private readonly Dictionary<int, bool> hadHealthHigherThanThresholds = new();
 
-    public int currentExplosionCount;
+    private int currentExplosionCount;
 
-    public int curTicks;
+    private int curTicks;
 
-    public int lastExplosionTicks;
+    private int lastExplosionTicks;
 
-    public Dictionary<int, int> toDetonate = new Dictionary<int, int>();
+    private Dictionary<int, int> toDetonate = new();
 
-    public CompProperties_Explosions Props => props as CompProperties_Explosions;
+    private CompProperties_Explosions Props => props as CompProperties_Explosions;
 
     public virtual void PostPreApplyDamage(DamageInfo dinfo, out bool absorbed)
     {
@@ -48,7 +48,7 @@ public class CompExplosions : ThingComp
         }
     }
 
-    public void TryDetonateOnKilled(Map previousMap)
+    private void TryDetonateOnKilled(Map previousMap)
     {
         // ReSharper disable once ForCanBeConvertedToForeach
         for (var i = 0; i < Props.explosions.Count; i++)
@@ -73,13 +73,8 @@ public class CompExplosions : ThingComp
         for (var i = 0; i < Props.explosions.Count; i++)
         {
             var curProps = Props.explosions[i];
-            if (curProps.anyDamageCausesExplosion && CanExplode())
-            {
-                TryDetonateOrSchedule(parent.Map, curProps);
-                continue;
-            }
-
-            if (curProps.missingBodyPartTrigger != null && bodyPartWasPresents.TryGetValue(i, out var wasPresent) &&
+            if (curProps.anyDamageCausesExplosion && CanExplode() || curProps.missingBodyPartTrigger != null &&
+                bodyPartWasPresents.TryGetValue(i, out var wasPresent) &&
                 wasPresent && pawn.health.hediffSet.GetNotMissingParts()
                     .All(x => x.def != curProps.missingBodyPartTrigger) &&
                 CanExplode())
@@ -126,7 +121,7 @@ public class CompExplosions : ThingComp
                (Props.maxExplosionCount == 0 || Props.maxExplosionCount > currentExplosionCount);
     }
 
-    public void TryDetonateOrSchedule(Map map, CompProperties_Explosions compProperties_Explosive)
+    private void TryDetonateOrSchedule(Map map, CompProperties_Explosions compProperties_Explosive)
     {
         if (compProperties_Explosive.ticksDelay > 0)
         {
@@ -143,7 +138,7 @@ public class CompExplosions : ThingComp
         }
     }
 
-    public void Detonate(Map map, CompProperties_Explosions compProperties_Explosive, bool ignoreUnspawned = false)
+    private void Detonate(Map map, CompProperties_Explosions compProperties_Explosive, bool ignoreUnspawned = false)
     {
         if (!ignoreUnspawned && !parent.SpawnedOrAnyParentSpawned)
         {
@@ -187,7 +182,8 @@ public class CompExplosions : ThingComp
         var damageFalloff = compProperties_Explosive.damageFalloff;
         GenExplosion.DoExplosion(positionHeld, map, explosiveRadius, explosiveDamageType, thing, damageAmountBase,
             armorPenetrationBase, explosionSound, null, null, null, postExplosionSpawnThingDef,
-            postExplosionSpawnChance, num, null, applyDamageToExplosionCellsNeighbors, preExplosionSpawnThingDef,
+            postExplosionSpawnChance, num, null, null, 0, applyDamageToExplosionCellsNeighbors,
+            preExplosionSpawnThingDef,
             preExplosionSpawnChance, preExplosionSpawnThingCount, chanceToStartFire, damageFalloff);
         currentExplosionCount++;
         lastExplosionTicks = Find.TickManager.TicksGame;

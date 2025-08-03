@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ================================ Ancient Ship Base ====================== -->
+  <ThingDef ParentName="BuildingBase" Name="RM_AncientShipPart" Abstract="True">
+    <tickerType>Normal</tickerType>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <thingClass>ReinforcedMechanoids.MechShipPart</thingClass>
+    <selectable>true</selectable>
+    <pathCost>50</pathCost>
+    <startingHpRange>0.4~0.95</startingHpRange>
+    <blockWind>true</blockWind>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <rotatable>true</rotatable>
+    <stealable>false</stealable>
+    <techLevel>Ultra</techLevel>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <uiIconScale>0.8</uiIconScale>
+    <building>
+      <buildingTags>
+        <li>RM_AncientShip</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+      <deconstructible>false</deconstructible>
+      <claimable>false</claimable>
+    </building>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <damageMultipliers>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0</multiplier>
+      </li>
+    </damageMultipliers>
+    <killedLeavings>
+      <ChunkSlagSteel>6</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Ship Barrier ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientShipBarrier</defName>
+    <label>ancient barrier</label>
+    <description>An ancient block of nearly impenetrable plasteel shield, usually used within the ship hull to protect the most vital apparatus. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientShipBarrier</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.1,1.1)</drawSize>
+      <shadowData>
+        <volume>(1, 0.2, 1)</volume>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <Plasteel>3</Plasteel>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Light Ship Beams ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientShipBeamLight</defName>
+    <label>ancient structural beam</label>
+    <description>An ancient structural beam around which a ship is constructed. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientLightStructuralBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.8,7.8)</drawSize>
+      <shadowData>
+        <volume>(2.04, 1.0, 5.75)</volume>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(1,6)</size>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <killedLeavings>
+      <Steel>10</Steel>
+      <Plasteel>5</Plasteel>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Heavy Ship Beams ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientShipBeamHeavy</defName>
+    <label>ancient structural beam</label>
+    <description>An ancient structural beam around which a ship is constructed. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientHeavyStructuralBeam</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.8,7.8)</drawSize>
+      <shadowData>
+        <volume>(2.04, 1.0, 5.75)</volume>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(2,6)</size>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <killedLeavings>
+      <Steel>20</Steel>
+      <Plasteel>15</Plasteel>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Small Ship Engines ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientShipEnginesSmall</defName>
+    <label>ancient ship engines</label>
+    <description>A set of ancient small Johnson Tanaka engines. This element is usually a part of a larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientSmallEngines</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,7)</drawSize>
+      <shadowData>
+        <volume>(2.1, 0.4, 4.3)</volume>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <passability>Impassable</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <size>(2,5)</size>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <placeWorkers>
+      <li>PlaceWorker_ShowExplosionRadius</li>
+    </placeWorkers>
+    <killedLeavings>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>20</Plasteel>
+      <Uranium>10</Uranium>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>280</wickTicks>
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explodeOnKilled>true</explodeOnKilled>
+        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- ================================ Ancient Ship Engines ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientShipEngines</defName>
+    <label>ancient ship engines</label>
+    <description>A set of ancient small Johnson Tanaka engines. This element is usually a part of a larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientEngines</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(8,8)</drawSize>
+      <shadowData>
+        <volume>(5.1, 1.0, 5.3)</volume>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <size>(5,6)</size>
+    <rotatable>true</rotatable>
+    <passability>Impassable</passability>
+    <statBases>
+      <MaxHitPoints>2200</MaxHitPoints>
+    </statBases>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <placeWorkers>
+      <li>PlaceWorker_ShowExplosionRadius</li>
+    </placeWorkers>
+    <killedLeavings>
+      <Steel>120</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>60</Plasteel>
+      <Uranium>60</Uranium>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>280</wickTicks>
+        <explosiveRadius>8.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explodeOnKilled>true</explodeOnKilled>
+        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- ================================ Ancient Ship Machinery ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientShipMachinery</defName>
+    <label>ancient machinery</label>
+    <description>A number of ancient complex machinery, motors, support systems and other mysterious apparatus hidden underneath a thick layer of plasteel. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientHeavyMachinery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,6)</drawSize>
+      <shadowData>
+        <volume>(3.76, 0.5, 3.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>1450</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Repair Module Broken ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientBrokenHullRepairModule</defName>
+    <label>ancient repair module</label>
+    <description>An ancient nanite container module capable of reinforcing the damaged hull of the ship. Unless destroyed, this module will constantly regenerate any damage done to other ship modules. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientBrokenHullRepairModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <shadowData>
+        <volume>(1.76, 0.5, 1.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Repair Module ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientHullRepairModule</defName>
+    <label>ancient repair module</label>
+    <description>An ancient nanite container module capable of reinforcing the damaged hull of the ship. Unless destroyed, this module will constantly regenerate any damage done to other ship modules. This element is usually a part of a much larger ship.</description>
+    <thingClass>ReinforcedMechanoids.HullRepairModule</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientHullRepairModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <shadowData>
+        <volume>(1.76, 0.5, 1.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AmbientSound">
+        <sound>CrashedShipPart_Ambience</sound>
+      </li>
+    </comps>
+    <killedLeavings>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Mechanoid Uplink ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientMechanoidUplink</defName>
+    <label>ancient uplink module</label>
+    <description>An ancient uplink module, once directly connected to a fleet of ships. It is no longer functional. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientUplink</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(6,6)</drawSize>
+      <shadowData>
+        <volume>(3.76, 0.5, 3.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <size>(4,4)</size>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <Steel>100</Steel>
+      <VFE_ComponentMechanoid MayRequire="OskarPotocki.VFE.Mechanoid">2</VFE_ComponentMechanoid>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Plasteel>20</Plasteel>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Trooper Storage ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientTrooperStorage</defName>
+    <label>ancient trooper storage</label>
+    <description>An ancient small-sized trooper transport bay, potentially filled with combat-ready mechanoids. It seems to be dormant at the moment, but any kind of damage done to the structure will most likely deploy defensive units. This element is usually a part of a much larger ship.</description>
+    <thingClass>ReinforcedMechanoids.TrooperStorage</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientTrooperStorageModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(1.76, 0.5, 1.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AmbientSound">
+        <sound>CrashedShipPart_Ambience</sound>
+      </li>
+    </comps>
+    <killedLeavings>
+      <Plasteel>10</Plasteel>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Assembly Pod ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientAssemblyPod</defName>
+    <label>ancient assembly pod</label>
+    <description>An ancient spaceship module containing a mechanoid factory. It is capable of transforming raw resources directly into different types of mechanoids, and it creates them continuously until destroyed. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientAssemblyPod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <shadowData>
+        <volume>(1.76, 0.5, 1.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AmbientSound">
+        <sound>CrashedShipPart_Ambience</sound>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_PawnProducer">
+        <faction>RM_Remnants</faction>
+        <pawnKindToProduceOneOf>
+          <li>RM_Mech_Falcon</li>
+          <li>RM_Mech_Gremlin</li>
+          <li>RM_Mech_Harpy</li>
+          <li>RM_Mech_Ranger</li>
+          <li>RM_Mech_Zealot</li>
+          <li>RM_Mech_Marshal</li>
+          <li>RM_Mech_Sentinel</li>
+          <li>RM_Mech_Behemoth</li>
+        </pawnKindToProduceOneOf>
+        <tickSpawnIntervalRange>10000</tickSpawnIntervalRange>
+        <spawnCountRange>1</spawnCountRange>
+      </li>
+    </comps>
+    <killedLeavings>
+      <Steel>40</Steel>
+      <Plasteel>35</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Cargo Container ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientCargoContainer</defName>
+    <label>ancient cargo container</label>
+    <description>An ancient cargo module containing various cargo. This element is usually a part of a much larger ship.</description>
+    <thingClass>ReinforcedMechanoids.Building_Container</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientCargoContainer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(6,10)</drawSize>
+      <shadowData>
+        <volume>(0.9, 1.0, 0.9)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.5, 0.1, 5, 2.8)</rect>
+      </damageData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(4,8)</size>
+    <rotatable>true</rotatable>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>1350</MaxHitPoints>
+    </statBases>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(3,0,0)</interactionCellOffset>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_AmbientSound">
+        <sound>CrashedShipPart_Ambience</sound>
+      </li>
+      <li Class="ReinforcedMechanoids.CompProperties_LootContainer">
+        <openingTicks>100</openingTicks>
+        <lootTables>
+          <li>
+            <chance>0.8</chance>
+            <lootOptions>
+              <li>
+                <weight>10</weight>
+                <thingDef>Steel</thingDef>
+                <quantity>25~132</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>Plasteel</thingDef>
+                <quantity>25~45</quantity>
+              </li>
+              <li>
+                <weight>4</weight>
+                <thingDef>Silver</thingDef>
+                <quantity>120~300</quantity>
+              </li>
+            </lootOptions>
+          </li>
+          <li>
+            <chance>0.2</chance>
+            <lootOptions>
+              <li>
+                <weight>10</weight>
+                <thingDef>ComponentIndustrial</thingDef>
+                <quantity>12~26</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>ComponentSpacer</thingDef>
+                <quantity>3~6</quantity>
+              </li>
+              <li MayRequire="OskarPotocki.VFE.Mechanoid">
+                <weight>2</weight>
+                <thingDef>VFE_ComponentMechanoid</thingDef>
+                <quantity>5~10</quantity>
+              </li>
+            </lootOptions>
+          </li>
+          <li>
+            <chance>0.5</chance>
+            <lootOptions>
+              <li>
+                <weight>10</weight>
+                <thingDef>MealSurvivalPack</thingDef>
+                <quantity>45~80</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>MealLavish</thingDef>
+                <quantity>25~45</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>MealLavish_Veg</thingDef>
+                <quantity>10~25</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>MealLavish_Meat</thingDef>
+                <quantity>10~25</quantity>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingDef>Chocolate</thingDef>
+                <quantity>25~45</quantity>
+              </li>
+            </lootOptions>
+          </li>
+          <li>
+            <chance>0.4</chance>
+            <lootOptions>
+              <li>
+                <weight>8</weight>
+                <thingDef>MedicineUltratech</thingDef>
+                <quantity>20~40</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>Neutroamine</thingDef>
+                <quantity>80~250</quantity>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingDef>MechSerumHealer</thingDef>
+                <quantity>1~6</quantity>
+              </li>
+              <li>
+                <weight>1</weight>
+                <thingDef>MechSerumResurrector</thingDef>
+                <quantity>1~6</quantity>
+              </li>
+            </lootOptions>
+          </li>
+          <li>
+            <chance>0.5</chance>
+            <lootOptions>
+              <li>
+                <weight>9</weight>
+                <thingDef>Apparel_HatHood</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">
+                <weight>9</weight>
+                <thingDef>Apparel_RobeRoyal</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>RM_Apparel_ProphetCrown</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>RM_Apparel_ProphetAura</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>Apparel_PowerArmor</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>Apparel_ArmorRecon</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>Apparel_PowerArmorHelmet</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>Apparel_ArmorHelmetRecon</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">
+                <weight>4</weight>
+                <thingDef>Apparel_Gunlink</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+            </lootOptions>
+          </li>
+          <li>
+            <chance>0.3</chance>
+            <lootOptions>
+              <li>
+                <weight>7</weight>
+                <thingDef>RM_Gun_ShardLauncher</thingDef>
+                <quantity>1~3</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>RM_Gun_ChargeLancePistol</thingDef>
+                <quantity>1~4</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>RM_Gun_ChargePistol</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li>
+                <weight>6</weight>
+                <thingDef>RM_Gun_ARCPistol</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>RM_Gun_ChargeLanceRifle</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>RM_Gun_ShardLance</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>RM_ARCRifle</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li>
+                <weight>3</weight>
+                <thingDef>RM_Gun_PlasmaImmolator</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">
+                <weight>2</weight>
+                <thingDef>RM_MeleeWeapon_PlasmaBane</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+              <li MayRequire="Ludeon.RimWorld.Royalty">
+                <weight>2</weight>
+                <thingDef>RM_MeleeWeapon_PlasmaSword</thingDef>
+                <quantity>1~2</quantity>
+              </li>
+            </lootOptions>
+          </li>
+        </lootTables>
+      </li>
+    </comps>
+    <killedLeavings>
+      <Plasteel>10</Plasteel>
+      <Steel>25</Steel>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Crypto Module ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientCryptoModule</defName>
+    <label>ancient crypto pods module</label>
+    <description>An ancient crypto module. This element is usually a part of a much larger ship.</description>
+    <thingClass>ReinforcedMechanoids.Building_Container</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientCryptoModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(5,5)</drawSize>
+      <shadowData>
+        <volume>(1.76, 0.5, 1.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+    </statBases>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(2,0,0)</interactionCellOffset>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="ReinforcedMechanoids.CompProperties_LootContainer">
+        <openingTicks>120</openingTicks>
+        <lootTables>
+          <li>
+            <chance>1</chance>
+            <lootOptions>
+              <li>
+                <weight>10</weight>
+                <pawnKinds>
+                  <RM_Missionary>1</RM_Missionary>
+                </pawnKinds>
+                <applyCryptoEffects>true</applyCryptoEffects>
+                <canGeneratePawnRelations>false</canGeneratePawnRelations>
+                <hediffsToApply>
+                  <li>CryptosleepSickness</li>
+                </hediffsToApply>
+                <faction>RM_Remnants</faction>
+                <quantity>2~4</quantity>
+              </li>
+              <li>
+                <weight>10</weight>
+                <pawnKinds>
+                  <RM_Missionary>8</RM_Missionary>
+                  <RM_Inquisitor>2</RM_Inquisitor>
+                </pawnKinds>
+                <applyCryptoEffects>true</applyCryptoEffects>
+                <canGeneratePawnRelations>false</canGeneratePawnRelations>
+                <hediffsToApply>
+                  <li>CryptosleepSickness</li>
+                </hediffsToApply>
+                <faction>RM_Remnants</faction>
+                <quantity>2~4</quantity>
+              </li>
+              <li>
+                <weight>10</weight>
+                <pawnKinds>
+                  <RM_Inquisitor>6</RM_Inquisitor>
+                  <RM_LesserProphet>3</RM_LesserProphet>
+                </pawnKinds>
+                <applyCryptoEffects>true</applyCryptoEffects>
+                <canGeneratePawnRelations>false</canGeneratePawnRelations>
+                <hediffsToApply>
+                  <li>CryptosleepSickness</li>
+                </hediffsToApply>
+                <faction>RM_Remnants</faction>
+                <quantity>2~4</quantity>
+              </li>
+            </lootOptions>
+          </li>
+        </lootTables>
+      </li>
+      <li Class="CompProperties_EmptyStateGraphic">
+        <graphicData>
+          <texPath>Things/Building/Ruins/AncientCryptoModule_Open</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(5,5)</drawSize>
+        </graphicData>
+      </li>
+    </comps>
+    <killedLeavings>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Ship Reactor ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientShipReactor</defName>
+    <label>ancient reactor</label>
+    <description>An ancient power generation unit. The gigantic vanometric power core will run forever, extracting energy from quantum foam fluctuations. Despite the huge power output, effort has been made to stabilise it. If enough damage is dealt to the plasteel shell surrounding the core, a huge explosion will wipe out the local area. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientReactor</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,6)</drawSize>
+      <shadowData>
+        <volume>(4.76, 0.5, 3.66)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <size>(5,4)</size>
+    <rotatable>true</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>4000</MaxHitPoints>
+    </statBases>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <placeWorkers>
+      <li>PlaceWorker_ShowExplosionRadius</li>
+    </placeWorkers>
+    <killedLeavings>
+      <Steel>100</Steel>
+      <Uranium>65</Uranium>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <VFE_ComponentMechanoid MayRequire="OskarPotocki.VFE.Mechanoid">2</VFE_ComponentMechanoid>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_AmbientSound">
+        <sound>CrashedShipPart_Ambience</sound>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>1520</wickTicks>
+        <explosiveRadius>18.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explodeOnKilled>true</explodeOnKilled>
+        <startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- ================================ Ancient Broken Turrets ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientBrokenImmolator</defName>
+    <label>ancient immolator turret</label>
+    <description>An ancient broken ship-mounted plasma cannon. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientBrokenImmolator</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <drawOffset>(0,0,-0.11)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.27,0.25,1.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <size>(5,5)</size>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>1400</MaxHitPoints>
+      <Mass>30</Mass>
+    </statBases>
+    <killedLeavings>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <VFE_ComponentMechanoid MayRequire="OskarPotocki.VFE.Mechanoid">1</VFE_ComponentMechanoid>
+    </killedLeavings>
+  </ThingDef>
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_AncientBrokenRailgun</defName>
+    <label>ancient immolator turret</label>
+    <description>An ancient broken ship mounted railgun. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientBrokenRailgun</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <drawOffset>(0,0,-0.11)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.27,0.25,1.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <size>(5,5)</size>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>1400</MaxHitPoints>
+      <Mass>30</Mass>
+    </statBases>
+    <killedLeavings>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <VFE_ComponentMechanoid MayRequire="OskarPotocki.VFE.Mechanoid">1</VFE_ComponentMechanoid>
+    </killedLeavings>
+  </ThingDef>
+  <!-- ================================ Ancient Immolator Turret ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_Turret_AncientImmolatorTurret</defName>
+    <label>ancient immolator turret</label>
+    <description>An ancient ship-mounted plasma cannon. This element is usually a part of a much larger ship.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientLargeTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <drawOffset>(0,0,-0.11)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.27,0.25,1.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <receivesSignals>true</receivesSignals>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <size>(2,2)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <statBases>
+      <MaxHitPoints>650</MaxHitPoints>
+      <Mass>10</Mass>
+      <ShootingAccuracyTurret>0.84</ShootingAccuracyTurret>
+      <Beauty>-25</Beauty>
+    </statBases>
+    <building>
+      <combatPower>240</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>RM_Gun_AncientImmolatorTurret</turretGunDef>
+      <turretBurstCooldownTime>10</turretBurstCooldownTime>
+      <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
+      <turretTopDrawSize>2.5</turretTopDrawSize>
+    </building>
+    <killedLeavings Inherit="False">
+      <ChunkSlagSteel>2</ChunkSlagSteel>
+      <Steel>20</Steel>
+      <Chemfuel>45</Chemfuel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>320</wickTicks>
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>RM_Gun_AncientImmolatorTurret</defName>
+    <label>immolator turret</label>
+    <description>A mechanoid-tech plasma immolator.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientImmolatorTurretSmall_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>0.2</uiIconScale>
+    <statBases>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>10</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>RM_Bullet_PlasmaImmolator</defaultProjectile>
+        <range>29.9</range>
+        <forcedMissRadius>1</forcedMissRadius>
+        <soundCast>RM_Shot_PlasmaImmolator</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <burstShotCount>3</burstShotCount>
+      </li>
+    </verbs>
+  </ThingDef>
+  <!-- ================================ Ancient Auto Mortar ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_Turret_AutoMortarCannon</defName>
+    <label>ancient auto-mortar cannon</label>
+    <description>An ancient large, ship-mounted artillery piece, auto-mortar is capable of firing incendiary shells over a long distance. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientLargeTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <drawOffset>(0,0,-0.11)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.27,0.25,1.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <size>(2,2)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <receivesSignals>true</receivesSignals>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Mass>10</Mass>
+      <ShootingAccuracyTurret>0.84</ShootingAccuracyTurret>
+      <Beauty>-25</Beauty>
+    </statBases>
+    <building>
+      <combatPower>240</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>RM_Gun_AncientAutoMortarCannon</turretGunDef>
+      <turretBurstCooldownTime>12.6</turretBurstCooldownTime>
+      <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
+      <turretTopDrawSize>2.5</turretTopDrawSize>
+      <turretTopOffset>(0, 0.1)</turretTopOffset>
+    </building>
+    <killedLeavings>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>320</wickTicks>
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseArtilleryWeapon">
+    <defName>RM_Gun_AncientAutoMortarCannon</defName>
+    <label>auto mortar cannon</label>
+    <description>A mechanoid-tech automatic mortar.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientAutoMortar_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <uiIconScale>0.8</uiIconScale>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_Shell_Incendiary</defaultProjectile>
+        <forcedMissRadius>14</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+        <warmupTime>24</warmupTime>
+        <minRange>22.9</minRange>
+        <range>500</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Mortar_LaunchA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <!-- ================================ Ancient Charge Railgun ====================== -->
+  <ThingDef ParentName="RM_AncientShipPart">
+    <defName>RM_Turret_AncientChargeRailgun</defName>
+    <label>ancient charge railgun</label>
+    <description>An ancient large ship mounted railgun, often used to punch holes in hostile capital ships. This cannon has incredible range and fires charged explosive rounds, allowing it to deal devastating losses before the enemy even gets in range. This element is usually a part of a much larger ship.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientBigTurret_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <drawOffset>(0,0,-0.11)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(1.27,0.25,1.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <tickerType>Normal</tickerType>
+    <size>(5,5)</size>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <receivesSignals>true</receivesSignals>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>0.8</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <statBases>
+      <MaxHitPoints>1650</MaxHitPoints>
+      <Mass>30</Mass>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <building>
+      <turretTopDrawSize>7</turretTopDrawSize>
+      <combatPower>650</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>RM_Gun_AncientChargeRailgun</turretGunDef>
+      <turretBurstCooldownTime>6</turretBurstCooldownTime>
+      <turretBurstWarmupTime>16</turretBurstWarmupTime>
+    </building>
+    <killedLeavings>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <VFE_ComponentMechanoid MayRequire="OskarPotocki.VFE.Mechanoid">1</VFE_ComponentMechanoid>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_AmbientSound">
+        <sound>CrashedShipPart_Ambience</sound>
+      </li>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>320</wickTicks>
+        <explosiveRadius>7.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseArtilleryWeapon">
+    <defName>RM_Gun_AncientChargeRailgun</defName>
+    <label>ancient charge railgun</label>
+    <description>An ancient powerful, mechanoid-tech charge railgun.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/AncientRailgunTurret_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <uiIconScale>1</uiIconScale>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>RM_Bullet_AncientChargeRailgun</defaultProjectile>
+        <forcedMissRadius>1</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+        <warmupTime>4</warmupTime>
+        <minRange>24.9</minRange>
+        <range>250</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCast>RM_Shot_ChargeRailgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <requireLineOfSight>false</requireLineOfSight>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>RM_Bullet_AncientChargeRailgun</defName>
+    <label>charge railgun shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/AncientChargeRailgunShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>4</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <speed>76</speed>
+      <flyOverhead>true</flyOverhead>
+      <explosionRadius>4.2</explosionRadius>
+    </projectile>
+  </ThingDef>
+</Defs>

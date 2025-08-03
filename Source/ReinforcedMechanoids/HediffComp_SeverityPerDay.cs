@@ -43,7 +43,7 @@ public class HediffComp_SeverityPerDay : HediffComp
         severityAdjustment += SeverityChangePerDay() / 60000f;
     }
 
-    public virtual float SeverityChangePerDay()
+    protected virtual float SeverityChangePerDay()
     {
         return Props.severityPerDay;
     }

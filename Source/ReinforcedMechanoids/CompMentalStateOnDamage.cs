@@ -5,9 +5,9 @@ namespace ReinforcedMechanoids;
 
 public class CompMentalStateOnDamage : ThingComp
 {
-    public bool mentalStateIsCaused;
+    private bool mentalStateIsCaused;
 
-    public CompProperties_MentalStateOnDamage Props => props as CompProperties_MentalStateOnDamage;
+    private CompProperties_MentalStateOnDamage Props => props as CompProperties_MentalStateOnDamage;
 
     public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
     {
@@ -25,10 +25,7 @@ public class CompMentalStateOnDamage : ThingComp
             return;
         }
 
-        if (pawn.mindState == null)
-        {
-            pawn.mindState = new Pawn_MindState(pawn);
-        }
+        pawn.mindState ??= new Pawn_MindState(pawn);
 
         if (!pawn.mindState.mentalStateHandler.TryStartMentalState(Props.mentalState))
         {

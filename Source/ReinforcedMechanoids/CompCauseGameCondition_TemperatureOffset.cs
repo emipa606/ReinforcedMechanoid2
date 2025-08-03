@@ -10,8 +10,8 @@ namespace ReinforcedMechanoids;
 
 public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPowerDependent
 {
-    public GameCondition_TemperatureOffsetSlow causedCondition;
-    public float temperatureOffset;
+    private GameCondition_TemperatureOffsetSlow causedCondition;
+    private float temperatureOffset;
 
     public new CompProperties_CausesGameCondition_ClimateAdjuster Props =>
         (CompProperties_CausesGameCondition_ClimateAdjuster)props;
@@ -23,13 +23,13 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
         Scribe_References.Look(ref causedCondition, "causedCondition");
     }
 
-    private string GetFloatStringWithSign(float val)
+    private static string getFloatStringWithSign(float val)
     {
         val = (float)Math.Round(val, 1);
         return val <= 0f ? val.ToStringTemperature("F0") : $"+{val.ToStringTemperature("F0")}";
     }
 
-    public void SetTemperatureOffset(float offset)
+    private void setTemperatureOffset(float offset)
     {
         causedCondition.startTick = Find.TickManager.TicksGame;
         causedCondition.tickSet = Find.TickManager.TicksGame;
@@ -37,7 +37,7 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
         temperatureOffset = new FloatRange(-50f, 50f).ClampToRange(temperatureOffset);
         SoundDefOf.DragSlider.PlayOneShotOnCamera();
         MoteMaker.ThrowText(parent.TrueCenter() + new Vector3(0.5f, 0f, 0.5f), parent.Map,
-            GetFloatStringWithSign(temperatureOffset), Color.white);
+            getFloatStringWithSign(temperatureOffset), Color.white);
         ReSetupAllConditions();
     }
 
@@ -50,7 +50,7 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             icon = ContentFinder<Texture2D>.Get("UI/Buttons/ChangeClimateMinusMax")
         };
         command_Minus50.action =
-            (Action)Delegate.Combine(command_Minus50.action, (Action)delegate { SetTemperatureOffset(-50f); });
+            (Action)Delegate.Combine(command_Minus50.action, (Action)delegate { setTemperatureOffset(-50f); });
         command_Minus50.disabled = !parent.GetComp<CompPowerTrader>().PowerOn;
         command_Minus50.disabledReason = "NoPower".Translate();
         command_Minus50.hotKey = KeyBindingDefOf.Misc1;
@@ -64,7 +64,7 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             icon = ContentFinder<Texture2D>.Get("UI/Buttons/ChangeClimateMinusMin")
         };
         command_Minus10.action =
-            (Action)Delegate.Combine(command_Minus10.action, (Action)delegate { SetTemperatureOffset(-10f); });
+            (Action)Delegate.Combine(command_Minus10.action, (Action)delegate { setTemperatureOffset(-10f); });
         command_Minus10.hotKey = KeyBindingDefOf.Misc2;
         yield return command_Minus10;
         var command_Plus10 = new Command_Action
@@ -76,7 +76,7 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             disabledReason = "NoPower".Translate()
         };
         command_Plus10.action =
-            (Action)Delegate.Combine(command_Plus10.action, (Action)delegate { SetTemperatureOffset(10f); });
+            (Action)Delegate.Combine(command_Plus10.action, (Action)delegate { setTemperatureOffset(10f); });
         command_Plus10.hotKey = KeyBindingDefOf.Misc3;
         yield return command_Plus10;
         var command_Plus50 = new Command_Action
@@ -88,7 +88,7 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             icon = ContentFinder<Texture2D>.Get("UI/Buttons/ChangeClimatePlusMax")
         };
         command_Plus50.action =
-            (Action)Delegate.Combine(command_Plus50.action, (Action)delegate { SetTemperatureOffset(50f); });
+            (Action)Delegate.Combine(command_Plus50.action, (Action)delegate { setTemperatureOffset(50f); });
         command_Plus50.hotKey = KeyBindingDefOf.Misc4;
         yield return command_Plus50;
     }
@@ -101,11 +101,11 @@ public class CompCauseGameCondition_TemperatureOffset : CompCauseGameConditionPo
             stringBuilder.AppendLine(base.CompInspectStringExtra());
         }
 
-        stringBuilder.AppendLine("RM.TargetTemperatureOffset".Translate(GetFloatStringWithSign(temperatureOffset)));
+        stringBuilder.AppendLine("RM.TargetTemperatureOffset".Translate(getFloatStringWithSign(temperatureOffset)));
         if (causedCondition != null)
         {
             stringBuilder.AppendLine(
-                "RM.CurrentTemperatureOffset".Translate(GetFloatStringWithSign(causedCondition.curValue)));
+                "RM.CurrentTemperatureOffset".Translate(getFloatStringWithSign(causedCondition.curValue)));
         }
 
         return stringBuilder.ToString().TrimEndNewlines();

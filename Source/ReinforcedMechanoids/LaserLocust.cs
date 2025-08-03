@@ -1,5 +1,5 @@
 using RimWorld;
-using VanillaWeaponsExpandedLaser;
+using VEF.Weapons;
 using Verse;
 
 namespace ReinforcedMechanoids;

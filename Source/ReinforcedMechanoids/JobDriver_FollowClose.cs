@@ -83,7 +83,7 @@ public class JobDriver_FollowClose : JobDriver
         };
     }
 
-    public IntVec3 GetCellToFollow(Pawn target)
+    private static IntVec3 GetCellToFollow(Pawn target)
     {
         if (!target.pather.Moving || target.pather.curPath == null)
         {

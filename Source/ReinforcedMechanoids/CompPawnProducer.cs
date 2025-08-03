@@ -6,11 +6,11 @@ namespace ReinforcedMechanoids;
 
 public class CompPawnProducer : ThingComp
 {
-    public PawnKindDef curPawnKindDef;
+    private PawnKindDef curPawnKindDef;
 
-    public int nextTick = -1;
+    private int nextTick = -1;
 
-    public CompProperties_PawnProducer Props => (CompProperties_PawnProducer)props;
+    private CompProperties_PawnProducer Props => (CompProperties_PawnProducer)props;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {
@@ -69,7 +69,7 @@ public class CompPawnProducer : ThingComp
         lord.AddPawn(pawn);
     }
 
-    public IntVec3 FindNearCloseWalk(IntVec3 root, Map map)
+    private static IntVec3 FindNearCloseWalk(IntVec3 root, Map map)
     {
         foreach (var item in GenRadial.RadialCellsAround(root, 10f, true))
         {

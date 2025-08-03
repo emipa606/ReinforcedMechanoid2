@@ -6,7 +6,7 @@ namespace ReinforcedMechanoids;
 
 public class CompLootContainer : ThingComp
 {
-    public CompProperties_LootContainer Props => props as CompProperties_LootContainer;
+    private CompProperties_LootContainer Props => props as CompProperties_LootContainer;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {

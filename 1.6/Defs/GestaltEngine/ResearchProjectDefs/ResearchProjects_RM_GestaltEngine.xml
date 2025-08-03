@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--============================= Gestalt Engine ================================-->
+  <ResearchProjectDef>
+    <defName>RM_GestaltEngine</defName>
+    <label>persona-class supercomputers</label>
+    <description>Research the ability to build persona-class supercomputers using hyper-advanced computer cores that houses a peak-human-equivalent machine personas.</description>
+    <baseCost>5500</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>BasicMechtech</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>0.30</researchViewY>
+  </ResearchProjectDef>
+</Defs>

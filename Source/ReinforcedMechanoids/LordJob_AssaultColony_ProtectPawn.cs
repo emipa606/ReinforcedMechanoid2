@@ -9,9 +9,9 @@ namespace ReinforcedMechanoids;
 
 public abstract class LordJob_AssaultColony_ProtectPawn : LordJob_AssaultColony, ILordJobJobOverride
 {
-    public abstract PawnKindDef ProtecteeKind { get; }
+    protected abstract PawnKindDef ProtecteeKind { get; }
 
-    public abstract float MaxDistanceFromProtectee { get; }
+    protected abstract float MaxDistanceFromProtectee { get; }
 
     public bool CanOverrideJobFor(Pawn pawn, Job initialJob)
     {

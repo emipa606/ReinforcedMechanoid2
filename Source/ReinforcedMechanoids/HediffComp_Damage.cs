@@ -4,9 +4,9 @@ namespace ReinforcedMechanoids;
 
 public class HediffComp_Damage : HediffComp
 {
-    public bool damaged;
+    private bool damaged;
 
-    public HediffCompProperties_Damage Props => props as HediffCompProperties_Damage;
+    private HediffCompProperties_Damage Props => props as HediffCompProperties_Damage;
 
     public override void CompPostTick(ref float severityAdjustment)
     {

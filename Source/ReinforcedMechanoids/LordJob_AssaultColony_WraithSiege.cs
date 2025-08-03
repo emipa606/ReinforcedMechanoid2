@@ -10,9 +10,9 @@ public class LordJob_AssaultColony_WraithSiege : LordJob_AssaultColony_ProtectPa
 {
     public float additionalRaidPoints;
 
-    public float additionalRaidPointsSaved;
+    private float additionalRaidPointsSaved;
 
-    public float blueprintPoints;
+    private float blueprintPoints;
 
     public IntVec3 siegeSpot = IntVec3.Invalid;
     public bool siegeStarted;
@@ -52,9 +52,9 @@ public class LordJob_AssaultColony_WraithSiege : LordJob_AssaultColony_ProtectPa
         }
     }
 
-    public override PawnKindDef ProtecteeKind => RM_DefOf.RM_Mech_WraithSiege;
+    protected override PawnKindDef ProtecteeKind => RM_DefOf.RM_Mech_WraithSiege;
 
-    public override float MaxDistanceFromProtectee => 20f;
+    protected override float MaxDistanceFromProtectee => 20f;
 
     public override StateGraph CreateGraph()
     {

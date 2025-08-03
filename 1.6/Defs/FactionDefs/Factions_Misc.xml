@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ================================ Remnants Faction ====================== -->
+  <FactionDef ParentName="FactionBase">
+    <defName>RM_Remnants</defName>
+    <label>scattered remnants</label>
+    <categoryTag>Remnants</categoryTag>
+    <description>The ancient remnants of an ultratech society from the planet Tyrikan. Their culture revolves around the worship or archotech entities, with position leadership near exclusively being held by women\n\nThese are the survivors of a planet wide revolution that ended up turning their once beautiful world into a barren wasteland, when the theocratic turned to more and more destructive weapons to keep control over their subjects. \n\nTheir cryptosleep caskets were never opened, leaving their mechanoid defences running rampant on every planet they landed on.</description>
+    <pawnSingular>remnant</pawnSingular>
+    <pawnsPlural>remnants</pawnsPlural>
+    <techLevel>Ultra</techLevel>
+    <settlementGenerationWeight>0.4</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <canMakeRandomly>true</canMakeRandomly>
+    <humanlikeFaction>true</humanlikeFaction>
+    <earliestRaidDays>65</earliestRaidDays>
+    <permanentEnemy>true</permanentEnemy>
+    <autoFlee>false</autoFlee>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>120</configurationListOrderPriority>
+    <leaderTitle>high prophetess</leaderTitle>
+    <factionNameMaker>RM_NamerFactionRemnants</factionNameMaker>
+    <allowedCultures>
+      <li>RM_Tyrikan</li>
+    </allowedCultures>
+    <settlementNameMaker>RM_NamerSettlementRemnants</settlementNameMaker>
+    <factionIconPath>World/WorldObjects/Expanding/Sites/MechanoidRemnantsBase</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/MechanoidRemnantsBaseExpanding</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0.62, 0.55, 0.5)</li>
+      <li>(0.38, 0.32, 0.31)</li>
+    </colorSpectrum>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">RM_TyrikanLegacy</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AutonomousWeapons_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AutonomousWeapons_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AutonomousWeapons_Disapproved</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.005</Neanderthal>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.15</Hussar>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.05</Genie>
+      </xenotypeChances>
+    </xenotypeSet>
+    <permanentEnemyToEveryoneExcept>
+      <li>Mechanoid</li>
+    </permanentEnemyToEveryoneExcept>
+    <apparelStuffFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+    </apparelStuffFilter>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
+    </backstoryFilters>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(300,  0)</li>
+        <li>(700,  1)</li>
+        <li>(1400, 1.8)</li>
+        <li>(2800, 2.2)</li>
+        <li>(4000, 2.6)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <raidLootMaker>RM_RemnantsRaidLootMaker</raidLootMaker>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     8)</li>
+        <li>(100,   60)</li>
+        <li>(1000, 250)</li>
+        <li>(2000, 400)</li>
+        <li>(4000, 500)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Generic Group -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <RM_Mech_Falcon>10</RM_Mech_Falcon>
+          <RM_Mech_Gremlin>10</RM_Mech_Gremlin>
+          <RM_Mech_Ranger>10</RM_Mech_Ranger>
+          <RM_Mech_Zealot>8</RM_Mech_Zealot>
+          <RM_Mech_Marshal>5</RM_Mech_Marshal>
+        </options>
+      </li>
+      <li>
+        <!-- Sentinel Group -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <RM_Mech_Falcon>10</RM_Mech_Falcon>
+          <RM_Mech_Gremlin>10</RM_Mech_Gremlin>
+          <RM_Mech_Ranger>5</RM_Mech_Ranger>
+          <RM_Mech_Sentinel>5</RM_Mech_Sentinel>
+        </options>
+      </li>
+      <li>
+        <!-- Sentinel Group -->
+        <kindDef>Combat</kindDef>
+        <commonality>70</commonality>
+        <options>
+          <RM_Mech_Ranger>10</RM_Mech_Ranger>
+          <RM_Mech_Zealot>8</RM_Mech_Zealot>
+          <RM_Mech_Marshal>8</RM_Mech_Marshal>
+        </options>
+      </li>
+      <li>
+        <!-- Harpy only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <RM_Mech_Harpy>10</RM_Mech_Harpy>
+        </options>
+      </li>
+      <li>
+        <!-- Behemoth Group -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <RM_Mech_Falcon>5</RM_Mech_Falcon>
+          <RM_Mech_Gremlin>5</RM_Mech_Gremlin>
+          <RM_Mech_Ranger>5</RM_Mech_Ranger>
+          <RM_Mech_Behemoth>10</RM_Mech_Behemoth>
+        </options>
+      </li>
+      <li>
+        <!-- Base Group -->
+        <kindDef>Settlement</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <RM_Mech_Falcon>10</RM_Mech_Falcon>
+          <RM_Mech_Harpy>5</RM_Mech_Harpy>
+          <RM_Mech_Gremlin>10</RM_Mech_Gremlin>
+          <RM_Mech_Ranger>10</RM_Mech_Ranger>
+          <RM_Mech_Zealot>10</RM_Mech_Zealot>
+          <RM_Mech_Marshal>8</RM_Mech_Marshal>
+          <RM_Mech_Sentinel>5</RM_Mech_Sentinel>
+          <RM_Mech_Behemoth>5</RM_Mech_Behemoth>
+          <RM_Mech_Locust>1</RM_Mech_Locust>
+        </options>
+      </li>
+      <li Class="ReinforcedMechanoids.PawnGroupMaker_LocustRaid">
+        <!-- Locust Raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <RM_Mech_Locust>1</RM_Mech_Locust>
+          <RM_Mech_Falcon>10</RM_Mech_Falcon>
+          <RM_Mech_Ranger>10</RM_Mech_Ranger>
+          <RM_Mech_Zealot>8</RM_Mech_Zealot>
+          <RM_Mech_Sentinel>5</RM_Mech_Sentinel>
+          <RM_Mech_Behemoth>5</RM_Mech_Behemoth>
+        </options>
+      </li>
+      <li Class="ReinforcedMechanoids.PawnGroupMaker_WraithSiege">
+        <!-- Wraith Raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <RM_Mech_WraithSiege>1</RM_Mech_WraithSiege>
+          <RM_Mech_Falcon>10</RM_Mech_Falcon>
+          <RM_Mech_Gremlin>5</RM_Mech_Gremlin>
+          <RM_Mech_Ranger>10</RM_Mech_Ranger>
+          <RM_Mech_Zealot>10</RM_Mech_Zealot>
+          <RM_Mech_Behemoth>5</RM_Mech_Behemoth>
+        </options>
+      </li>
+      <li Class="ReinforcedMechanoids.PawnGroupMaker_CaretakerRaid">
+        <!-- Caretaker Raid -->
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <RM_Mech_Falcon>10</RM_Mech_Falcon>
+          <RM_Mech_Ranger>10</RM_Mech_Ranger>
+          <RM_Mech_Zealot>10</RM_Mech_Zealot>
+          <RM_Mech_Gremlin>5</RM_Mech_Gremlin>
+          <RM_Mech_Sentinel>5</RM_Mech_Sentinel>
+          <RM_Mech_Behemoth>5</RM_Mech_Behemoth>
+          <RM_Mech_Harpy>2</RM_Mech_Harpy>
+          <RM_Mech_Caretaker>1</RM_Mech_Caretaker>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <dropPodActive>ActiveDropPodMechanoid</dropPodActive>
+    <dropPodIncoming>DropPodIncomingMechanoidRapid</dropPodIncoming>
+    <modExtensions>
+      <li Class="VEF.Factions.FactionDefExtension">
+        <neverConnectToRoads>true</neverConnectToRoads>
+        <minDistanceToOtherSettlements>4</minDistanceToOtherSettlements>
+        <disallowedBiomes>
+          <li>IceSheet</li>
+          <li>SeaIce</li>
+        </disallowedBiomes>
+        <excludeFromCommConsole>true</excludeFromCommConsole>
+        <excludeFromQuests>true</excludeFromQuests>
+      </li>
+      <li Class="KCSG.CustomGenOption">
+        <chooseFromlayouts>
+          <li>RM_AncientBaseShip01</li>
+        </chooseFromlayouts>
+        <preventBridgeable>true</preventBridgeable>
+        <clearFogInRect>true</clearFogInRect>
+        <fullClear>true</fullClear>
+      </li>
+    </modExtensions>
+  </FactionDef>
+  <ThingSetMakerDef>
+    <defName>RM_RemnantsRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+            <li>ComponentIndustrial</li>
+            <li>ComponentSpacer</li>
+            <li MayRequire="OskarPotocki.VFE.Mechanoid">VFE_ComponentMechanoid</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+</Defs>

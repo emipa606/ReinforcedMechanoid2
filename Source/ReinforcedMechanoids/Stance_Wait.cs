@@ -15,7 +15,7 @@ public class Stance_Wait : Stance_Busy
 
     private bool drawAimPie = true;
 
-    protected Effecter effecter;
+    private Effecter effecter;
 
     private bool needsReInitAfterLoad;
     private Sustainer sustainer;
@@ -53,7 +53,7 @@ public class Stance_Wait : Stance_Busy
         drawAimPie = false;
     }
 
-    public void InitEffects(bool afterReload = false)
+    private void InitEffects(bool afterReload = false)
     {
         if (verb == null)
         {

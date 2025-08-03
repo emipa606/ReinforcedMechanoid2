@@ -1,32 +1,42 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyName>ReinforcedMechanoids</AssemblyName>
-    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
-    <TargetFramework>net472</TargetFramework>
+    <OutputPath>..\..\1.5\Assemblies</OutputPath>
+    <TargetFramework>net481</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DebugType>None</DebugType>
+    <LangVersion>latest</LangVersion>
+    <FileVersion>1.5.18</FileVersion>
   </PropertyGroup>
-  <PropertyGroup>
-    <LangVersion>11.0</LangVersion>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup />
-  <ItemGroup />
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\..\..\ModPublishing\Binaries\Assembly-CSharp.dll</HintPath>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+      <Private>false</Private>
     </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\..\..\ModPublishing\Binaries\0Harmony.dll</HintPath>
+    <Reference Include="VanillaWeaponsExpandedLaser">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.5\Assemblies\VanillaWeaponsExpandedLaser.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+      <Private>false</Private>
     </Reference>
-    <Reference Include="VFECore" />
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\..\..\..\ModPublishing\Binaries\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="MVCF">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.5\Assemblies\MVCF.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+      <Private>false</Private>
     </Reference>
-    <Reference Include="System.Xml" />
-    <Reference Include="VanillaWeaponsExpandedLaser" />
-    <Reference Include="System.Core" />
-    <Reference Include="MVCF" />
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\..\..\..\..\..\..\ModPublishing\Binaries\UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Krafs.Publicizer" Version="*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
 </Project>

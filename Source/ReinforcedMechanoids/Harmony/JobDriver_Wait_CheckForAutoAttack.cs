@@ -15,11 +15,11 @@ public static class JobDriver_Wait_CheckForAutoAttack
             return true;
         }
 
-        CheckForAutoAttack(__instance);
+        checkForAutoAttack(__instance);
         return false;
     }
 
-    private static void CheckForAutoAttack(JobDriver_Wait __instance)
+    private static void checkForAutoAttack(JobDriver_Wait __instance)
     {
         if (__instance.pawn.Downed || __instance.pawn.stances.FullBodyBusy || __instance.pawn.IsCarryingPawn())
         {

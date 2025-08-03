@@ -5,11 +5,11 @@ namespace ReinforcedMechanoids;
 
 public class CompActiveGameCondition : ThingComp
 {
-    public GameCondition gameCondition;
+    protected GameCondition gameCondition;
 
-    public CompProperties_ActiveGameCondition Props => (CompProperties_ActiveGameCondition)props;
+    private CompProperties_ActiveGameCondition Props => (CompProperties_ActiveGameCondition)props;
 
-    public GameConditionDef ConditionDef => Props.conditionDef;
+    private GameConditionDef ConditionDef => Props.conditionDef;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {

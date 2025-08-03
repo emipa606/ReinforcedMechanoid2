@@ -17,6 +17,8 @@ public static class RM_DefOf
 
     public static PawnKindDef RM_Mech_Locust;
 
+    public static JobDef VFE_Mechanoids_Recharge;
+
     public static JobDef RM_RepairMechanoid;
 
     public static JobDef RM_RepairThing;
@@ -56,6 +58,8 @@ public static class RM_DefOf
     public static ThingDef RM_AncientTrooperStorage;
 
     public static DutyDef RM_Build;
+
+    public static NeedDef VFE_Mechanoids_Power;
 
     public static TerrainDef MarshyTerrain;
 

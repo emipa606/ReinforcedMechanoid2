@@ -23,7 +23,7 @@ public class LordJob_AssaultColony_LocustRaid : LordJob_AssaultColony_ProtectPaw
         this.canPickUpOpportunisticWeapons = canPickUpOpportunisticWeapons;
     }
 
-    public override PawnKindDef ProtecteeKind => RM_DefOf.RM_Mech_Locust;
+    protected override PawnKindDef ProtecteeKind => RM_DefOf.RM_Mech_Locust;
 
-    public override float MaxDistanceFromProtectee => 12f;
+    protected override float MaxDistanceFromProtectee => 12f;
 }

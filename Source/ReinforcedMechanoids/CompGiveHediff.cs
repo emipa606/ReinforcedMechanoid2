@@ -4,13 +4,13 @@ namespace ReinforcedMechanoids;
 
 public class CompGiveHediff : ThingComp
 {
-    public Hediff assignedHediff;
+    private Hediff assignedHediff;
 
-    public int nextAssignTicks;
+    private int nextAssignTicks;
 
-    public CompProperties_GiveHediff Props => props as CompProperties_GiveHediff;
+    private CompProperties_GiveHediff Props => props as CompProperties_GiveHediff;
 
-    public bool CanGiveHediff
+    private bool CanGiveHediff
     {
         get
         {

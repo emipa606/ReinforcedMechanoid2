@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: gestate matriarch -->
+  <RM_Matriarch.label>gestate matriarch</RM_Matriarch.label>
+  <!-- EN: Gestate a matriarch mechanoid. -->
+  <RM_Matriarch.description>Gestate a matriarch mechanoid.</RM_Matriarch.description>
+  <!-- EN: Gestating mech. -->
+  <RM_Matriarch.jobString>Gestating mech.</RM_Matriarch.jobString>
+</LanguageData>

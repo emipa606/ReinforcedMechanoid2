@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AnimalBehaviours;
 using RimWorld;
-using UnityEngine;
+using VEF.AnimalBehaviours;
 using Verse;
 using Verse.AI;
 
@@ -12,24 +11,21 @@ namespace ReinforcedMechanoids;
 public class CompGrenadeThrower : ThingComp, PawnGizmoProvider
 {
     private ThingWithComps grenadeLauncher;
-    public int nextAllowedThrowTick;
+    private int nextAllowedThrowTick;
 
-    public CompProperties_GrenadeThrower Props => props as CompProperties_GrenadeThrower;
+    private CompProperties_GrenadeThrower Props => props as CompProperties_GrenadeThrower;
 
-    public ThingWithComps GrenadeLauncher
+    private ThingWithComps GrenadeLauncher
     {
         get
         {
-            if (grenadeLauncher == null)
-            {
-                grenadeLauncher = ThingMaker.MakeThing(Props.grenadeLauncher) as ThingWithComps;
-            }
+            grenadeLauncher ??= ThingMaker.MakeThing(Props.grenadeLauncher) as ThingWithComps;
 
             return grenadeLauncher;
         }
     }
 
-    public bool CanThrow
+    private bool CanThrow
     {
         get
         {
@@ -86,10 +82,10 @@ public class CompGrenadeThrower : ThingComp, PawnGizmoProvider
             return;
         }
 
-        var source = parent.Map.attackTargetsCache?.GetPotentialTargetsFor(parent as IAttackTargetSearcher)?.Where(
-                x => x is Pawn { Dead: false, Downed: false } &&
-                     x.Thing.Position.DistanceTo(parent.Position) <= Props.maxDistance &&
-                     GenSight.LineOfSight(x.Thing.Position, parent.Position, parent.Map, false))
+        var source = parent.Map.attackTargetsCache?.GetPotentialTargetsFor(parent as IAttackTargetSearcher)?.Where(x =>
+                x is Pawn { Dead: false, Downed: false } &&
+                x.Thing.Position.DistanceTo(parent.Position) <= Props.maxDistance &&
+                GenSight.LineOfSight(x.Thing.Position, parent.Position, parent.Map, false))
             .Select(y => y.Thing);
         if (!source.TryRandomElement(out var result))
         {
@@ -108,7 +104,7 @@ public class CompGrenadeThrower : ThingComp, PawnGizmoProvider
         Scribe_Values.Look(ref nextAllowedThrowTick, "nextAllowedThrowTick");
     }
 
-    public IEnumerable<Command> GetVerbsCommands(KeyCode hotKey = KeyCode.None)
+    private IEnumerable<Command> GetVerbsCommands()
     {
         var comp = GrenadeLauncher.GetComp<CompEquippable>();
         if (comp.VerbTracker.directOwner is not CompEquippable ce)

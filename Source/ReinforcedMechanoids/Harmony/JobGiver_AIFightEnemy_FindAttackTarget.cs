@@ -15,11 +15,11 @@ public static class JobGiver_AIFightEnemy_FindAttackTarget
             return true;
         }
 
-        __result = FindAttackTarget(__instance, pawn);
+        __result = findAttackTarget(__instance, pawn);
         return __result == null;
     }
 
-    public static Thing FindAttackTarget(JobGiver_AIFightEnemy __instance, Pawn pawn)
+    private static Thing findAttackTarget(JobGiver_AIFightEnemy __instance, Pawn pawn)
     {
         var targetable = TargetScanFlags.NeedThreat | TargetScanFlags.NeedAutoTargetable;
         return (Thing)AttackTargetFinder.BestAttackTarget(pawn, targetable,

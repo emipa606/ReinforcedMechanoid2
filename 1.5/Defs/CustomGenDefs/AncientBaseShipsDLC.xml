@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-  <KCSG.StructureLayoutDef Name="RM_StructureLayoutDLC" Abstract="True">
-    <modRequirements>
-      <li>Ludeon.RimWorld.Royalty</li>
-    </modRequirements>
-  </KCSG.StructureLayoutDef>
-</Defs>

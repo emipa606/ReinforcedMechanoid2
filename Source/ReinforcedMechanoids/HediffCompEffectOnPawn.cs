@@ -9,7 +9,7 @@ public class HediffCompEffectOnPawn : HediffComp
     private int lastRefreshTick;
     private Mote moteCast;
 
-    public HediffCompProperties_EffectOnPawn Props => props as HediffCompProperties_EffectOnPawn;
+    private HediffCompProperties_EffectOnPawn Props => props as HediffCompProperties_EffectOnPawn;
 
     public override void CompPostPostAdd(DamageInfo? dinfo)
     {

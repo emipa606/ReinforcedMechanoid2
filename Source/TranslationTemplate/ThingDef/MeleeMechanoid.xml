@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: graviton mace -->
+  <RM_MeleeWeapon_GravitonMace.label>graviton mace</RM_MeleeWeapon_GravitonMace.label>
+  <!-- EN: A truly massive weapon designed for use by large, powerful mechanoids simply due to its weight and the required strength to properly wield. One side protrudes a metal core which is wrapped in an insulated plasma sheath, giving it a scorching cutting edge, while the other side features what boils down to a modified repulsor generator fitted with pneumatic plates.\n\nDue to the knockback effect of the hammer side of this mace, which intended use is against armoured vehicles and entrenched power armour users, this weapon can be considered somewhat as a crowd control weapon. -->
+  <RM_MeleeWeapon_GravitonMace.description>A truly massive weapon designed for use by large, powerful mechanoids simply due to its weight and the required strength to properly wield. One side protrudes a metal core which is wrapped in an insulated plasma sheath, giving it a scorching cutting edge, while the other side features what boils down to a modified repulsor generator fitted with pneumatic plates.
+
+Due to the knockback effect of the hammer side of this mace, which intended use is against armoured vehicles and entrenched power armour users, this weapon can be considered somewhat as a crowd control weapon.</RM_MeleeWeapon_GravitonMace.description>
+  <!-- EN: head -->
+  <RM_MeleeWeapon_GravitonMace.tools.head.label>head</RM_MeleeWeapon_GravitonMace.tools.head.label>
+  <!-- EN: blade -->
+  <RM_MeleeWeapon_GravitonMace.tools.blade.label>blade</RM_MeleeWeapon_GravitonMace.tools.blade.label>
+  <!-- EN: handle -->
+  <RM_MeleeWeapon_GravitonMace.tools.handle.label>handle</RM_MeleeWeapon_GravitonMace.tools.handle.label>
+</LanguageData>

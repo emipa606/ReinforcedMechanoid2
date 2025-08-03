@@ -15,19 +15,13 @@ public static class PawnComponentsUtility_AddAndRemoveDynamicComponents
         }
     }
 
-    public static void AssignPawnComponents(Pawn pawn)
+    private static void AssignPawnComponents(Pawn pawn)
     {
         var pawn2 = pawn;
-        if (pawn2.story == null)
-        {
-            pawn2.story = new Pawn_StoryTracker(pawn);
-        }
+        pawn2.story ??= new Pawn_StoryTracker(pawn);
 
         pawn2 = pawn;
-        if (pawn2.skills == null)
-        {
-            pawn2.skills = new Pawn_SkillTracker(pawn);
-        }
+        pawn2.skills ??= new Pawn_SkillTracker(pawn);
 
         if (pawn.workSettings != null)
         {
