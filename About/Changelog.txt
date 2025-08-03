@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.5.20 - Last update of the legacy version of the mod
+
+
 1.5.19 - Fixed graviton mace being craftable and removed a redundant gestalt engine patch
 
 
