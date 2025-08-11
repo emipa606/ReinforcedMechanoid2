@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.6.1 - Fixed mechs not being able to equip weapons
+
+
 1.6.0 - Mod updated for 1.6 and passed autotests
 
 
