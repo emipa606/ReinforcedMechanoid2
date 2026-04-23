@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationInsert">
-    <xpath>/Defs/ThingDef[defName="LargeMechGestator"]/recipes/li[text()="Lancer"]</xpath>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
     <value>
       <li>RM_Matriarch</li>
     </value>

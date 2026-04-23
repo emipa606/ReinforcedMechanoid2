@@ -6,4 +6,161 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="ReinforcedMechanoids/ReinforcedMechanoids.csproj" />
+  <Folder Name="/XML/1.6/Defs/CultureDefs/">
+    <File Path="../1.6/Defs/CultureDefs/Cultures.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/">
+    <File Path="../1.6/Patches/Biotech.xml" />
+    <File Path="../1.6/Patches/Core.xml" />
+    <File Path="../1.6/Patches/Ideology.xml" />
+    <File Path="../1.6/Patches/NoRoyaltyShips.xml" />
+    <File Path="../1.6/Patches/Other.xml" />
+    <File Path="../1.6/Patches/Royalty.xml" />
+    <File Path="../1.6/Patches/Toggleable-Patches.xml" />
+    <File Path="../1.6/Patches/VFE-Mechanoids.xml" />
+    <File Path="../1.6/Patches/VWE-Grenades.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/GestaltEngineKeys.xml" />
+    <File Path="../Languages/English/Keyed/Keys.xml" />
+    <File Path="../Languages/English/Keyed/Machines.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Damages/">
+    <File Path="../1.6/Defs/Damages/Damages.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/GestaltEngine/RecipeDefs/">
+    <File Path="../1.6/Defs/GestaltEngine/RecipeDefs/Recipes_MechGestator_Medium.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Items/">
+    <File Path="../1.6/Defs/ThingDefs_Items/Items_Exotic.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThinkTreeDefs/">
+    <File Path="../1.6/Defs/ThinkTreeDefs/Machines.xml" />
+    <File Path="../1.6/Defs/ThinkTreeDefs/Mechanoids.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/RulePackDefs/">
+    <File Path="../1.6/Defs/RulePackDefs/RulePacks_Namers_Factions.xml" />
+    <File Path="../1.6/Defs/RulePackDefs/RulePacks_Namers_People.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/SymbolDefs/">
+    <File Path="../1.6/Defs/SymbolDefs/Symbol_Ships.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/StatDefs/">
+    <File Path="../1.6/Defs/StatDefs/ShieldCode.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/RulesDefs/">
+    <File Path="../1.6/Defs/RulesDefs/Rules_Complex_CSG.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/GestaltEngine/ModOptionCategories/">
+    <File Path="../1.6/Defs/GestaltEngine/ModOptionCategories/ModOptionCategories.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/DutyDefs/">
+    <File Path="../1.6/Defs/DutyDefs/Duties_Misc.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ToolCapacityDefs/">
+    <File Path="../1.6/Defs/ToolCapacityDefs/ToolCapacity.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/NeedDefs/">
+    <File Path="../1.6/Defs/NeedDefs/Needs_Machine.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Races/">
+    <File Path="../1.6/Defs/ThingDefs_Races/Races_Machines_Base.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Races/Races_Machines.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Races/Races_Mechanoid.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/PawnKinds/">
+    <File Path="../1.6/Defs/PawnKinds/PawnKinds_Machines.xml" />
+    <File Path="../1.6/Defs/PawnKinds/PawnKinds_Mechanoids.xml" />
+    <File Path="../1.6/Defs/PawnKinds/PawnKinds_Remnants.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Buildings/">
+    <File Path="../1.6/Defs/ThingDefs_Buildings/Buildings_Machines.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Buildings/Buildings_Mech.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Buildings/Buildings_Power.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Buildings/Buildings_Security_Turrets.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Buildings/Buildings_Ships.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/SoundDefs/">
+    <File Path="../1.6/Defs/SoundDefs/Mechanoid_Sustainers_Ambiences.xml" />
+    <File Path="../1.6/Defs/SoundDefs/World_Oneshots_Apparel.xml" />
+    <File Path="../1.6/Defs/SoundDefs/World_Oneshots_Explosions.xml" />
+    <File Path="../1.6/Defs/SoundDefs/World_Oneshots_Weapons.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Storyteller/">
+    <File Path="../1.6/Defs/Storyteller/Incidents_Map_Special.xml" />
+    <File Path="../1.6/Defs/Storyteller/RaidStrategies.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Misc/">
+    <File Path="../1.6/Defs/ThingDefs_Misc/Apparel_Headgear.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Apparel_Utility.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Ethereal_OrbitalStrikes.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Skyfallers.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Bodies/">
+    <File Path="../1.6/Defs/Bodies/Bodies_Mechanoid.xml" />
+    <File Path="../1.6/Defs/Bodies/BodyParts_Mechanoid.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/CustomGenDefs/">
+    <File Path="../1.6/Defs/CustomGenDefs/AncientBaseShipsDLC.xml" />
+    <File Path="../1.6/Defs/CustomGenDefs/AncientShips_Base.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/JobDefs/">
+    <File Path="../1.6/Defs/JobDefs/Jobs_Machine.xml" />
+    <File Path="../1.6/Defs/JobDefs/Jobs_Misc.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Gestalt/ModSettings/">
+    <File Path="../1.6/Patches/Gestalt/ModSettings/Slider-Patches.xml" />
+    <File Path="../1.6/Patches/Gestalt/ModSettings/Toggleable-Patches-Royalty-DLC.xml" />
+    <File Path="../1.6/Patches/Gestalt/ModSettings/Toggleable-Patches.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/GestaltEngine/ResearchProjectDefs/">
+    <File Path="../1.6/Defs/GestaltEngine/ResearchProjectDefs/ResearchProjects_RM_GestaltEngine.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Misc/Weapons/">
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/MeleeMechanoid.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/RangedMechanoid.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/RangedSpacer.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/RangedSpacerARC.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/RangedUltratechLaser.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/RangedUltratechPlasma.xml" />
+    <File Path="../1.6/Defs/ThingDefs_Misc/Weapons/RangedUltratechShard.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/GestaltEngine/ThingDefs_Races/">
+    <File Path="../1.6/Defs/GestaltEngine/ThingDefs_Races/Races_Mechanoid.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Maneuvers/">
+    <File Path="../1.6/Defs/Maneuvers/Maneuvers.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/RecipeDefs/">
+    <File Path="../1.6/Defs/RecipeDefs/Recipes_Hacking.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/FactionDefs/">
+    <File Path="../1.6/Defs/FactionDefs/Factions_Misc.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/HediffDefs/">
+    <File Path="../1.6/Defs/HediffDefs/Hediffs_Global_Misc.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/TerrainDefs/">
+    <File Path="../1.6/Defs/TerrainDefs/Terrain_Floors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/GestaltEngine/ThingDefs_Buildings/">
+    <File Path="../1.6/Defs/GestaltEngine/ThingDefs_Buildings/Buildings_Gestalt.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ResearchProjectDefs/">
+    <File Path="../1.6/Defs/ResearchProjectDefs/ResearchProjects_4_MultiAnalyzer.xml" />
+    <File Path="../1.6/Defs/ResearchProjectDefs/ResearchTabs.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Effects/">
+    <File Path="../1.6/Defs/Effects/Effecter_Laser.xml" />
+    <File Path="../1.6/Defs/Effects/Mote_Visual.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/Gestalt/">
+    <File Path="../1.6/Patches/Gestalt/Biotech.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/MentalStateDefs/">
+    <File Path="../1.6/Defs/MentalStateDefs/MentalStates_Special.xml" />
+  </Folder>
 </Solution>

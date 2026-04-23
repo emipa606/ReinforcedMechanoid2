@@ -9,6 +9,14 @@ public static class JobGiver_Work_PawnCanUseWorkGiver
 {
     public static void Postfix(ref bool __result, Pawn pawn, WorkGiver giver)
     {
+        if (pawn.kindDef == RM_DefOf.RM_Mech_Vulture
+            && !__result
+            && giver.def.workType == WorkTypeDefOf.Construction
+            && pawn.mindState?.duty?.def == RM_DefOf.RM_Build)
+        {
+            __result = true;
+        }
+
         if (pawn is not Machine || !CompMachine.cachedMachinesPawns.TryGetValue(pawn, out var comp))
         {
             return;
