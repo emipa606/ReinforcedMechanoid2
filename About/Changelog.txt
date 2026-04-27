@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.6.3 - FIx when using non-english language
+
+
 1.6.2 - Sieges should not cause issues now. Matriarch gestation should show correctly.
 Used DeepL to update translations for ChineseSimplified, French, German
 
