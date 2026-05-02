@@ -8,6 +8,11 @@ public static class Pawn_EquipmentTracker_DestroyEquipment
 {
     public static bool Prefix(Pawn_EquipmentTracker __instance)
     {
-        return !__instance.pawn.RaceProps.IsMechanoid || __instance.pawn.Dead;
+        if (!__instance.pawn.RaceProps.IsMechanoid)
+        {
+            return true;
+        }
+
+        return !__instance.pawn.Downed;
     }
 }

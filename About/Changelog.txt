@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.6.5 - Non downed mechs can now switch weapon correctly (alpha mecs etc.)
+
+
 1.6.4 - Fixed matriarch doing ressurection bills
 
 
