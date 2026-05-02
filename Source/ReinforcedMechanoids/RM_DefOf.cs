@@ -9,6 +9,8 @@ public static class RM_DefOf
 {
     public static PawnKindDef RM_Mech_Caretaker;
 
+    public static PawnKindDef RM_Mech_Matriarch;
+
     public static PawnKindDef RM_Mech_Vulture;
 
     public static PawnKindDef RM_Mech_Behemoth;
