@@ -50,6 +50,10 @@
             </li>
           </subNodes>
         </li>
+        <!-- Lord -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
         <!-- Player mechs -->
         <li Class="ThinkNode_ConditionalPlayerControlledMech">
           <subNodes>
@@ -122,10 +126,6 @@
               </subNodes>
             </li>
           </subNodes>
-        </li>
-        <!-- Lord -->
-        <li Class="ThinkNode_Subtree">
-          <treeDef>LordDuty</treeDef>
         </li>
         <!-- Idle player mech -->
         <li Class="ThinkNode_ConditionalPlayerControlledMech">
