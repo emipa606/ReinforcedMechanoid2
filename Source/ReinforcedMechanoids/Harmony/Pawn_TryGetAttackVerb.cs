@@ -20,7 +20,7 @@ public static class Pawn_TryGetAttackVerb
                    __instance.equipment.Primary.def.IsMeleeWeapon &&
                    __instance.equipment.PrimaryEq.PrimaryVerb.Available() &&
                    (!__instance.equipment.PrimaryEq.PrimaryVerb.verbProps.onlyManualCast ||
-                    __instance.CurJob != null && __instance.CurJob.def != JobDefOf.Wait_Combat ||
+                    __instance.CurJob != null && __instance.CurJob.def == JobDefOf.Wait_Combat ||
                     allowManualCastWeapons)
             ? __instance.equipment.PrimaryEq.PrimaryVerb
             : __instance.meleeVerbs.TryGetMeleeVerb(target);

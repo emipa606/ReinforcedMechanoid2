@@ -1,41 +1,54 @@
-# .github/copilot-instructions.md for Reinforced Mechanoid 2 (Continued)
+# GitHub Copilot Instructions for Reinforced Mechanoid 2 (Continued)
 
 ## Mod Overview and Purpose
-The "Reinforced Mechanoid 2 (Continued)" mod is an enhancement of the original RimWorld mechanoid system, integrating new gameplay mechanics, threats, weapons, buildings, and factions that align seamlessly with the vanilla RimWorld experience. Originally named "HALO: Rimworld Heretic Mechanoids," this mod builds upon the foundation laid by "Reinforced Mechanoids: Tyrikan-Line."
-
-The mod leverages the enhanced support for Asset Bundles provided by RimWorld 1.6 to streamline the mod's size and performance. It incorporates the functionality of the Gestalt Engine, eliminating the need for this additional mod, making mechanoid management more intuitive and efficient.
+The "Reinforced Mechanoid 2 (Continued)" mod is an expansion pack for RimWorld that enhances and expands upon the vanilla mechanoid experience. Originally known as "HALO: Rimworld Heretic Mechanoids," this mod introduces new mechanoid units, weapons, buildings, factions, and gameplay mechanics, all of which are designed to integrate seamlessly with the base game. The mod also features unique systems that innovate on existing game mechanics, offering a richer and more varied gameplay experience.
 
 ## Key Features and Systems
-- **New Mechanoids**: Introduces a variety of new mechanoids, each with unique abilities, behaviors, and roles. These mechanoids are part of a new ancient faction on the world map, offering fresh challenges and storytelling opportunities.
-- **Mechanoid Construction**: Players can construct and utilize mechanoids in combat, allowing for strategic innovation.
-- **Mechanoid Power**: Implements a new power production method, inspired by the "Mechanoid Power" mod, with new code, textures, and finely tuned balance.
-- **DLC Integration**: Owners of the Royalty DLC can now utilize the weather controller and climate adjuster for their own colonies.
-- **Gestalt Engine**: Control mechanoids without a mechanitor, providing a streamlined and autonomous control mechanism.
-- **Vanilla-Friendly Integration**: Ensures all new assets, textures, and balance adjustments feel native to the RimWorld environment.
+- **New Mechanoid Variants**: Introduces mechanoids with unique abilities and behaviors, beyond mere aesthetic changes, providing new combat challenges.
+  
+- **Ancient Faction Integration**: Features mechanoids that belong to a new ancient faction on the world map, expanding the narrative and strategic elements of the game.
+
+- **Player-Created Mechanoids**: Allows players to construct and deploy their own mechanoid units, adding depth to colony management and combat strategies.
+
+- **New Power Production Method**: Builds upon the "Mechanoid Power" mod to provide a novel way to generate power with balanced mechanics.
+
+- **Royalty DLC Integration**: Empowers players to utilize weather controllers and climate adjusters, significantly modifying environmental gameplay.
+
+- **Gestalt Engine**: Provides a mechanism for controlling mechanoids independently, without necessitating a mechanitor, thereby offering players greater tactical flexibility.
+
+- **Vanilla-Friendly Design**: All additions are balanced and crafted to match the vanilla art style and lore, offering a cohesive expansion experience.
 
 ## Coding Patterns and Conventions
-- **Naming Conventions**: Classes and methods follow PascalCase, which is standard for C# development.
-- **Class Structure**: Utility classes are marked appropriately (e.g., `internal static class Utils`), and core functionalities are encapsulated in specific classes such as `CompGestaltEngine` for managing Gestalt Engine capabilities.
-- **Comments and Documentation**: Use XML comments (`///`) for code documentation to facilitate IntelliSense support and enhance comprehension for collaborators and users.
+- **C# Code Structure**: Follow a clear and organized file structure, with distinct C# files for different mod components like the `GestaltEngine` and its patches.
+
+- **Naming Conventions**: Use PascalCase for class names and methods, and camelCase for method parameters. Maintain clarity and context in naming to enhance code readability.
+
+- **Modularity**: Separate concerns by organizing functionality into distinct classes and methods. This includes the use of prefixes and postfixes to apply patches via Harmony.
 
 ## XML Integration
-- XML files are used to define game components such as mechanoid behaviors and item definitions, ensuring easy integration and modification.
-- Use of DefModExtensions for dynamic data loading from XML, as seen in classes like `BeamExtension` and `EquipmentDrawPositionOffsetExtension`.
-- When defining new entities or modifying existing ones, ensure XML tags and data are consistent with RimWorld standards to avoid conflicts and errors.
+- **Defs Configuration**: XML files are used to define new game entities, such as body parts (`BodyPartDef`), cultures (`CultureDef`), and structural layouts (`KCSG.StructureLayoutDef`).
+
+- **Path Organization**: Maintain a structured directory for XML definitions under version-specific folders to ensure compatibility and ease of updating.
+
+- **Vanilla Compatibility**: Ensure that new XML defs integrate smoothly with existing game mechanics by adhering to existing data structures and naming conventions.
 
 ## Harmony Patching
-- **Harmony Library**: Utilized extensively for modifying existing game functions without altering core game files directly.
-- All patches are organized within a single class, `HarmonyPatches`, which initializes and applies the necessary patches when the mod is loaded.
-- **Patch Examples**: Patches like `CameraJumper_TryJumpAndSelect_Patch` and `Pawn_MechanitorTracker_CanControlMechs_Patch` demonstrate targeted enhancements to existing game logic without disrupting base game mechanics.
+- **Adding Patches**: Use the Harmony library for method patching, allowing for alterations or extensions of vanilla game methods without direct modifications.
+
+- **Prefix/Postfix Usage**: Apply prefixes and postfixes judiciously to adjust or augment game logic. Prefix methods can alter or prevent the execution of original methods, while postfixes can execute additional logic after the original method completes.
+
+- **Example Implementations**: The `CameraJumper_TryJumpAndSelect_Patch` uses a `Prefix` to modify camera behavior, while patches in `CompGestaltEngine` manage mechanoid control logic.
 
 ## Suggestions for Copilot
-- Write efficient code by leveraging C# features such as LINQ, async/await for asynchronous operations, and try-catch blocks for error handling.
-- Consider creating helper functions for repetitive tasks to promote DRY (Don't Repeat Yourself) principles.
-- Utilize Copilot’s ability to autocomplete by starting with clear intents or method signatures to improve predictability of the suggestions.
-- Leverage XML comment templates to maintain coherent and standardized documentation across codebase components.
-- When creating new functionalities, consider potential interactions and dependencies within the RimWorld ecosystem to ensure smooth gameplay and mod compatibility.
+- **Contextual Predictions**: Copilot can aid in suggesting XML tags and attributes based on existing mod definitions. Ensure suggestions follow the pattern established in similar def files.
+  
+- **Method Stubs**: When creating new methods or patches, Copilot can propose method signatures and basic logic that align with the mod's programming style and structure.
 
-This file provides an overarching guide for leveraging GitHub Copilot in the development of the "Reinforced Mechanoid 2 (Continued)" project, enhancing productivity and code quality while maintaining the mod's unique identity and seamless integration with the base game.
+- **Bug Fixing**: Use Copilot to suggest fixes for common coding issues, specifically in Harmony patches or XML errors.
+
+- **Documentation Assistance**: Leverage Copilot to auto-generate detailed method and class comments based on code logic and intents, enhancing code maintainability and readability.
+
+This guide ensures that contributors to the "Reinforced Mechanoid 2 (Continued)" mod project maintain coding quality and consistency across development stages.
 
 ## Project Solution Guidelines
 - Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
@@ -44,3 +57,9 @@ This file provides an overarching guide for leveraging GitHub Copilot in the dev
 - When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
 - In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
 - For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
+
+
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+

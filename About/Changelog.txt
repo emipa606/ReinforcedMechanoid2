@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.6.8 - Sentinels should work better now
+
+
 1.6.7 - Matriarch should be able to use subcore encoder
 
 
