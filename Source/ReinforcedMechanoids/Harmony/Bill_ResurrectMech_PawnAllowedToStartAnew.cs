@@ -7,7 +7,7 @@ namespace ReinforcedMechanoids.Harmony;
 [HarmonyPatch(typeof(Bill_ResurrectMech), nameof(Bill_ResurrectMech.PawnAllowedToStartAnew))]
 public static class Bill_ResurrectMech_PawnAllowedToStartAnew
 {
-    public static bool Prefix(ref bool __result, Pawn p)
+    public static bool Prefix(Bill_ResurrectMech __instance, ref bool __result, Pawn p)
     {
         if (p.mechanitor != null)
         {
@@ -18,7 +18,15 @@ public static class Bill_ResurrectMech_PawnAllowedToStartAnew
         // be allowed to perform resurrection bills. Skip vanilla logic to avoid null-ref.
         if (p.kindDef == RM_DefOf.RM_Mech_Matriarch && p.Faction == Faction.OfPlayer)
         {
-            __result = true;
+            // Re-apply the ActiveBill lock from Bill_Autonomous.PawnAllowedToStartAnew,
+            // which is skipped along with the rest of the vanilla logic. Without it a
+            // Matriarch can start a second bill while another one is mid-gestation,
+            // stealing ActiveBill and leaving the first bill permanently stuck in Forming.
+            var workTable = (Building_WorkTableAutonomous)__instance.billStack.billGiver;
+            __result = workTable.ActiveBill == null || workTable.ActiveBill == __instance
+                       || (workTable.ActiveBill.suspended
+                           && workTable.ActiveBill.State == FormingState.Gathering
+                           && workTable.innerContainer.Count == 0);
             return false;
         }
 
