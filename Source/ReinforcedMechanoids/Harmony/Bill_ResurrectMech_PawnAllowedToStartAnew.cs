@@ -24,9 +24,9 @@ public static class Bill_ResurrectMech_PawnAllowedToStartAnew
             // stealing ActiveBill and leaving the first bill permanently stuck in Forming.
             var workTable = (Building_WorkTableAutonomous)__instance.billStack.billGiver;
             __result = workTable.ActiveBill == null || workTable.ActiveBill == __instance
-                       || (workTable.ActiveBill.suspended
-                           && workTable.ActiveBill.State == FormingState.Gathering
-                           && workTable.innerContainer.Count == 0);
+                                                    || workTable.ActiveBill.suspended
+                                                    && workTable.ActiveBill.State == FormingState.Gathering
+                                                    && workTable.innerContainer.Count == 0;
             return false;
         }
 

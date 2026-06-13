@@ -1,5 +1,8 @@
 # Changelog for ReinforcedMechanoid2
 
+1.6.9 - Fix for the Matriarchs gestation ability, thanks hughjersey
+
+
 1.6.8 - Sentinels should work better now
 
 
