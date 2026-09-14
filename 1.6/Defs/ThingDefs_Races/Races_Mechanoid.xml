@@ -445,7 +445,7 @@
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
     <comps>
-      <li Class="ReinforcedMechanoids.CompProperties_PawnJumper">
+      <li Class="ReinforcedMechanoids.CompProperties_PawnJumper" MayRequire="Ludeon.RimWorld.Royalty">
         <jumpTickRateInterval>600</jumpTickRateInterval>
         <maxJumpDistance>25</maxJumpDistance>
         <minJumpDistance>5</minJumpDistance>

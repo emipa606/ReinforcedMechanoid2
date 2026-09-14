@@ -146,4 +146,4 @@ Rimworld is owned by Tynan Sylvester and he wants you to finally buy his book!
 
   | tags:  gestalt engine 
 
-[![Image](https://img.shields.io/github/v/release/emipa606/ReinforcedMechanoid2?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3541404610) | tags: gestalt engine
+[![Image](https://img.shields.io/github/v/release/emipa606/ReinforcedMechanoid2?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3541404610) | gestalt engine

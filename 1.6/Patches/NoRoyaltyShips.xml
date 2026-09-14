@@ -4,6 +4,7 @@
     <mods>
       <li>Royalty</li>
     </mods>
+    <success>Always</success>
     <nomatch Class="PatchOperationSequence">
       <operations>
         <!-- ================================ Adds ship layouts for when there is no Royalty installed ====================== -->
